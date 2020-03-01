@@ -1,0 +1,6 @@
+@import "src/assets/styles/bases";
+
+::ng-deep router-outlet + * {
+  display: block;
+  margin-top: $size-header;
+}
