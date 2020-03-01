@@ -1,0 +1,43 @@
+<div  class="nav-bar">
+    <div class="nav-bar__menu" (click)="showHideMenu()">
+      Menu
+    </div>
+    <div class="nav-bar__items"
+         [ngClass]="{'nav-bar__items--mobile': displayMobileMenu}"
+         [excludeClasses]="['nav-bar__menu']"
+         (clickOutside)="hideMenu()"
+         appClickOutside>
+      <div class="item">
+        <a class="item__title" routerLink="" (click)="hideMenu()">Accueil</a>
+      </div>
+      <div class="item">
+        <a class="item__title" routerLink="taichi" (click)="hideMenu()">Tai Chi</a>
+        <div class="item__list">
+          <a routerLink="taichi" [queryParams]="{anchor: 'explication'}">Présentation</a>
+          <a routerLink="taichi" [queryParams]="{anchor: 'cours'}">Les cours</a>
+          <a routerLink="taichi" [queryParams]="{anchor: 'articles'}">Articles parus</a>
+          <a routerLink="taichi" [queryParams]="{anchor: 'stage'}">Stages et ateliers</a>
+        </div>
+      </div>
+      <div class="item">
+        <a class="item__title" routerLink="massage" (click)="hideMenu()">Massages-Bien-Etre</a>
+        <div class="item__list">
+          <a routerLink="massage" [queryParams]="{anchor: 'ayurvedique'}">Tradition ayurvédique</a>
+          <a routerLink="massage" [queryParams]="{anchor: 'energetique'}">Relaxation énergétique</a>
+          <a routerLink="massage" [queryParams]="{anchor: 'drainante'}">Relaxation drainante</a>
+          <a routerLink="massage" [queryParams]="{anchor: 'tailandais'}">Nuad-bo-rarn</a>
+          <a routerLink="massage" [queryParams]="{anchor: 'minute'}">Massage minutes</a>
+          <a routerLink="massage" [queryParams]="{anchor: 'temoignage'}">Témoignages</a>
+        </div>
+      </div>
+      <div class="item">
+        <a class="item__title" routerLink="apropos" (click)="hideMenu()">A Propos</a>
+        <div class="item__list">
+          <a routerLink="apropos" [queryParams]="{anchor: 'explication'}">Présentation</a>
+        </div>
+      </div>
+      <div class="item">
+        <a class="item__title" routerLink="contact" (click)="hideMenu()">Contact</a>
+      </div>
+    </div>
+</div>
