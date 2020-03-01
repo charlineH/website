@@ -1,0 +1,22 @@
+@import 'colors';
+
+$border-radius-default: 0.3125rem; // 5 px
+$border-radius-small: 0.125rem; // 2 px
+
+$border-size-default: 0.0625rem; // 1 px
+$border-size-medium: 0.125rem; // 2 px
+
+$border-type-default: solid;
+
+$border-project-primary-light: $border-size-default $border-type-default $color-project-primary-light;
+$border-project-primary: $border-size-default $border-type-default $color-project-primary;
+$border-project-primary-dark: $border-size-default $border-type-default $color-project-primary-dark;
+
+$border-project-secondary-light: $border-size-default $border-type-default $color-project-secondary-light;
+$border-project-secondary: $border-size-default $border-type-default $color-project-secondary;
+$border-project-secondary-dark: $border-size-default $border-type-default $color-project-secondary-dark;
+
+$border-project-terciary-light: $border-size-default $border-type-default $color-project-terciary-light;
+$border-project-terciary: $border-size-default $border-type-default $color-project-terciary;
+$border-project-terciary-dark: $border-size-default $border-type-default $color-project-terciary-dark;
+
