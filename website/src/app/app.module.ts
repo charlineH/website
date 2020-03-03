@@ -70,5 +70,8 @@ export class AppModule {
     iconRegistry.addSvgIcon(
       'tai-chi',
       sanitizer.bypassSecurityTrustResourceUrl('../assets/images/svg/tai-chi.svg'));
+    iconRegistry.addSvgIcon(
+      'up-arrow',
+      sanitizer.bypassSecurityTrustResourceUrl('../assets/images/svg/up-arrow.svg'));
   }
 }
