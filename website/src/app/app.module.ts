@@ -21,6 +21,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule, MatIconRegistry } from '@angular/material/icon';
 import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ThumbnailComponent } from './components/thumbnail/thumbnail.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { HttpClientModule } from '@angular/common/http';
     ShiatsuComponent,
     ClickOutsideDirective,
     QuotemarksComponent,
-    FooterComponent
+    FooterComponent,
+    ThumbnailComponent
   ],
   imports: [
     BrowserModule,
