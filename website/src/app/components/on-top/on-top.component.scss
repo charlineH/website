@@ -1,0 +1,18 @@
+@import "src/assets/styles/bases";
+
+.on-top {
+  position: fixed;
+  right: $size-large;
+  bottom: $size-large;
+}
+
+.on-top__icon {
+  color: $color-project-secondary;
+  width: $size-large;
+  height: $size-large;
+
+  &:hover {
+    cursor: pointer;
+    color: $color-project-secondary-light;
+  }
+}
