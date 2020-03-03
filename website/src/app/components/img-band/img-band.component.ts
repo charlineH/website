@@ -7,8 +7,9 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ImgBandComponent implements OnInit {
   @Input() img?: string;
-  @Input() type: 'bonze' |'bonze-ouie' |'bonze-parole' |'roses' | 'taichi';
+  @Input() type: 'eye-bonze' |'ears-bonze' |'mouse-bonze' |'roses' | 'taichi' | 'primary';
   @Input() title: string;
+
   constructor() { }
 
   ngOnInit(): void {
@@ -16,9 +17,10 @@ export class ImgBandComponent implements OnInit {
 
   getImgClass() {
     if (this.type) {
-      return `img-band--${this.type}`
+      return `band--${this.type}`
+    } else if (this.img) {
+      return `band--img`;
     }
-
-    return '';
+    return 'band--default';
   }
 }
