@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, DomSanitizer } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -16,6 +16,11 @@ import { ImgBandComponent } from './components/img-band/img-band.component';
 import { OnTopComponent } from './components/on-top/on-top.component';
 import { ShiatsuComponent } from './pages/shiatsu/shiatsu.component';
 import { ClickOutsideDirective } from './directive/click-outside.directive';
+import { QuotemarksComponent } from './components/quotemarks/quotemarks.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatIconModule, MatIconRegistry } from '@angular/material/icon';
+import { FooterComponent } from './components/footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -32,13 +37,36 @@ import { ClickOutsideDirective } from './directive/click-outside.directive';
     ImgBandComponent,
     OnTopComponent,
     ShiatsuComponent,
-    ClickOutsideDirective
+    ClickOutsideDirective,
+    QuotemarksComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatIconModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
+    iconRegistry.addSvgIcon(
+      'building',
+      sanitizer.bypassSecurityTrustResourceUrl('../assets/images/svg/building.svg'));
+    iconRegistry.addSvgIcon(
+      'massage',
+      sanitizer.bypassSecurityTrustResourceUrl('../assets/images/svg/massage.svg'));
+    iconRegistry.addSvgIcon(
+      'quotemark',
+      sanitizer.bypassSecurityTrustResourceUrl('../assets/images/svg/quotemark.svg'));
+    iconRegistry.addSvgIcon(
+      'shiatsu',
+      sanitizer.bypassSecurityTrustResourceUrl('../assets/images/svg/shiatsu.svg'));
+    iconRegistry.addSvgIcon(
+      'tai-chi',
+      sanitizer.bypassSecurityTrustResourceUrl('../assets/images/svg/tai-chi.svg'));
+  }
+}
