@@ -7,7 +7,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { MassageComponent } from './pages/massage/massage.component';
 import { TaichiComponent } from './pages/taichi/taichi.component';
 import { GallerieComponent } from './pages/gallerie/gallerie.component';
-import { ContactComponent } from './pages/contact/contact.component';
+import { EntrepriseComponent } from './pages/entreprise/entreprise.component';
 import { ArticleComponent } from './components/article/article.component';
 import { AboutComponent } from './pages/about/about.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
@@ -22,6 +22,7 @@ import { MatIconModule, MatIconRegistry } from '@angular/material/icon';
 import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ThumbnailComponent } from './components/thumbnail/thumbnail.component';
+import { NewsComponent } from './components/news/news.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,7 @@ import { ThumbnailComponent } from './components/thumbnail/thumbnail.component';
     MassageComponent,
     TaichiComponent,
     GallerieComponent,
-    ContactComponent,
+    EntrepriseComponent,
     ArticleComponent,
     AboutComponent,
     NavBarComponent,
@@ -41,7 +42,8 @@ import { ThumbnailComponent } from './components/thumbnail/thumbnail.component';
     ClickOutsideDirective,
     QuotemarksComponent,
     FooterComponent,
-    ThumbnailComponent
+    ThumbnailComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,

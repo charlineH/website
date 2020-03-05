@@ -1,0 +1,11 @@
+button {
+    -webkit-appearance: inherit;
+    -moz-appearance: inherit;
+    background: none;
+    border: none;
+    padding: initial;
+
+    &:focus {
+        outline: none;
+    }
+}

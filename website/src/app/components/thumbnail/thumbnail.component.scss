@@ -9,6 +9,10 @@
   align-items: center;
   height: 2*$size-xlarge;
   padding: $size-default;
+
+  &:hover {
+    background-color: $color-empty;
+  }
 }
 
 .thumbnail__bulle {
