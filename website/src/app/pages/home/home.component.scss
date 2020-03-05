@@ -1,11 +1,30 @@
 @import "src/assets/styles/bases";
 
-.home__thumbails {
+.home__thumbnails {
   display: flex;
-  justify-content: space-around;
-  width: 80%;
+  justify-content: center;
+  height: 5*$size-xmedium;
+  margin-top: -$size-xmedium;
 
-  .home__thumbail {
+  .thumbnails-container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    position: absolute;
+  }
+
+  .thumbnails__item {
     width: 20%;
+  }
+
+}
+
+.home__news {
+  display: flex;
+  flex-direction: column;
+  padding: 2*$size-medium;
+
+  .news__item {
+    margin-bottom: $size-xmedium;
   }
 }

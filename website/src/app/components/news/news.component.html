@@ -1,0 +1,13 @@
+<div [ngClass]="{'news--reverse': left}" class="news">
+  <img [ngClass]="type" alt="{{imageLabel}}" class="news__img" src="{{img}}">
+  <div [ngClass]="type" class="news__content">
+    <span class="news__title">{{title}}</span>
+    <p class="news__text">{{text}}</p>
+    <button *ngIf="buttonLabel"
+            [routerLink]="redirect"
+            aria-label="buttonLabel"
+            class="news__button">
+      {{buttonLabel}}
+    </button>
+  </div>
+</div>

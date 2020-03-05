@@ -1,6 +1,6 @@
-<div class="thumbnail">
+<div (click)="redirectTo()" class="thumbnail">
   <div class="thumbnail__bulle">
-    <mat-icon class="thumbnail__icon" [svgIcon]="getIcon()"></mat-icon>
+    <mat-icon [svgIcon]="getIcon()" class="thumbnail__icon"></mat-icon>
   </div>
   <span class="thumbnail__text">{{text}}</span>
 </div>

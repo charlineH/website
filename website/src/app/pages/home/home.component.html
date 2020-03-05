@@ -1,13 +1,52 @@
-<p>home works!</p>
 <app-img-band img="lien vers l'image" title="les cours"></app-img-band>
 <br>
 <app-multiple-img-band [images]="images"></app-multiple-img-band>
 
-<app-img-band [type]="'eye-bonze'" [title]="'Actualité'"></app-img-band>
+<app-img-band [title]="'Actualité'" [type]="'eye-bonze'"></app-img-band>
 
-<div class="home__thumbails">
-  <app-thumbnail class="home__thumbail" type="taichi" text="tai chi"></app-thumbnail>
-  <app-thumbnail class="home__thumbail" type="massage" text="Massage-Bien-Etre"></app-thumbnail>
-  <app-thumbnail class="home__thumbail" type="shiatsu" text="Shiatsu"></app-thumbnail>
-  <app-thumbnail class="home__thumbail" type="entreprise" text="Et pour votre entrprise?"></app-thumbnail>
+<div class="home__thumbnails">
+  <div class="thumbnails-container">
+    <app-thumbnail class="thumbnails__item" text="tai chi" type="taichi"></app-thumbnail>
+    <app-thumbnail class="thumbnails__item" text="Massage-Bien-Etre" type="massage"></app-thumbnail>
+    <app-thumbnail class="thumbnails__item" text="Shiatsu" type="shiatsu"></app-thumbnail>
+    <app-thumbnail class="thumbnails__item" text="Et pour votre entrprise?" type="entreprise"></app-thumbnail>
+  </div>
+</div>
+
+<div class="home__news">
+  <app-news buttonLabel="Clique par ici c'est marrant!"
+            class="news__item"
+            img="assets/images/home/massage-main-442x295.jpg"
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id ligula sed felis egestas accumsan. Sed vel lectus tempor, venenatis odio vitae, viverra mauris. Praesent imperdiet eleifend tristique. Nunc porta eu quam eu rhoncus. Maecenas urna odio, dignissim at nunc dictum, viverra tincidunt ante. Sed porttitor lorem urna, a suscipit turpis venenatis id. Donec iaculis odio justo, id blandit felis finibus ut. In luctus, elit ut scelerisque interdum, sapien orci auctor nunc, non pulvinar lorem mauris rhoncus quam. Nullam viverra, nulla id varius sagittis, neque ipsum vehicula lorem, nec luctus dolor ipsum vel est."
+            title="Lorem ipsum bonne idée"
+  >
+  </app-news>
+
+  <app-news buttonLabel="Clique par ici c'est marrant!"
+            class="news__item"
+            img="assets/images/home/massage-main-442x295.jpg"
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id ligula sed felis egestas accumsan. Sed vel lectus tempor, venenatis odio vitae, viverra mauris. Praesent imperdiet eleifend tristique. Nunc porta eu quam eu rhoncus. Maecenas urna odio, dignissim at nunc dictum, viverra tincidunt ante. Sed porttitor lorem urna, a suscipit turpis venenatis id. Donec iaculis odio justo, id blandit felis finibus ut. In luctus, elit ut scelerisque interdum, sapien orci auctor nunc, non pulvinar lorem mauris rhoncus quam. Nullam viverra, nulla id varius sagittis, neque ipsum vehicula lorem, nec luctus dolor ipsum vel est."
+            title="Lorem ipsum bonne idée"
+            type="yellow"
+  >
+  </app-news>
+
+  <app-news buttonLabel="Clique par ici c'est marrant!"
+            class="news__item"
+            img="assets/images/home/massage-main-442x295.jpg"
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id ligula sed felis egestas accumsan. Sed vel lectus tempor, venenatis odio vitae, viverra mauris. Praesent imperdiet eleifend tristique. Nunc porta eu quam eu rhoncus. Maecenas urna odio, dignissim at nunc dictum, viverra tincidunt ante. Sed porttitor lorem urna, a suscipit turpis venenatis id. Donec iaculis odio justo, id blandit felis finibus ut. In luctus, elit ut scelerisque interdum, sapien orci auctor nunc, non pulvinar lorem mauris rhoncus quam. Nullam viverra, nulla id varius sagittis, neque ipsum vehicula lorem, nec luctus dolor ipsum vel est."
+            title="Lorem ipsum bonne idée"
+            type="blue"
+  >
+  </app-news>
+
+  <app-news [left]="true"
+            buttonLabel="Clique par ici c'est marrant!"
+            class="news__item"
+            img="assets/images/home/massage-main-442x295.jpg"
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id ligula sed felis egestas accumsan. Sed vel lectus tempor, venenatis odio vitae, viverra mauris. Praesent imperdiet eleifend tristique. Nunc porta eu quam eu rhoncus. Maecenas urna odio, dignissim at nunc dictum, viverra tincidunt ante. Sed porttitor lorem urna, a suscipit turpis venenatis id. Donec iaculis odio justo, id blandit felis finibus ut. In luctus, elit ut scelerisque interdum, sapien orci auctor nunc, non pulvinar lorem mauris rhoncus quam. Nullam viverra, nulla id varius sagittis, neque ipsum vehicula lorem, nec luctus dolor ipsum vel est."
+            title="Lorem ipsum bonne idée"
+            type="grey"
+  >
+  </app-news>
 </div>
