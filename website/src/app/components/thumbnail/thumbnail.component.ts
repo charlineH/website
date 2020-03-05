@@ -1,4 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
+import { RoutesPath } from '../../enum/routes.enum';
 
 @Component({
   selector: 'app-thumbnail',
@@ -9,9 +11,12 @@ export class ThumbnailComponent {
   @Input() type: 'taichi' | 'massage' | 'shiatsu' | 'entreprise';
   @Input() text: string;
 
+  constructor(private router: Router) {
+  }
+
   getIcon(): string {
-  let icon: string;
-    switch(this.type) {
+    let icon: string;
+    switch (this.type) {
       case 'taichi':
         icon = 'tai-chi';
         break;
@@ -23,9 +28,28 @@ export class ThumbnailComponent {
         break;
       case 'shiatsu':
       default:
-        icon = 'shiatsu'
+        icon = 'shiatsu';
     }
-  return icon;
+    return icon;
+  }
+
+  redirectTo(): void {
+    let redirect: RoutesPath;
+    switch (this.type) {
+      case 'taichi':
+        redirect = RoutesPath.TAICHI;
+        break;
+      case 'massage':
+        redirect = RoutesPath.MASSAGE;
+        break;
+      case 'entreprise':
+        redirect = RoutesPath.ENTREPRISE;
+        break;
+      case 'shiatsu':
+      default:
+        redirect = RoutesPath.SHIATSU;
+    }
+    this.router.navigateByUrl(redirect);
   }
 
 }
