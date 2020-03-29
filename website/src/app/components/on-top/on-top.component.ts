@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-on-top',
@@ -7,9 +7,10 @@ import { Component, ElementRef, OnInit } from '@angular/core';
 })
 export class OnTopComponent {
 
-  constructor(private element: ElementRef) { }
+  constructor() {
+  }
 
   scrollOnTop() {
-    this.element.nativeElement.scrollTop = 0;
+    window.scrollTo(0, 0);
   }
 }

@@ -1,0 +1,20 @@
+<ngb-carousel [showNavigationArrows]="false" [showNavigationIndicators]="false">
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img alt="Random first slide" src="assets/images/taichi/mieux-vivre.jpg">
+    </div>
+    <div class="carousel-caption">
+      <h3>10 seconds between slides...</h3>
+      <p>This carousel uses customized default values.</p>
+    </div>
+  </ng-template>
+  <ng-template *ngIf="multiple" ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img alt="Random second slide" src="assets/images/taichi/tai-chi-gros-plan-mains-separer-363x186.jpg">
+    </div>
+    <div class="carousel-caption">
+      <h3>No mouse events...</h3>
+      <p>This carousel doesn't pause or resume on mouse events</p>
+    </div>
+  </ng-template>
+</ngb-carousel>
