@@ -23,6 +23,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ThumbnailComponent } from './components/thumbnail/thumbnail.component';
 import { NewsComponent } from './components/news/news.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,8 @@ import { NewsComponent } from './components/news/news.component';
     QuotemarksComponent,
     FooterComponent,
     ThumbnailComponent,
-    NewsComponent
+    NewsComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
@@ -51,6 +54,7 @@ import { NewsComponent } from './components/news/news.component';
     BrowserAnimationsModule,
     MatIconModule,
     HttpClientModule,
+    NgbCarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

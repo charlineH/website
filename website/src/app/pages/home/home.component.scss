@@ -23,6 +23,9 @@
   display: flex;
   flex-direction: column;
   padding: 2*$size-medium;
+  @media (min-width: $small-window) {
+    padding: 2*$size-medium 8*$size-medium;
+  }
 
   .news__item {
     margin-bottom: $size-xmedium;
