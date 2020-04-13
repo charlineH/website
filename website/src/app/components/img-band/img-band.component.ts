@@ -7,20 +7,29 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ImgBandComponent implements OnInit {
   @Input() img?: string;
-  @Input() type: 'eye-bonze' |'ears-bonze' |'mouse-bonze' |'roses' | 'taichi' | 'primary';
+  @Input() type: 'eye-bonze' | 'ears-bonze' | 'mouse-bonze' | 'roses' | 'taichi' | 'primary' | 'meditation' | 'stage';
   @Input() title: string;
+  @Input() cadre: boolean;
+  @Input() movingBand: boolean;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
 
   getImgClass() {
+    let bandName = 'band--default';
     if (this.type) {
-      return `band--${this.type}`
+      bandName = `band--${ this.type }`;
     } else if (this.img) {
-      return `band--img`;
+      bandName = `band--img`;
     }
-    return 'band--default';
+    const cadre = this.cadre ? 'band--with-cadre' : '';
+    return `${ bandName } ${ cadre }`;
+  }
+
+  getImgStyle() {
+    return this.img ? `background-image: url(${ this.img })` : '';
   }
 }

@@ -1,0 +1,156 @@
+@import "src/assets/styles/bases";
+
+.taichi-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.taichi__presentation {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin-top: $size-large;
+}
+
+.presentation__image {
+  height: 100%;
+  margin-right: $size-xmedium;
+}
+
+.presentation__text {
+  color: $color-empty;
+  font-weight: $txt-bold-default;
+  text-align: justify;
+  display: flex;
+  padding-top: $size-medium;
+
+  .img-certification-taichi {
+    cursor: pointer;
+    align-self: center;
+    height: 100%;
+  }
+}
+
+.taichi-introduction {
+  color: $color-empty;
+  font-weight: $txt-bold-default;
+  text-align: justify;
+  width: 80%;
+  margin-bottom: $size-large;
+}
+
+.taichi-chapters {
+  width: 65%;
+  margin-bottom: 6.5*$size-default;
+}
+
+.taichi__band {
+  width: 100%;
+}
+
+.taichi__chapter {
+  width: 60%;
+  margin-top: 4*$size-default;
+}
+
+.chapter__introduction {
+  color: $color-project-primary;
+  font-weight: $txt-regular-medium;
+  font-size: $txt-size-regular;
+  margin-bottom: $size-xmedium;
+}
+
+.chapter__content {
+  color: $color-empty;
+  font-size: $txt-size-lower;
+  text-align: justify;
+  margin-bottom: $size-xmedium;
+}
+
+.chapter__image {
+  width: 100%;
+}
+
+.chapter__stikers {
+  display: flex;
+  margin: $size-xmedium -4*$size-default;
+}
+
+.stiker {
+  flex: 1;
+  margin: 0 $size-default;
+  border-radius: $border-radius-default;
+  box-shadow: 0 4px 6px rgba($color-default-primary, 0.16);
+  display: flex;
+  flex-direction: column;
+  padding: $size-medium;
+
+  .stiker__title {
+    font-size: $txt-size-regular;
+    font-weight: $txt-regular-medium;
+    color: $color-project-tertiary;
+    align-self: center;
+    margin-bottom: $size-default;
+  }
+
+  .stiker__content {
+    font-size: $txt-size-lower;
+    color: $color-empty;
+    text-align: justify;
+  }
+}
+
+.chapter-1__content--img {
+  display: flex;
+
+  img {
+    height: 100%;
+    margin-left: $size-default;
+  }
+}
+
+.chapter-2__content--columns {
+  display: flex;
+
+  .column {
+    flex: 1;
+    padding: $size-default;
+    margin-left: $size-xmedium;
+  }
+}
+
+.chapter-2__content--title {
+  color: $color-project-primary;
+  text-transform: uppercase;
+  font-size: $txt-size-regular;
+  font-weight: $txt-regular-medium;
+  margin-bottom: $size-default;
+}
+
+.taichi__testimonies {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 4*$size-default 0;
+
+  app-testimony {
+    width: 30%;
+    margin-top: $size-lower;
+    margin-right: $size-xmedium;
+  }
+}
+
+.taichi__articles {
+  display: flex;
+  flex-direction: column;
+  padding: 2*$size-medium;
+  @media (min-width: $small-window) {
+    padding: 2*$size-medium 8*$size-medium;
+  }
+
+  .articles__item {
+    margin-bottom: $size-xmedium;
+  }
+}
+

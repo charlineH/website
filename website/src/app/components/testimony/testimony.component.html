@@ -1,0 +1,14 @@
+<div class="testimony">
+  <div>
+    <div [ngClass]="color" class="testimony__icon">
+    </div>
+  </div>
+  <div class="testimony__content">
+    <h6 [ngClass]="color" class="testimony__author">
+      {{author}}
+    </h6>
+    <p class="testimony__text">
+      <ng-content></ng-content>
+    </p>
+  </div>
+</div>

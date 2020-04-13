@@ -6,12 +6,18 @@
   background-size: cover;
 }
 
+$cadre-offset: 7*$size-default;
+
 .band {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 4*$size-large;
   padding-top: $size-xmedium;
+
+  &.band--with-cadre {
+    margin-bottom: $cadre-offset;
+  }
 
   &.band--default {
     background-color: $color-default-secondary;
@@ -23,7 +29,7 @@
     color: $color-project-primary-very-light;
   }
 
-  &.bang--img {
+  &.band--img {
     @extend %band--img;
   }
 
@@ -51,6 +57,16 @@
     @extend %band--img;
     background-image: url("src/assets/images/bandeau/overlay.png"), url("src/assets/images/bandeau/taichi_groupe_band.png");
   }
+
+  &.band--stage {
+    @extend %band--img;
+    background-image: url("src/assets/images/bandeau/stage-taichi_1680x658.png");
+  }
+
+  &.band--meditation {
+    @extend %band--img;
+    background-image: url("src/assets/images/bandeau/IMG_4625_1680x658.jpg");
+  }
 }
 
 .band__title {
@@ -58,4 +74,21 @@
   color: $white;
   text-align: center;
   text-transform: uppercase;
+}
+
+.band__cadre {
+  background-color: rgba($color-project-tertiary-very-light, .65);
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  height: 2*$cadre-offset;
+  margin-top: 1.5*$cadre-offset;
+
+  h3 {
+    font-size: $txt-size-xxl;
+    color: $color-project-tertiary-dark;
+    font-weight: $txt-bold-default;
+    text-transform: uppercase;
+    align-self: center;
+  }
 }
