@@ -1,16 +1,17 @@
 @import "src/assets/styles/bases";
 
 .nav-bar {
-  background-color: $color-project-primary-dark;
+  background-color: $color-default-secondary;
   position: fixed;
   display: flex;
   justify-content: flex-start;
   width: 100%;
   height: $size-header;
   top: 0;
+  z-index: 99999;
 
   @media(min-width: $small-window) {
-    justify-content: flex-end;
+    justify-content: space-between;
   }
 }
 
@@ -32,6 +33,30 @@
   }
 }
 
+.nav-bar__website-info {
+  display: none;
+
+  @media (min-width: $small-window) {
+    display: flex;
+    align-items: center;
+    margin-left: $size-default;
+  }
+}
+
+.website-info__logo {
+  background-color: $color-project-primary-light;
+  border-radius: 50%;
+  width: $size-xlarge;
+  height: $size-xlarge;
+  margin-right: $size-medium;
+}
+
+.website-info__title {
+  font-size: $txt-size-large;
+  color: $color-project-secondary;
+  font-weight: $txt-regular-medium;
+}
+
 .nav-bar__items--mobile {
   flex-direction: column;
   background-color: $color-project-primary;
@@ -47,10 +72,10 @@
 .nav-bar__items {
   display: none;
 
-  @media(min-width: $small-window){
+  @media(min-width: $small-window) {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     margin-right: $size-large;
     height: 100%;
   }
@@ -58,20 +83,19 @@
 
 .item {
   font-size: $txt-size-regular;
-  color: $color-project-primary-very-light;
-  padding: $size-medium $size-default;
+  color: $color-empty;
 
   &.active {
-    color: $color-project-terciary;
-    border-bottom: $border-project-terciary;
+    color: $color-project-primary;
   }
 }
 
 .item__title {
-  color: $color-project-primary-very-light;
+  padding: $size-medium $size-default;
+  border-radius: $border-radius-default;
 
   &:hover {
-    opacity: .5;
+    background-color: $color-project-primary-very-light;
   }
 }
 
@@ -82,8 +106,8 @@
 
 .item__list {
   display: none;
-  background-color: $color-project-terciary-light;
-  color: $color-project-terciary-dark;
+  background-color: $color-default-secondary;
+  color: $color-project-tertiary-dark;
   box-shadow: -10px 10px 5px -2px rgba($grey, 0.1);
   border-radius: $border-radius-default;
   position: absolute;
@@ -95,7 +119,7 @@
     padding: $size-lower $size-large $size-lower $size-default;
 
     &:hover {
-      background-color: $color-project-terciary-very-light;
+      background-color: $color-project-tertiary-very-light;
     }
   }
 }

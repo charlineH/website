@@ -1,13 +1,13 @@
 @import "src/assets/styles/bases";
 
 .quotemarks {
-  background-color: $color-project-terciary;
+  background-color: $color-project-tertiary;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  -webkit-box-shadow: -$size-small $size-small $size-default $size-small rgba($color-empty-dark,0.3);
-  -moz-box-shadow: -$size-small $size-small $size-default $size-small rgba($color-empty-dark,0.3);
-  box-shadow: -$size-small $size-small $size-default $size-small rgba($color-empty-dark,0.3);
+  -webkit-box-shadow: -$size-small $size-small $size-default $size-small rgba($color-empty-dark, 0.3);
+  -moz-box-shadow: -$size-small $size-small $size-default $size-small rgba($color-empty-dark, 0.3);
+  box-shadow: -$size-small $size-small $size-default $size-small rgba($color-empty-dark, 0.3);
   max-width: 7*$size-large;
   padding: $size-default;
 }
@@ -19,26 +19,26 @@
 }
 
 ::ng-deep .quotemarks__icon path.active-path {
-  fill: $color-project-terciary-dark;
+  fill: $color-project-tertiary-dark;
   margin-bottom: $size-default;
 }
 
 .quotemarks__text {
   font-size: $size-medium;
-  color: $color-project-terciary-dark;
+  color: $color-project-tertiary-dark;
   text-align: center;
 }
 
 .quotemarks__separator {
-  background-color: $color-project-terciary-very-light;
-  color: $color-project-terciary-very-light;
+  background-color: $color-project-tertiary-very-light;
+  color: $color-project-tertiary-very-light;
   margin: $size-default 0;
 }
 
 .quotemarks__author {
   font-weight: $txt-bold-default;
   font-size: $size-medium;
-  color: $color-project-terciary-dark;
+  color: $color-project-tertiary-dark;
   text-transform: uppercase;
   text-align: center;
 }

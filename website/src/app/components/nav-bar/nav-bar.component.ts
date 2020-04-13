@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { RoutesPath } from '../../enum/routes.enum';
 
 @Component({
   selector: 'app-nav-bar',
@@ -6,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav-bar.component.scss']
 })
 export class NavBarComponent {
+  @Input() page: RoutesPath;
 
+  readonly homePage = RoutesPath.HOME;
+  readonly taichiPage = RoutesPath.TAICHI;
+  readonly massagePage = RoutesPath.MASSAGE;
+  readonly shiatsuPage = RoutesPath.SHIATSU;
+  readonly entreprisePage = RoutesPath.ENTREPRISE;
   displayMobileMenu: boolean;
 
   showHideMenu() {

@@ -1,5 +1,11 @@
 @import "src/assets/styles/bases";
 
+.home-page {
+  background-color: $color-empty-very-light;
+  display: flex;
+  flex-direction: column;
+}
+
 .home__thumbnails {
   display: flex;
   justify-content: center;
@@ -17,6 +23,30 @@
     width: 20%;
   }
 
+}
+
+.home__presentation {
+  background-color: $color-project-tertiary-very-light;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 3px 6px rgba($color-default-primary, 0.16);
+  width: 80%;
+  padding: $size-medium $size-xmedium;
+  margin: 5*$size-default 0;
+
+  .presentation__title {
+    color: $color-project-tertiary-dark;
+    font-size: $txt-size-regular;
+    font-weight: $txt-bold-default;
+    align-self: center;
+  }
+
+  .presentation__text {
+    font-size: $txt-size-default;
+    color: $color-empty;
+    margin-top: $size-medium;
+  }
 }
 
 .home__news {
