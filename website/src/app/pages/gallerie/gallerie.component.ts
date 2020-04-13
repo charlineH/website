@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RoutesPath } from '../../enum/routes.enum';
 
 @Component({
   selector: 'app-gallerie',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GallerieComponent implements OnInit {
 
-  constructor() { }
+  readonly page = RoutesPath.GALLERY;
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

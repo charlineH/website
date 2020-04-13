@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { RoutesPath } from '../../enum/routes.enum';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,12 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  images = [ { img: 'truc', title: 'truc'}, {img: 'truc2', title: 'truc2'}];
+  readonly page = RoutesPath.HOME;
 
-  constructor() { }
+  images = [{img: 'truc', title: 'truc'}, {img: 'truc2', title: 'truc2'}];
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

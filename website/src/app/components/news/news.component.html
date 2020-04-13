@@ -2,7 +2,7 @@
   <img [ngClass]="type" alt="{{imageLabel}}" class="news__img" src="{{img}}">
   <div [ngClass]="type" class="news__content">
     <span class="news__title">{{title}}</span>
-    <p class="news__text">{{text}}</p>
+    <ng-content></ng-content>
     <button *ngIf="buttonLabel"
             [routerLink]="redirect"
             aria-label="buttonLabel"

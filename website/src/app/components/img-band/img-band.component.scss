@@ -7,8 +7,10 @@
 }
 
 .band {
-  position: relative;
-  height: 3*$size-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4*$size-large;
   padding-top: $size-xmedium;
 
   &.band--default {
@@ -34,13 +36,15 @@
     @extend %band--img;
     background-image: url("src/assets/images/bandeau/overlay.png"), url("src/assets/images/bandeau/band_bonze_2.png");
   }
+
   &.band--mouse-bonze {
     @extend %band--img;
     background-image: url("src/assets/images/bandeau/overlay.png"), url("src/assets/images/bandeau/band_bonze_3.png");
   }
+
   &.band--roses {
     @extend %band--img;
-    background-image: url("src/assets/images/bandeau/overlay.png"), url("src/assets/images/bandeau/band_rose.png");
+    background-image: url("src/assets/images/bandeau/overlay.png"), url("src/assets/images/bandeau/IMG_4635_1680x658.png");
   }
 
   &.band--taichi {

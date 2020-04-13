@@ -1,20 +1,36 @@
 <ngb-carousel [showNavigationArrows]="false" [showNavigationIndicators]="false">
   <ng-template ngbSlide>
     <div class="picsum-img-wrapper">
-      <img alt="Random first slide" src="assets/images/taichi/mieux-vivre.jpg">
+      <img alt="Random first slide" src="assets/images/caroussel/IMG_4628_1920x447.png">
     </div>
     <div class="carousel-caption">
-      <h3>10 seconds between slides...</h3>
-      <p>This carousel uses customized default values.</p>
+      <h3>Marie-laure, une philosophie d'accompagnement</h3>
+      <p>à travers le tai chi, le qi gong, les Massages-Bien-Etre et bientôt le shiatsu</p>
     </div>
   </ng-template>
-  <ng-template *ngIf="multiple" ngbSlide>
+  <ng-template *ngIf="multiple || type === 'taichi'" ngbSlide>
     <div class="picsum-img-wrapper">
-      <img alt="Random second slide" src="assets/images/taichi/tai-chi-gros-plan-mains-separer-363x186.jpg">
+      <img alt="Random second slide" src="assets/images/caroussel/mieux-vivre_1920x448.png">
     </div>
     <div class="carousel-caption">
-      <h3>No mouse events...</h3>
-      <p>This carousel doesn't pause or resume on mouse events</p>
+      <h3>Tai chi - Qi Gong</h3>
+      <p>Mouvement et conscience corporelle</p>
+    </div>
+  </ng-template>
+  <ng-template *ngIf="multiple || type === 'massage'" ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img alt="Random second slide" src="assets/images/caroussel/IMG_4643_1920x447.png">
+    </div>
+    <div class="carousel-caption">
+      <h3>Massages-Bien-Etre</h3>
+    </div>
+  </ng-template>
+  <ng-template *ngIf="multiple || type === 'shiatsu'" ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img alt="Random second slide" src="assets/images/caroussel/IMG_4616_1920x447.png">
+    </div>
+    <div class="carousel-caption">
+      <h3>Shiatsu</h3>
     </div>
   </ng-template>
 </ngb-carousel>
