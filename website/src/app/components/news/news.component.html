@@ -2,9 +2,17 @@
   <img [ngClass]="type" alt="{{imageLabel}}" class="news__img" src="{{img}}">
   <div [ngClass]="type" class="news__content">
     <span class="news__title">{{title}}</span>
-    <ng-content></ng-content>
-    <button *ngIf="buttonLabel"
+    <p class="news__text">
+      <ng-content></ng-content>
+    </p>
+    <button *ngIf="buttonLabel && !isExterneRedirect"
             [routerLink]="redirect"
+            aria-label="buttonLabel"
+            class="news__button">
+      {{buttonLabel}}
+    </button>
+    <button (click)="openLink()"
+            *ngIf="buttonLabel && isExterneRedirect"
             aria-label="buttonLabel"
             class="news__button">
       {{buttonLabel}}

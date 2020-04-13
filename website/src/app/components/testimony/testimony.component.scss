@@ -1,0 +1,53 @@
+@import "src/assets/styles/bases";
+
+
+.testimony {
+  display: flex;
+  padding: $size-xmedium;
+  border-radius: $border-radius-default;
+  box-shadow: 0 4px 6px rgba($color-default-primary, 0.16);
+  height: 4*$size-large;
+}
+
+.testimony__icon {
+  border-radius: 50%;
+  width: 4*$size-default;
+  height: 4*$size-default;
+  margin-right: $size-xmedium;
+
+  &.blue {
+    background-color: $color-project-tertiary;
+  }
+
+  &.pink {
+    background-color: $color-project-primary;
+  }
+
+  &.yellow {
+    background-color: $color-project-secondary;
+  }
+}
+
+.testimony__author {
+  font-size: $txt-size-regular;
+  font-weight: $txt-regular-medium;
+  margin-bottom: $size-small;
+
+  &.blue {
+    color: $color-project-tertiary;
+  }
+
+  &.pink {
+    color: $color-project-primary;
+  }
+
+  &.yellow {
+    color: $color-project-secondary;
+  }
+}
+
+.testimony__text {
+  font-size: $txt-size-small;
+  color: $color-empty;
+  text-align: justify;
+}

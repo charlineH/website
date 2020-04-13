@@ -1,0 +1,30 @@
+@import "src/assets/styles/bases";
+
+.chapter {
+  display: flex;
+  box-shadow: 4px 4px 6px rgba($color-default-primary, 0.16);
+  margin-bottom: $size-xmedium;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-empty-very-light;
+  }
+}
+
+.chapter__text {
+  margin: $size-medium 4*$size-default;
+}
+
+.chapter__title {
+  color: $color-project-tertiary;
+  font-size: $txt-size-regular;
+  font-weight: $txt-bold-default;
+  text-transform: uppercase;
+  margin-bottom: $size-xmedium;
+}
+
+::ng-deep .chapter__teaser {
+  color: $color-empty;
+  font-size: $txt-size-lower;
+  text-align: justify;
+}
