@@ -9,7 +9,6 @@ export class NewsComponent implements OnInit {
   @Input() left: boolean;
   @Input() img: string;
   @Input() title: string;
-  @Input() text: string;
   @Input() buttonLabel: string;
   @Input() redirect: string;
   @Input() type: 'yellow' | 'blue' | 'grey';

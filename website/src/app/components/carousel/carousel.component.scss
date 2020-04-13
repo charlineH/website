@@ -1,0 +1,17 @@
+@import "src/assets/styles/bases";
+
+.carousel-caption {
+  h3 {
+    font-size: $txt-size-xxl;
+    font-weight: $txt-bold-default;
+    text-transform: uppercase;
+    text-shadow: 0 2px 6px #000000;
+  }
+
+  p {
+    font-size: $txt-size-large;
+    font-weight: $txt-bold-default;
+    text-transform: uppercase;
+    text-shadow: 0 2px 6px #000000;
+  }
+}

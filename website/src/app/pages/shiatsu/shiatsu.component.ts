@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RoutesPath } from '../../enum/routes.enum';
 
 @Component({
   selector: 'app-shiatsu',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShiatsuComponent implements OnInit {
 
-  constructor() { }
+  readonly page = RoutesPath.SHIATSU;
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
