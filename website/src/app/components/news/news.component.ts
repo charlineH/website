@@ -14,8 +14,14 @@ export class NewsComponent implements OnInit {
   @Input() type: 'yellow' | 'blue' | 'grey';
 
   imageLabel: string;
+  isExterneRedirect: boolean;
 
   ngOnInit(): void {
     this.imageLabel = this.img?.split('/')?.reverse()[0].split('.')[0];
+    this.isExterneRedirect = this.redirect && this.redirect.includes('http');
+  }
+
+  openLink() {
+    window.open(this.redirect, '_blank');
   }
 }

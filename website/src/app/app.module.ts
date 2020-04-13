@@ -8,7 +8,6 @@ import { MassageComponent } from './pages/massage/massage.component';
 import { TaichiComponent } from './pages/taichi/taichi.component';
 import { GallerieComponent } from './pages/gallerie/gallerie.component';
 import { EntrepriseComponent } from './pages/entreprise/entreprise.component';
-import { ArticleComponent } from './components/article/article.component';
 import { AboutComponent } from './pages/about/about.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { MultipleImgBandComponent } from './components/multiple-img-band/multiple-img-band.component';
@@ -25,6 +24,8 @@ import { ThumbnailComponent } from './components/thumbnail/thumbnail.component';
 import { NewsComponent } from './components/news/news.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+import { ChapterComponent } from './components/chapter/chapter.component';
+import { TestimonyComponent } from './components/testimony/testimony.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,6 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
     TaichiComponent,
     GallerieComponent,
     EntrepriseComponent,
-    ArticleComponent,
     AboutComponent,
     NavBarComponent,
     MultipleImgBandComponent,
@@ -46,7 +46,9 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
     FooterComponent,
     ThumbnailComponent,
     NewsComponent,
-    CarouselComponent
+    CarouselComponent,
+    ChapterComponent,
+    TestimonyComponent
   ],
   imports: [
     BrowserModule,

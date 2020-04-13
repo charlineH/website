@@ -35,7 +35,7 @@
     align-self: flex-end;
   }
 
-  ::ng-deep .news__text {
+  .news__text {
     text-align: right;
   }
 }
@@ -118,7 +118,7 @@
   }
 }
 
-::ng-deep .news__text {
+.news__text {
   color: $color-empty;
   font-size: $txt-size-default;
   text-align: left;

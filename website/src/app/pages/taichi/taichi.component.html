@@ -1,2 +1,232 @@
 <app-nav-bar [page]="page"></app-nav-bar>
-<p>taichi works!</p>
+<div class="taichi-page">
+  <app-carousel [multiple]="false" type="taichi"></app-carousel>
+  <div class="taichi__presentation">
+    <img alt="Marie-Laure Humeau, professeur de Tai Chi, Le Mans"
+         class="presentation__image"
+         src="assets/images/taichi/IMG_4700-360x216.png">
+    <p class="presentation__text">
+      Marie-Laure, accompagne la conscience du corps par le Tai Chi, le Qi Gong et la méditation.<br>
+      Le Tai Chi le Qi Gong, la méditation favorisent l’équilibre du corps, de l’esprit, de l’énergie. Ces pratiques
+      millénaires associent le corps le mental et la circulation du Chi. Arts énergétiques ou simples activités de
+      loisir, elles développent au fil du temps une présence, un état d’esprit au quotidien. <br>
+      Je pratique depuis une quinzaine d’années et je participe au rayonnement du réseau Corps Vivant Corps Conscient.
+      Le Tai Chi et Qi Gong Corps Vivant Corps conscient se distingue par une pédagogie progressive et précise. Il met
+      l'accent sur le ressenti plus que sur la culture chinoise. Un corps vivant c’est à dire disponible, souple,
+      puissant, en santé. Un corps conscient c’est-à-dire centré, incarné, où l’énergie circule, libéré. C’est un chemin
+      d’évolution pour chacun.
+      <span (click)="goToQuatrePilier()" aria-label="Site des quatres piliers" style="align-self: center">
+      <img alt="Enseignant certifié corps vivant corps conscient"
+           class="img-certification-taichi"
+           src="assets/images/logo/corps-viviant-corps-conscient.jpg">
+      </span>
+    </p>
+  </div>
+  <p class="taichi-introduction">
+    Parce que la conscience corporelle intérieure devient, au fil du temps, point d'appui et force intérieure, au
+    quotidien. Elle transforme le rapport à soi, aux autres et au monde, chacun à son rythme...
+    Parce que ces transformations, le plus souvent silencieuses, demandent un accompagnement éthique. J'ai choisi de
+    réfléchir cet accompagnement à l'université de Tours, dans le cadre d'un Master 2 en sciences de l'éducation et de
+    la formation. Vous trouverez 2 articles extraits des mémoires en bas de page.
+  </p>
+
+  <div class="taichi-chapters">
+    <app-chapter (click)="goToChapter1()"
+                 img="assets/images/taichi/tai-chi-s_accorder-445x203.png" title="Une pratique chinoise millénaire">
+      <p class="chapter__teaser">
+        Le Tai Chi, le Qi Gong et la méditation sont accessibles à tous. Leur pratique développe la souplesse,
+        l’équilibre, la respiration, le lâcher-prise, la relation aux autres … globalement le bien-être au
+        quotidien.
+        <br/>
+        Les cours associent des temps de relaxation, d’assouplissement, de méditation en parallèle des mouvements
+        lents pour retrouver le plaisir de se mouvoir dans l’espace.
+        <br/>
+      </p>
+    </app-chapter>
+    <app-chapter (click)="goToChapter2()"
+                 img="assets/images/taichi/IMG_5348_445x203.png"
+                 title="Les cours de Tai Chi, Qi Gong et méditation">
+      <p class="chapter__teaser">
+        Les Qi Gong et le Tai Chi sont des gymastiques de santé chinoises qui s'inscrivent dans une
+        tradition millénaire. Elles associent la respiration, le Chi, les mouvements lents et la conscentration avec
+        l'enracinement.<br>
+        La pédagogie corps vivant corps conscient est adaptée à notre monde occidentale.
+      </p>
+    </app-chapter>
+    <app-chapter (click)="goToChapter3()"
+                 img="assets/images/flowers/IMG_3353_445x203.png"
+                 title="Les articles parus">
+      <p class="chapter__teaser">
+        Pendant mon parcours universitaire, j’ai mené deux recherches en lien avec le Tai Chi. La première a mis
+        en lumière des processus de transformations dans lesquels chacun se glisse à son rythme au fil des années.
+        La seconde s’est orientée sur l’accompagnement de ces transformations.
+      </p>
+    </app-chapter>
+  </div>
+  <app-img-band [cadre]="true"
+                class="taichi__band"
+                id="explication"
+                img="IMG_4627_1680x658.png"
+                title="Tai chi, qi gong et méditation">
+
+  </app-img-band>
+  <div class="taichi__chapter taichi__chapter--1">
+    <p class="chapter__introduction">
+      La pratique du Tai chi, du Qi Gong et de la méditation est accessible à <strong>tous</strong>. Chacun, à son
+      rythme, peut se <strong>détendre</strong>, se <strong>ressourcer</strong>, <strong>respirer</strong>,
+      <strong>influencer</strong>
+      sa posture, <strong>soulager</strong> ses douleurs etc. Chacun développe, à son rythme, des
+      attitudes/aptitudes pour mieux vivre son quotidien.
+    </p>
+    <p class="chapter__content">
+      Cette pratique favorise l'équilibre du corps, de l'esprit et de l'énergie. La transmission selon Vlady
+      Stévanovitch associe des temps au sol : relaxation, assouplissement, méditation... et des temps debout :
+      plaisir de se déplacer dans l'espace. Elle harmonise le mental, les émotions, le physique et l'énergie. Elle
+      développe souplesse, équilibre, coordination, respiration, enracinement... Elle favorise la perception du Chi*
+      et sa circulation dans tout le corps.
+      <br><br>
+      Les mouvements sont portés par des générations de moines orientaux. Ils assouplissent le corps et l'esprit,
+      ils libèrent la respiration. Ils favorisent la détente et un meilleur équilibre physique, mental, émotionnel
+      et énergétique.
+    </p>
+    <div class="chapter-1__content--img">
+      <p class="chapter__content">
+        Je pratique le Tai Chi – Qi Gong, selon la transmission de Vlady Stévanovitch, depuis près de 15 ans. Je
+        transmets avec plaisir cet art millénaire, sans recherche de performance et attentive au confort de chacun. La
+        pratique est ouverte à tous, quel que soit l’âge ou la condition physique. Chacun arrive avec ses propres
+        motivations. Chacun est accueilli avec autant de bienveillance, qu’il vienne pour découvrir et pratiquer ces
+        arts corporels, pour améliorer sa qualité de vie, pour se déstresser, par recommandation d'un thérapeute, ou
+        pour faire des liens avec sa pratique professionnelle...
+        <br><br>
+        L’enseignement est progressif et transformateur. Il nous ouvre à la perception concrète du Chi, énergie
+        vitale, et à des moyens d’agir sur lui et avec lui. Cette ouverture colore les bases d’une démarche qui peut
+        transformer la vie, une Voie, comme disaient les Anciens. Mais dès le départ, elle nous aide à nous sentir
+        mieux dans notre corps et dans notre tête.
+        <br><br>
+        *le Chi est souffle de vie qui anime tout être vivant.
+      </p>
+      <img alt="Position des mains pendant le taichi"
+           src="assets/images/taichi/tai-chi-gros-plan-mains-separer-363x186.jpg">
+    </div>
+  </div>
+  <app-img-band [cadre]="true"
+                class="taichi__band"
+                id="cours"
+                title="Les cours"
+                type="meditation">
+  </app-img-band>
+  <div class="taichi__chapter taichi__chapter--2">
+    <p class="chapter__introduction">
+      Je propose des cours de Qi Gong et Tai Chi (style Yang), en association ou en entreprise. Tous les cours
+      associent des temps d’assouplissement, de relaxation, de méditation orientée sur la respiration, le centrage,
+      la circulation du Chi.
+    </p>
+    <img alt="Cours de Tai Chi en plein air"
+         class="chapter__image"
+         src="assets/images/taichi/cours-taichi-qigong-meditation-1600x784.png">
+    <div class="chapter__stikers">
+      <div class="stiker">
+        <div class="stiker__title">Qi Gong Méditation</div>
+        <div class="stiker__content">
+          Apprentissage des 11 exercices de santé chinois et des 8 brocards associés à de la méditation de base orientée
+          notamment sur la relaxation, la respiration.
+          Ces mouvements faciles à mémomriser, ont été selectionnés parmi des centaines d'exercices de Qi Gong pour leur
+          maintien de la santé et pour leur préparation à la pratique du Tai Chi.
+        </div>
+      </div>
+      <div class="stiker">
+        <div class="stiker__title">Qi Gong Tai Chi 24</div>
+        <div class="stiker__content">
+          Pratique des 11 exercices, apprentissage des 24 postures, associé à de
+          la méditation orientée sur la relaxation, la respiration et le Tan Tien (centre du corps), la circulation du
+          Chi. Cet apprentissage se fait le plus souvent sur 3 années. Il est de fait fonction du rythme de chacun, il
+          peut aussi être plus long ou plus rapide… Le principal enjeu est de lâcher-prise et d’y trouver du plaisir,
+          là encore au rythme de chacun!.
+        </div>
+      </div>
+      <div class="stiker">
+        <div class="stiker__title">Tai Chi 127</div>
+        <div class="stiker__content">
+          Apprentissage des 127 postures et des techniques de Chi et de méditation
+          correspondantes. Niveau avancé.
+        </div>
+      </div>
+    </div>
+    <div class="chapter-2__content--columns">
+      <div class="column">
+        <h4 class="chapter-2__content--title">le mans</h4>
+        <p class="chapter__content">
+          Saison 2019-2020. Cours d’essai sans engagement. Merci de vous téléphoner avant de vous déplacer au premier
+          cours.
+          <br>
+          L’association Art de vie propose trois niveaux de cours : Qi Gong Méditation, Qi Gong Tai Chi 24, Tai Chi
+          127, le mardi et le jeudi.
+          <br>
+          En savoir plus sur
+          <a href="https://sites.google.com/site/assoartdevie/home" target="_blank" title="Association art de vie">
+            le site de l'association
+          </a>.
+        </p>
+      </div>
+      <div class="column">
+        <h4 class="chapter-2__content--title">laigné en belin</h4>
+        <p class="chapter__content">
+          Saison 2019-2020. Cours d’essai sans engagement. Merci de vous téléphoner avant de vous déplacer au premier
+          cours.
+          L’association Bien être en Belinois propose deux niveaux de cours Qi Gong Tai Chi 24 et Tai Chi 127, le lundi.
+          En savoir plus sur
+          <a href="https://www.facebook.com/bienetrebelinois/" target="_blank" title="Facebook taichi laigné en belin">
+            la page Facebook
+          </a>.
+        </p>
+      </div>
+    </div>
+    <div class="chapter-2__content--columns">
+      <div class="column">
+        <h4 class="chapter-2__content--title">Autres lieux</h4>
+        <p class="chapter__content">
+          De plus, j'anime des cours Bien-être et détente, avec la RSAL (Retraite Sportive Aulne et Loir)
+          <br/>
+          J'encadre également des ateliers prévention santé pour les séniors, avec le CDOS Sarthe (Comité Départemental
+          Olympique et Sportif).<br/>En savoir plus sur
+          <a href="http://sarthe.franceolympique.com/art.php?id=68436" target="_blank" title="CDOS">le site du CDOS</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+  <app-img-band [cadre]="true" class="taichi__band" id="articles" img="truc" title="Articles"></app-img-band>
+  <div class="taichi__articles">
+    <app-news
+      [left]="true"
+      buttonLabel="En savoir plus"
+      class="articles__item"
+      img="assets/images/flowers/IMG_8660_480x320.png"
+      redirect="http://www.uqar.ca/uqar/universite/a-propos-de-luqar/departements/psychosociologie_et_travail_social/revue_presences_vol5_humeau_ml.pdf"
+      title="Les transformations silencieuses du Tai Ji Quan"
+      type="yellow">
+      Le Tai Ji Quan est historiquement un art martial ayant pour finalité de protéger la vie. Depuis deux
+      millénaires, il est aussi une pratique corporelle orientale enrichie et perfectionnée pour mobiliser
+      l’énergie vitale, qui transforme silencieusement ses pratiquants.
+    </app-news>
+    <app-news
+      [left]="true"
+      buttonLabel="En savoir plus"
+      class="articles__item"
+      img="assets/images/flowers/IMG_8655_480x320.png"
+      redirect="http://www.uqar.ca/uqar/universite/a-propos-de-luqar/departements/psychosociologie_et_travail_social/presences_vol8_humeau_vivre_au_quotidien_tai-ji-quan.pdf"
+      title="Mieux vivre son quotidien : apprendre à agir sur soi"
+      type="blue">
+      Depuis une quarantaine d’années des pratiques venues d’Orient se sont immiscées dans nos pays occidentaux
+      (Tai Chi, Yoga, méditation etc.) et sont même devenues de véritables pratiques de loisir. On les observe
+      aujourd’hui souvent sous l’angle de la santé mais qu’est-ce que les gens découvrent avec ces pratiques.
+      Comment ou en quoi se forment- ils ?
+    </app-news>
+  </div>
+  <app-img-band [cadre]="true" class="taichi__band" title="Témoignages" type="stage"></app-img-band>
+  <div class="taichi__testimonies">
+    <app-testimony *ngFor="let testimony of testimonies"
+                   [author]="testimony.author">
+      {{testimony.testimony}}
+    </app-testimony>
+  </div>
+</div>
