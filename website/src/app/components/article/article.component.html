@@ -1,0 +1,22 @@
+<div class="article">
+  <span class="article__title">{{title}}</span>
+  <div class="article__content">
+    <div class="content__image">
+      <img alt="{{title}}" src="{{src}}">
+    </div>
+    <div class="content__text">
+      <ng-content></ng-content>
+      <div *ngIf="duree || tarif" class="content__row">
+      <span *ngIf="duree">
+        <strong>Durée : </strong> {{duree}}
+      </span>
+        <span *ngIf="tarif">
+        <strong>Tarif : </strong> {{tarif}}
+      </span>
+      </div>
+      <div *ngIf="bienfaits">
+        <strong>Bienfaits : </strong> {{bienfaits}}
+      </div>
+    </div>
+  </div>
+</div>
