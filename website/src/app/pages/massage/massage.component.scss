@@ -1,0 +1,60 @@
+@import "src/assets/styles/bases";
+
+.massage-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  font-size: $size-default;
+  color: $color-empty;
+}
+
+.massage-page__presentation {
+  width: 60%;
+  margin: $size-large 0;
+
+}
+
+.presentation__title {
+  color: $color-project-primary;
+  font-weight: $txt-bold-default;
+}
+
+.presentation__image {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    width: 3*$size-large;
+  }
+
+  p {
+    width: 80%;
+  }
+}
+
+.massage__band {
+  width: 100%;
+}
+
+.massage-page__massages {
+  width: 60%;
+  margin: $size-large 0;
+}
+
+
+.massage__testimonies {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 4*$size-default 0;
+
+  app-testimony {
+    width: 30%;
+    margin-top: $size-lower;
+    margin-right: $size-xmedium;
+  }
+}
