@@ -15,45 +15,45 @@
          class="item">
       <a (click)="hideMenu()"
          class="item__title none"
-         routerLink="{{homePage}}">Accueil</a>
+         routerLink="/{{homePage}}">Accueil</a>
     </div>
     <div [ngClass]="{'active': page === taichiPage}"
          class="item">
       <a (click)="hideMenu()"
          class="item__title none"
-         routerLink="{{taichiPage}}">Tai Chi</a>
+         routerLink="/{{taichiPage}}">Tai Chi</a>
       <div class="item__list">
-        <a [queryParams]="{anchor: 'explication'}" class="none" routerLink="{{taichiPage}}">Présentation</a>
-        <a [queryParams]="{anchor: 'cours'}" class="none" routerLink="{{taichiPage}}">Les cours</a>
-        <a [queryParams]="{anchor: 'articles'}" class="none" routerLink="{{taichiPage}}">Articles parus</a>
-        <!--        <a [queryParams]="{anchor: 'stage'}" class="none" routerLink="{{taichiPage}}">Stages et ateliers</a>-->
+        <a [queryParams]="{anchor: 'explication'}" class="none" routerLink="/{{taichiPage}}">Présentation</a>
+        <a [queryParams]="{anchor: 'cours'}" class="none" routerLink="/{{taichiPage}}">Les cours</a>
+        <a [queryParams]="{anchor: 'articles'}" class="none" routerLink="/{{taichiPage}}">Articles parus</a>
+        <!--        <a [queryParams]="{anchor: 'stage'}" class="none" routerLink="/{{taichiPage}}">Stages et ateliers</a>-->
       </div>
     </div>
     <div [ngClass]="{'active': page === massagePage}"
          class="item">
       <a (click)="hideMenu()"
          class="item__title none"
-         routerLink="{{massagePage}}">Massages-Bien-Etre</a>
+         routerLink="/{{massagePage}}">Massages-Bien-Etre</a>
       <div class="item__list">
-        <a [queryParams]="{anchor: 'ayurvedique'}" class="none" routerLink="{{massagePage}}">Tradition ayurvédique</a>
-        <a [queryParams]="{anchor: 'energetique'}" class="none" routerLink="{{massagePage}}">Relaxation énergétique</a>
-        <a [queryParams]="{anchor: 'drainante'}" class="none" routerLink="{{massagePage}}">Relaxation drainante</a>
-        <a [queryParams]="{anchor: 'tailandais'}" class="none" routerLink="{{massagePage}}">Nuad-bo-rarn</a>
-        <a [queryParams]="{anchor: 'minute'}" class="none" routerLink="{{massagePage}}">Massage minutes</a>
-        <a [queryParams]="{anchor: 'temoignage'}" class="none" routerLink="{{massagePage}}">Témoignages</a>
+        <a [queryParams]="{anchor: 'ayurvedique'}" class="none" routerLink="/{{massagePage}}">Tradition ayurvédique</a>
+        <a [queryParams]="{anchor: 'vitalisant'}" class="none" routerLink="/{{massagePage}}">Relaxation vitalisante</a>
+        <a [queryParams]="{anchor: 'drainant'}" class="none" routerLink="/{{massagePage}}">Relaxation drainante</a>
+        <a [queryParams]="{anchor: 'tailandais'}" class="none" routerLink="/{{massagePage}}">Nuad-bo-rarn</a>
+        <a [queryParams]="{anchor: 'enfants'}" class="none" routerLink="/{{massagePage}}">Massage avec les enfants</a>
+        <a [queryParams]="{anchor: 'minutes'}" class="none" routerLink="/{{massagePage}}">Massage minutes</a>
       </div>
     </div>
     <div [ngClass]="{'active': page === shiatsuPage}"
          class="item">
       <a (click)="hideMenu()"
          class="item__title none"
-         routerLink="{{shiatsuPage}}">Shiatsu</a>
+         routerLink="/{{shiatsuPage}}">Shiatsu</a>
     </div>
     <div [ngClass]="{'active': page === entreprisePage}"
          class="item">
       <a (click)="hideMenu()"
          class="item__title none"
-         routerLink="{{entreprisePage}}">Entreprise</a>
+         routerLink="/{{entreprisePage}}">Entreprise</a>
     </div>
   </div>
 </div>

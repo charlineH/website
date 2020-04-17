@@ -1,0 +1,8 @@
+export enum MassageEnum {
+  AYURVEDIQUE,
+  VITALISANT,
+  DRAINANT,
+  THAILANDAIS,
+  ENFANTS,
+  MINUTES
+}

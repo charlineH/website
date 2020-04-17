@@ -1,0 +1,45 @@
+@import "src/assets/styles/bases";
+
+.article {
+  margin-bottom: $size-xmedium;
+}
+
+.article__title {
+  color: $color-project-primary;
+  text-transform: uppercase;
+  font-weight: $txt-bold-default;
+  font-size: $txt-size-regular;
+  margin-bottom: $size-xmedium;
+}
+
+.article__content {
+  display: flex;
+  align-items: center;
+  color: $color-empty;
+  font-size: $size-default;
+}
+
+.content__image {
+  margin-right: $size-default;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+  height: 200px;
+}
+
+.content__text {
+  strong {
+    color: $color-project-primary;
+  }
+}
+
+.content__row {
+  display: flex;
+  margin-bottom: $size-default;
+
+  span {
+    margin-right: $size-large;
+    max-width: 70%;
+  }
+}
