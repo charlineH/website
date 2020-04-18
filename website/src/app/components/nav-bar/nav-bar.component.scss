@@ -2,6 +2,7 @@
 
 .nav-bar {
   background-color: $color-default-secondary;
+  box-shadow: $size-small 0 $size-small $color-empty;
   position: fixed;
   display: flex;
   justify-content: flex-start;
@@ -44,7 +45,8 @@
 }
 
 .website-info__logo {
-  background-color: $color-project-primary-light;
+  background-image: url("/assets/images/favicon.png");
+  background-size: contain;
   border-radius: 50%;
   width: $size-xlarge;
   height: $size-xlarge;

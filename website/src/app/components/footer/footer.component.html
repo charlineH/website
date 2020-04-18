@@ -1,29 +1,60 @@
 <div class="footer">
-  <div class="footer__inner">
-    <div class="inner__column">
-      <span class="inner__title">Contact</span>
-      <div class="inner__content">
-        <p>Marie-Laure Humeau</p>
-        <p>9 rue de l’oisonnière</p>
-        <p>72220 Laigné en Belin</p>
-        <p>06.08.03.26.45</p>
-        <p><a (click)="meContacter()" aria-label="Me contacter" class="none" title="Cliquer pour envoyer un mail">Me
-          contacter</a></p>
-      </div>
+  <div class="footer__contact">
+    <div class="contact__item">
+      <h4>m'appeler</h4>
+      <p>Mobile: 0608032645</p>
     </div>
-    <div class="inner__column">
-      <span class="inner__title">Cadre éthique</span>
-      <p class="inner__content">
-        Congruence - Présence - Ecoute active et sensible - Ouverture - Disponibilité - Confiance - Bienveillance
-        et non jugement - Persévérance - Confidentialité - Respect des engagements - Respect du rythme de chacun -
-        Je ne sais pas pour l'autre.
+    <div class="contact__item contact__item--dark">
+      <h4>venir me voir</h4>
+      <p>
+        9 rue de l'oisonnière <br>
+        72220 Laigné en Belin
+      </p>
+    </div>
+    <div class="contact__item">
+      <h4>m'envoyer un mail</h4>
+      <p>
+        <a (click)="meContacter()" aria-label="Envoyer un mail" class="none" title="Cliquer pour envoyer un mail">
+          Cliquer ici
+        </a>
       </p>
     </div>
   </div>
-  <div class="footer__credit">
-    <div class="credit__humoe">
-      Humoe© copyright - All right reserved.
+  <div class="footer__content">
+    <div class="col-6">
+      <div class="content__item">
+        <h4>cadre éthique</h4>
+        <p>
+          Congruence - Présence - Ecoute active et sensible - Ouverture - Disponibilité - Confiance - Bienveillance
+          et non jugement - Persévérance - Confidentialité - Respect des engagements - Respect du rythme de chacun -
+          Je ne sais pas pour l'autre.
+        </p>
+      </div>
+      <div class="content__item">
+        <h4>Website</h4>
+        <div>
+          <a class="none" routerLink="/taichi">Tai Chi</a> -
+          <a class="none" routerLink="/massage">Massage</a> -
+          <a class="none" routerLink="/shiatsu">Shiatsu</a> -
+          <a class="none" routerLink="/entreprise">Entreprise</a> -
+        </div>
+      </div>
     </div>
+    <div class="content__item">
+      <h4>dernières mises à jour</h4>
+      <div class="content__posts">
+        <app-post date="18/04/2020" img="assets/images/svg/building.svg" redirect="/entreprise" title="Page entreprise">
+        </app-post>
+        <app-post date="18/04/2020" img="assets/images/svg/shiatsu.svg" redirect="/shiatsu" title="Page shiatsu">
+        </app-post>
+        <app-post anchor="drainant" date="18/04/2020" img="assets/images/svg/massage.svg" redirect="/massage"
+                  title="massage drainant">
+        </app-post>
+      </div>
+    </div>
+  </div>
+  <div class="footer__credit">
+    <span>Humoe© copyright - All right reserved.</span>
     <div class="credit__flaticon">
       <div>Icons made by
         <a class="none" href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>,
@@ -32,6 +63,10 @@
         <a class="none" href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a> from
         <a class="none" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
       </div>
+    </div>
+    <div class="credit__reseaux">
+      <a class="none" href="https://www.facebook.com/marielauretaichi">Facebook</a> |
+      <a class="none" href="https://fr.linkedin.com/in/marie-laure-humeau-b7b2b8137">LinkedIn</a>
     </div>
   </div>
 </div>
