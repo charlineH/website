@@ -6,6 +6,10 @@
   align-items: center;
 }
 
+app-carousel {
+  width: 100%;
+}
+
 p {
   font-size: $size-default;
   color: $color-empty;
@@ -43,6 +47,10 @@ p {
 .massage-page__massages {
   width: 60%;
   margin: $size-large 0;
+}
+
+app-article {
+  scroll-margin: 75px;
 }
 
 

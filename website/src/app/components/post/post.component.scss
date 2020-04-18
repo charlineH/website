@@ -1,0 +1,36 @@
+@import "src/assets/styles/bases";
+
+.post {
+  display: flex;
+  cursor: pointer;
+}
+
+.post__image {
+  background-color: $color-empty-very-light;
+  background-size: contain;
+  background-position: center;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  width: $size-large;
+  height: $size-large;
+  padding: $size-small;
+  margin-right: $size-medium;
+}
+
+.post__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.post__title {
+  text-transform: uppercase;
+  font-weight: $txt-bold-default;
+  font-size: $txt-size-default;
+  color: $color-empty-very-light;
+}
+
+.post__date {
+
+  font-size: $txt-size-small;
+  color: $color-empty-very-light;
+}

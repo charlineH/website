@@ -27,6 +27,7 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { ChapterComponent } from './components/chapter/chapter.component';
 import { TestimonyComponent } from './components/testimony/testimony.component';
 import { ArticleComponent } from './components/article/article.component';
+import { PostComponent } from './components/post/post.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { ArticleComponent } from './components/article/article.component';
     CarouselComponent,
     ChapterComponent,
     TestimonyComponent,
-    ArticleComponent
+    ArticleComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
