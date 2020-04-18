@@ -1,4 +1,4 @@
-import { AfterViewChecked, Component } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
 import { RoutesPath } from '../../enum/routes.enum';
 import { ActivatedRoute } from '@angular/router';
 import { Massage } from '../../model/massage.model';
@@ -10,7 +10,7 @@ import { MassageEnum } from '../../model/massage.enum';
   templateUrl: './massage.component.html',
   styleUrls: ['./massage.component.scss']
 })
-export class MassageComponent implements AfterViewChecked {
+export class MassageComponent implements AfterViewInit {
 
   readonly page = RoutesPath.MASSAGE;
   readonly typesMassage: Massage[] = [
@@ -59,7 +59,7 @@ export class MassageComponent implements AfterViewChecked {
   constructor(private readonly route: ActivatedRoute) {
   }
 
-  ngAfterViewChecked(): void {
+  ngAfterViewInit(): void {
     this.scrollToAnchor(this.route.snapshot.queryParams.anchor);
   }
 

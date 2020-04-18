@@ -1,4 +1,4 @@
-import { AfterViewChecked, Component } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
 import { RoutesPath } from '../../enum/routes.enum';
 import { ActivatedRoute } from '@angular/router';
 
@@ -7,7 +7,7 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './taichi.component.html',
   styleUrls: ['./taichi.component.scss']
 })
-export class TaichiComponent implements AfterViewChecked {
+export class TaichiComponent implements AfterViewInit {
 
   readonly page = RoutesPath.TAICHI;
 
@@ -91,18 +91,8 @@ export class TaichiComponent implements AfterViewChecked {
   constructor(private readonly route: ActivatedRoute) {
   }
 
-  ngAfterViewChecked(): void {
+  ngAfterViewInit(): void {
     this.scrollToAnchor(this.route.snapshot.queryParams.anchor);
-  }
-
-  scrollToAnchor(anchor: string): void {
-    try {
-      if (anchor) {
-        document.querySelector(`#${ anchor }`).scrollIntoView();
-      }
-    } catch (e) {
-      console.error('Scoll impossible', e);
-    }
   }
 
   goToQuatrePilier() {
@@ -119,5 +109,15 @@ export class TaichiComponent implements AfterViewChecked {
 
   goToChapter3() {
     this.scrollToAnchor('articles');
+  }
+
+  private scrollToAnchor(anchor: string): void {
+    try {
+      if (anchor) {
+        document.querySelector(`#${ anchor }`).scrollIntoView();
+      }
+    } catch (e) {
+      console.error('Scoll impossible', e);
+    }
   }
 }

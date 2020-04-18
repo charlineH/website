@@ -33,4 +33,12 @@
       <h3>Shiatsu</h3>
     </div>
   </ng-template>
+  <ng-template *ngIf="multiple || type === 'entreprise'" ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img alt="Random second slide" src="assets/images/caroussel/IMG_4637_1920x448.png">
+    </div>
+    <div class="carousel-caption">
+      <h3>Entreprise</h3>
+    </div>
+  </ng-template>
 </ngb-carousel>

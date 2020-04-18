@@ -7,6 +7,10 @@
   border-radius: $border-radius-default;
   box-shadow: 0 4px 6px rgba($color-default-primary, 0.16);
   height: 4*$size-large;
+
+  &.testimony--small {
+    height: 4*$size-xmedium;
+  }
 }
 
 .testimony__icon {

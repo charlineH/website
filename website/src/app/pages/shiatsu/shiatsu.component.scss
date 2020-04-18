@@ -1,35 +1,40 @@
 @import "src/assets/styles/bases";
 
+
+app-carousel {
+  width: 100%;
+}
+
 .shiatsu-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .shiatsu__content{
-      width: 60%;
-      margin: $size-large 0;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .content__row{
-    display: flex;
-  }
+.shiatsu__content {
+  width: 60%;
+  margin: $size-large 0;
+}
 
-  .content__row__text{
-    margin: 0 $size-large;
-  }
+.content__row {
+  display: flex;
+}
 
-  .content__text{
-    margin: $size-medium 0;
-  }
+.content__row__text {
+  margin: 0 $size-large;
+}
 
-  .content__text--red{
-    @extend .content__text;
-    color: $color-project-primary;
-    font-weight: $txt-bold-default;
-  }
+.content__text {
+  margin: $size-medium 0;
+}
 
-  .content__img-band{
-    display: flex;
-    justify-content: center;
-  }
+.content__text--red {
+  @extend .content__text;
+  color: $color-project-primary;
+  font-weight: $txt-bold-default;
+}
+
+.content__img-band {
+  display: flex;
+  justify-content: center;
+}
