@@ -21,10 +21,10 @@
     </script>
     <title>Portfolio | Humoe</title>
     <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <!--[if lte IE 8]>
     <script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-    <link rel="stylesheet" href="assets/css/styles.css"/>
+    <link href="assets/css/styles.css" rel="stylesheet"/>
     <!--[if lte IE 9]>
     <link rel="stylesheet" href="assets/css/ie9.css"/><![endif]-->
 </head>
@@ -33,12 +33,12 @@
 <!-- Nav -->
 <section>
     <nav class="nav-bar nav-bar-home" id="nav-bar">
-        <div id="menu" class="menu">
+        <div class="menu" id="menu">
             <!-- <img id = "logoBlanc" class = "logo" src="images/logo.png" alt="logo"> -->
             <!-- Example responsive navigation menu  -->
             <ul class="menu-items">
-                <li><a id="home" href="index.html">Accueil</a></li>
-                <li class="dropdown"><a class="dropbtn" id="taichi" href="taichi.html">Tai Chi</a>
+                <li><a href="index.html" id="home">Accueil</a></li>
+                <li class="dropdown"><a class="dropbtn" href="taichi.html" id="taichi">Tai Chi</a>
                     <div class="dropdown-content">
                         <a href="taichi.html#explication">Présentation</a>
                         <a href="taichi.html#cours">Les cours</a>
@@ -46,7 +46,7 @@
                         <a href="taichi.html#stage">Stages et ateliers</a>
                     </div>
                 </li>
-                <li class="dropdown"><a class="dropbtn" id="massage" href="massage.html">Massages-Bien-Etre</a>
+                <li class="dropdown"><a class="dropbtn" href="massage.html" id="massage">Massages-Bien-Etre</a>
                     <div class="dropdown-content">
                         <a href="massage.html#ayurvedique">Tradition ayurvédique</a>
                         <a href="massage.html#energetique">Relaxation énergétique</a>
@@ -56,31 +56,31 @@
                         <a href="massage.html#temoignages">Témoignages</a>
                     </div>
                 </li>
-                <li class="dropdown"><a id="profil" href="portfolio.html">Portfolio</a>
+                <li class="dropdown"><a href="portfolio.html" id="profil">Portfolio</a>
                     <div class="dropdown-content last">
                         <a href="portfolio.html#presentation">Présentation</a>
                         <!--<a href="portfolio.html#planning">Planning</a>-->
                     </div>
                 </li>
-                <li class="dropdown"><a id="apropos" href="apropos.html">A Propos</a>
+                <li class="dropdown"><a href="apropos.html" id="apropos">A Propos</a>
                     <div class="dropdown-content last">
                         <a href="apropos.html#presentation">Présentation</a>
                         <!--<a href="apropos.html#boiteALivres">Boite à livres</a>-->
                     </div>
                 </li>
-                <li><a id="contact" href="contact.html">Contact</a></li>
+                <li><a href="contact.html" id="contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 </section>
 
 <!-- Banner -->
-<section id="banner" class="apropos">
+<section class="apropos" id="banner">
     <h1>Portfolio</h1>
 </section>
 
 <!-- One -->
-<section id="presentation" class="wrapper special">
+<section class="wrapper special" id="presentation">
     <br>
     <div class="inner">
         <div class="container">
@@ -103,31 +103,31 @@
             </p>
         </div>
         <div class="image-grid image-grid-6" id="portfolio">
-            <a href="#outils" class="image">
+            <a class="image" href="#outils">
                 <div class="text">Outils de travail...</div>
-                <img src="images/portfolio/outil.png" alt="Outils"/></a>
-            <a href="#reflexion" class="image">
+                <img alt="Outils" src="images/portfolio/outil.png"/></a>
+            <a class="image" href="#reflexion">
                 <div class="text"> Temp de réflexion...</div>
-                <img src="images/portfolio/gift.png" alt="Réflexion"/></a>
-            <a href="#stimulant" class="image">
+                <img alt="Réflexion" src="images/portfolio/gift.png"/></a>
+            <a class="image" href="#stimulant">
                 <div class="text">Stimulant psychologique...</div>
-                <img src="images/portfolio/brain.png" alt="Stimulant"/></a>
-            <a href="#groupe" class="image">
+                <img alt="Stimulant" src="images/portfolio/brain.png"/></a>
+            <a class="image" href="#groupe">
                 <div class="text" style="text-color:black">Expérence de groupe...</div>
-                <img src="images/portfolio/group.png" alt="Groupe"/></a>
-            <a href="#formation" class="image">
+                <img alt="Groupe" src="images/portfolio/group.png"/></a>
+            <a class="image" href="#formation">
                 <div class="text">Processus de formation...</div>
-                <img src="images/portfolio/form.png" alt="Formation"/></a>
-            <a href="#dossier" class="image">
+                <img alt="Formation" src="images/portfolio/form.png"/></a>
+            <a class="image" href="#dossier">
                 <div class="text">Dossier...</div>
-                <img src="images/portfolio/file.png" alt="Dossier"/></a>
+                <img alt="Dossier" src="images/portfolio/file.png"/></a>
         </div>
     </div>
 </section>
 
-<section id="outils" class="container">
-    <span class="image left"><img src="images/portfolio/outil.png" alt=""/></span><br>
-        Un outil de travail qui permet de :
+<section class="container" id="outils">
+    <span class="image left"><img alt="" src="images/portfolio/outil.png"/></span><br>
+    Un outil de travail qui permet de :
     <ul>
         <li>faire le point sur ses ressources, ses aptitudes, ses compétences</li>
         <li>définir un projet de vie, professionnel, personnel, social ou de formation.</li>
@@ -136,7 +136,7 @@
 <div id="reflexion"></div>
 <br><br><br>
 <section class="container">
-    <p><span class="image left"><img src="images/portfolio/gift.png" alt=""/></span>
+    <p><span class="image left"><img alt="" src="images/portfolio/gift.png"/></span>
         Un temps de réflexion pour :
     <ul>
         <li>Comprendre ce que l’on est aujourd’hui en revisitant son parcours de vie</li>
@@ -147,7 +147,7 @@
 <div id="stimulant"></div>
 <br><br>
 <section class="container">
-    <p><span class="image left"><img src="images/portfolio/brain.png" alt=""/></span>
+    <p><span class="image left"><img alt="" src="images/portfolio/brain.png"/></span>
         Un stimulant psychologique personnel et professionnel.
     <ul>
         <li>Un moyen de reprendre contact avec soi, son identité, sa culture, sa singularité</li>
@@ -161,7 +161,7 @@
 <div id="groupe"></div>
 <br>
 <section class="container">
-    <p><span class="image left"><img src="images/portfolio/group.png" alt=""/></span><br>
+    <p><span class="image left"><img alt="" src="images/portfolio/group.png"/></span><br>
         Une expérience de groupe. Il joue un rôle déterminant dans la reconnaissance et la valorisation des compétences
         de l’autre. Il permet de se faire reconnaitre et il favorise la socialisation et le partage.
     </p>
@@ -169,7 +169,7 @@
 <div id="formation"></div>
 <br><br><br>
 <section class="container">
-    <p><span class="image left"><br><br><img src="images/portfolio/form.png" alt=""/><br></span>
+    <p><span class="image left"><br><br><img alt="" src="images/portfolio/form.png"/><br></span>
         Un processus de formation qui place la personne au centre de la démarche pour :
     <ul>
         <li>Permettre d’apprendre à rechercher, découvrir, nommer, analyser, évaluer et synthétiser ses compétences.
@@ -190,7 +190,8 @@
 <div id="dossier"></div>
 <br><br><br>
 <section class="container">
-    <p><span class="image left"><img src="images/portfolio/file.png" alt=""/></span>Le portfolio est un dossier organisé
+    <p><span class="image left"><img alt="" src="images/portfolio/file.png"/></span>Le portfolio est un dossier
+        organisé
         qui peut prendre diverses formes selon ses objectifs et ses choix
     <ul>
         <li>Il sert de preuve du processus réalisé en répertoriant les traces de ses ressources et acquis.</li>
