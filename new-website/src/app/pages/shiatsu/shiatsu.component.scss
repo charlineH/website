@@ -12,12 +12,21 @@ app-carousel {
 }
 
 .shiatsu__content {
-  width: 60%;
+  width: 80%;
   margin: $size-large 0;
+
+  @media (min-width: $medium-desktop-window) {
+    width: 65%;
+  }
 }
 
 .content__row {
   display: flex;
+  flex-direction: column;
+
+  @media (min-width: $small-desktop-window) {
+    flex-direction: row;
+  }
 }
 
 .content__row__text {
@@ -37,4 +46,9 @@ app-carousel {
 .content__img-band {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+
+  @media (min-width: $small-desktop-window) {
+    flex-direction: row;
+  }
 }

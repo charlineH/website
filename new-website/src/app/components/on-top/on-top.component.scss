@@ -2,8 +2,13 @@
 
 .on-top {
   position: fixed;
-  right: $size-large;
-  bottom: $size-large;
+  right: $size-default;
+  bottom: $size-default;
+
+  @media (min-width: $small-desktop-window) {
+    right: $size-large;
+    bottom: $size-large;
+  }
 }
 
 .on-top__icon {

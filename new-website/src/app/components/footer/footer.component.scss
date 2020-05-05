@@ -11,17 +11,26 @@
 
 .footer__contact {
   display: flex;
+  flex-direction: column;
   width: 80%;
+
+  @media (min-width: $small-desktop-window) {
+    flex-direction: row;
+  }
 }
 
 .contact__item {
-  width: 33.33333333%;
   background-color: rgba($color-empty-dark, 0.72);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: $size-lower;
+
+
+  @media (min-width: $small-desktop-window) {
+    width: 33.33333333%;
+  }
 
 
   &.contact__item--dark {
@@ -61,6 +70,24 @@
   }
 }
 
+.col--mobile {
+  max-width: 100%;
+  flex: none;
+
+  @media (min-width: $small-desktop-window) {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+.content__item--mobile {
+  display: none;
+
+  @media (min-width: $small-desktop-window) {
+    display: block;
+  }
+}
+
 .content__posts {
   display: flex;
   flex-wrap: wrap;
@@ -72,11 +99,17 @@
 
 .footer__credit {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: flex-start;
   width: 80%;
   margin-top: $size-default;
   color: $color-empty-light;
+
+  @media (min-width: $small-desktop-window) {
+    flex-direction: row;
+    align-items: flex-end;
+  }
 }
 
 

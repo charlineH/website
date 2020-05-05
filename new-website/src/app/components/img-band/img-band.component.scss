@@ -85,11 +85,22 @@ $cadre-offset: 7*$size-default;
   margin-top: 1.5*$cadre-offset;
 
   h3 {
-    font-size: $txt-size-xxl;
     color: $color-project-tertiary-dark;
     font-weight: $txt-bold-default;
     text-transform: uppercase;
     text-align: center;
     align-self: center;
+
+    @media (min-width: $small-mobile-window) {
+      font-size: $txt-size-regular;
+    }
+
+    @media (min-width: $small-desktop-window) {
+      font-size: $txt-size-big;
+    }
+
+    @media (min-width: $medium-desktop-window) {
+      font-size: $txt-size-xxl;
+    }
   }
 }
