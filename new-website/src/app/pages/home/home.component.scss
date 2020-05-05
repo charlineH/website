@@ -7,10 +7,14 @@
 }
 
 .home__thumbnails {
-  display: flex;
+  display: none;
   justify-content: center;
   height: 5*$size-xmedium;
   margin-top: -$size-xmedium;
+
+  @media (min-width: $small-desktop-window) {
+    display: flex;
+  }
 
   .thumbnails-container {
     display: flex;
@@ -53,7 +57,7 @@
   display: flex;
   flex-direction: column;
   padding: 2*$size-medium;
-  @media (min-width: $small-window) {
+  @media (min-width: $small-mobile-window) {
     padding: 2*$size-medium 8*$size-medium;
   }
 

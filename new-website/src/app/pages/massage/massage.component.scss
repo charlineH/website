@@ -61,8 +61,16 @@ app-article {
   margin: 4*$size-default 0;
 
   app-testimony {
-    width: 30%;
+    width: 100%;
     margin-top: $size-lower;
-    margin-right: $size-xmedium;
+
+    @media (min-width: $small-desktop-window) {
+      width: 40%;
+      margin-right: $size-xmedium;
+    }
+
+    @media(min-width: $medium-desktop-window) {
+      width: 30%;
+    }
   }
 }

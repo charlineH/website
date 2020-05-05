@@ -25,11 +25,13 @@ export class MassageComponent implements AfterViewInit {
     }, {
       img: 'assets/images/massage/massage-drainant-300x200.png',
       title: 'Massage Drainant',
-      type: MassageEnum.DRAINANT
+      type: MassageEnum.DRAINANT,
+      dark: true
     }, {
       img: 'assets/images/massage/massage-thai-jambes-300x200.jpg',
       title: 'Massage Thaïlandais',
-      type: MassageEnum.THAILANDAIS
+      type: MassageEnum.THAILANDAIS,
+      dark: true
     }, {
       img: 'assets/images/logo/misa-france-146x250.jpg',
       title: 'Massage entre enfants',
