@@ -12,9 +12,14 @@ app-carousel {
 
 .taichi__presentation {
   display: flex;
+  flex-direction: column;
   align-items: center;
   width: 80%;
   margin-top: $size-large;
+
+  @media (min-width: $medium-desktop-window) {
+    flex-direction: row;
+  }
 }
 
 .presentation__image {
@@ -139,9 +144,17 @@ app-carousel {
   margin: 4*$size-default 0;
 
   app-testimony {
-    width: 30%;
+    width: 100%;
     margin-top: $size-lower;
-    margin-right: $size-xmedium;
+
+    @media (min-width: $small-desktop-window) {
+      width: 40%;
+      margin-right: $size-xmedium;
+    }
+
+    @media(min-width: $medium-desktop-window) {
+      width: 30%;
+    }
   }
 }
 
@@ -149,7 +162,7 @@ app-carousel {
   display: flex;
   flex-direction: column;
   padding: 2*$size-medium;
-  @media (min-width: $small-window) {
+  @media (min-width: $small-mobile-window) {
     padding: 2*$size-medium 8*$size-medium;
   }
 

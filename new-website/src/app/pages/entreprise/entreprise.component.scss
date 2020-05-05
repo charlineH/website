@@ -12,9 +12,14 @@ app-carousel {
 
 .entreprise__presentation {
   display: flex;
+  flex-direction: column;
   align-items: center;
   width: 80%;
   margin-top: $size-large;
+
+  @media (min-width: $medium-desktop-window) {
+    flex-direction: row;
+  }
 }
 
 .presentation__image {
@@ -37,13 +42,28 @@ app-carousel {
 }
 
 .entreprise__chapters {
-  width: 65%;
-  margin: $size-large 0;
+  width: 80%;
+
+  @media (min-width: $small-desktop-window) {
+    width: 75%;
+  }
+
+  @media (min-width: $medium-desktop-window) {
+    width: 65%;
+  }
 }
 
 .entreprise__chapter {
-  width: 65%;
+  width: 90%;
   margin: $size-large 0;
+
+  @media (min-width: $small-desktop-window) {
+    width: 80%;
+  }
+
+  @media (min-width: $medium-desktop-window) {
+    width: 65%;
+  }
 }
 
 .chapter__subtitle {
@@ -56,10 +76,19 @@ app-carousel {
   flex-wrap: wrap;
 
   app-testimony {
-    width: 30%;
-    margin-top: 0.5rem;
-    margin-right: 2rem;
+    width: 100%;
+    margin-top: $size-lower;
+
+    @media (min-width: $small-desktop-window) {
+      width: 40%;
+      margin-right: $size-xmedium;
+    }
+
+    @media(min-width: $medium-desktop-window) {
+      width: 30%;
+    }
   }
+
 }
 
 .entreprise__band {
