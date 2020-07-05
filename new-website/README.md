@@ -8,12 +8,18 @@ Pour pouvoir contribuer au projet vérifier que les outils suivants sont bien in
 ### Git
 Utiliser pour le versionning du projet.
 
-Téléchargement de l'installateur ici : https://gitforwindows.org/
+Téléchargement de l'installateur ici : [ici](https://gitforwindows.org/)
 
 **NOTE** : Pour ouvrir une invite de commande git bash : 
  1. Aller dans le dossier souhaité en utilisant l'Explorateur de fichier windows
  1. Faire une click droit
  1. Sélection Open git bash here
+
+### NodeJs
+
+Language utilisé pour l'angular
+
+Téléchargement de l'installateur ici : https://nodejs.org/fr/download/
 
 ### Vscode
 Logiciel utilisé pour écrire du code.
@@ -21,7 +27,7 @@ Logiciel utilisé pour écrire du code.
 Téléchargement de l'installateur ici : https://code.visualstudio.com/download
 
 Liste des extensions utile pour développer en angular:
-* Anguler Essential (Version 9)
+* Angular Essential (Version 9)
 * Gitlens - Git supercharged
 
 ### Lier son ordinateur à github
@@ -40,6 +46,17 @@ Recommendation :
 1. Ouvrir git bash
 1. Taper la commande `git clone <addresse SSH copiée juste avant>` et faire Entrée
 
-## Development server
+## Installer et lancer le projet
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Installation du projet et de ses dépendances
+
+1. Ouvrir git bash dans le dossier du projet
+1. Aller dans le dossier new-website avec la commande `cd new-website`
+1. Taper la commande `npm install -g @angular/cli` pour installer angular sur l'ordinateur
+1. Taper la commande `npm install` pour installer les dépendances du projet
+
+### Lancer le projet sur l'odinateur
+ 1. Ouvrir git bash dans le dossier du projet.
+ 1. Aller dans le dossier new-website avec `cd new-website`
+ 1. Taper la commande `ng serve`
+ 1. Ouvrir Chrome et aller à l'addresse `https://localhost:4200`
