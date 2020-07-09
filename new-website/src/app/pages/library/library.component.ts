@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { LibraryData } from '../../model/library-data.model';
 import { ImageItem } from '../../model/massage.model';
 import { MassageEnum } from '../../model/massage.enum';
+import { MatSelectionListChange } from '@angular/material/list';
 
 
 @Component({
@@ -10,6 +11,17 @@ import { MassageEnum } from '../../model/massage.enum';
   styleUrls: ['./library.component.scss']
 })
 export class LibraryComponent {
+  readonly tableOfContents = [
+    {id: 'article', label: 'Article'},
+    {id: 'carrousel', label: 'Carrousel'},
+    {id: 'chapter', label: 'Chapitre'},
+    {id: 'img-band', label: 'Bandeau image'},
+    {id: 'multiple-img-band', label: 'Bandeau image multiple'},
+    {id: 'news', label: 'Actualité'},
+    {id: 'post', label: 'Post'},
+    {id: 'testimony', label: 'Témoignage'}
+  ];
+
   readonly articleDataSource: LibraryData[] = [
     {
       name: 'title',
@@ -63,7 +75,7 @@ export class LibraryComponent {
     {
       name: 'title',
       type: 'string',
-      default: 'false',
+      default: '-',
       required: 'non',
       description: 'titre du chapitre'
     }, {
@@ -157,6 +169,55 @@ export class LibraryComponent {
       Si aucun type n'est sélectionné la couleur est rouge franboise.`
     }
   ];
+  readonly postDataSource: LibraryData[] = [
+    {
+      name: 'title',
+      type: 'string',
+      default: '-',
+      required: 'oui',
+      description: `Le titre du post`
+    }, {
+      name: 'redirect',
+      type: 'string',
+      default: '-',
+      required: 'oui',
+      description: `l'adresse de redirection au clique sur le post. Doit être interne au site`
+    }, {
+      name: 'anchor',
+      type: 'string',
+      default: '-',
+      required: 'non',
+      description: `L'identifiant de sous-partie dans la page de redirection sur lequel le focus doit être fait. `
+    }, {
+      name: 'data',
+      type: 'string',
+      default: '-',
+      required: 'oui',
+      description: `La date de mise à jour`
+    }, {
+      name: 'img',
+      type: 'string',
+      default: '-',
+      required: 'non',
+      description: `L'adresse de l'image du post`
+    }
+  ];
+  readonly testimonyDataSource: LibraryData[] = [
+    {
+      name: 'author',
+      type: 'string',
+      default: '-',
+      required: 'oui',
+      description: `Nom et prénom de l'auteur du témoignage`
+    }, {
+      name: 'small',
+      type: 'boolean',
+      default: 'false',
+      required: 'Non',
+      description: `True - affiche le témoignage dans sa version small. L'auteur n'est pas affiché`
+    }
+  ];
+
 
   readonly typesMassage: ImageItem[] = [
     {
@@ -180,7 +241,7 @@ export class LibraryComponent {
     }
   ];
 
-  htmlArticle = `
+  readonly htmlArticle = `
   <app-article
       src="assets/images/logo/misa-france-146x250.jpg"
       title="MASSAGE ENTRE ENFANTS 'MASSAGE IN SCHOOLS ASSOCIATION'">
@@ -194,14 +255,14 @@ export class LibraryComponent {
       </p>
     </app-article>
   `;
-  htmlCaroussel = `
+  readonly htmlCaroussel = `
     Carrousel bloqué sur une seule photo
     <app-carrousel [multiple]="false" type="massage"></app-carrousel>
 
     Carrousel avec plusieurs photo
     <app-carrousel [multiple]="true"></app-carrousel>
     `;
-  htmlChapter = `
+  readonly htmlChapter = `
   <app-chapter img="assets/images/taichi/tai-chi-s_accorder-445x203.png"
                title="Une pratique chinoise millénaire">
     <p class="chapter__teaser">
@@ -215,7 +276,7 @@ export class LibraryComponent {
     </p>
   </app-chapter>
   `;
-  htmlImgBand = `
+  readonly htmlImgBand = `
       Bandeau avec cadre
       <app-img-band [cadre]="true" class="massage__band" title="Témoignages" type="stage"></app-img-band>
 
@@ -226,10 +287,10 @@ export class LibraryComponent {
       <app-img-band [cadre]="true" class="massage__band" img="assets/images/bandeau/IMG_4635_1680x658.png"
                     title="Les massages"></app-img-band>
   `;
-  htmlMultipleImgBand = `
+  readonly htmlMultipleImgBand = `
      <app-multiple-img-band (selectItem)="scrollToMassage($event)" [images]="typesMassage"></app-multiple-img-band>
   `;
-  htmlNews = `
+  readonly htmlNews = `
   Affichage de la photo à droite
   <app-news class="news__item"
             img="assets/images/taichi/cours-taichi-qigong-meditation.jpg"
@@ -311,4 +372,29 @@ export class LibraryComponent {
       appuyons sur ce qui a déjà été vu pendant les cours.
     </app-news>
   `;
+  readonly htmlPost = `
+  <app-post date="18/04/2020" img="assets/images/svg/building.svg" redirect="/entreprise" title="Page entreprise">
+        </app-post>
+  `;
+  readonly htmlTestimony = `
+    Témoignage en version small.
+    <app-testimony [small]="true">J’ai aimé passé un moment agréable.</app-testimony>
+
+    Témoignage en version normal
+    <app-testimony author="Adeline Duplat">
+      Je suis rentrée plus rapidement dans la relaxation et dans les mouvements aussi,
+      cette année. J’ai eu la sensation de progresser très rapidement cette année.
+    </app-testimony>
+  `;
+
+  scrollToAnchor(selection: MatSelectionListChange): void {
+    const anchor = selection.option.value;
+    try {
+      if (anchor) {
+        document.querySelector(`#${ anchor }`).scrollIntoView();
+      }
+    } catch (e) {
+      console.error('Scoll impossible', e);
+    }
+  }
 }

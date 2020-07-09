@@ -31,6 +31,8 @@ import { PostComponent } from './components/post/post.component';
 import { MatTableModule } from '@angular/material/table';
 import { LibraryComponent } from './pages/library/library.component';
 import { LibraryComponentComponent } from './pages/library/library-component/library-component.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -67,6 +69,8 @@ import { LibraryComponentComponent } from './pages/library/library-component/lib
     HttpClientModule,
     NgbCarouselModule,
     MatTableModule,
+    MatSidenavModule,
+    MatListModule,
   ],
   providers: [],
   exports: [
