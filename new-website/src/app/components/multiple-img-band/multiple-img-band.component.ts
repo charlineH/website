@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { Massage } from '../../model/massage.model';
+import { ImageItem } from '../../model/massage.model';
 
 @Component({
   selector: 'app-multiple-img-band',
@@ -7,8 +7,8 @@ import { Massage } from '../../model/massage.model';
   styleUrls: ['./multiple-img-band.component.scss']
 })
 export class MultipleImgBandComponent implements OnInit {
-  @Input() images: Massage[];
-  @Output() select: EventEmitter<number> = new EventEmitter<number>();
+  @Input() images: ImageItem[];
+  @Output() selectItem: EventEmitter<number> = new EventEmitter<number>();
 
   constructor() {
   }

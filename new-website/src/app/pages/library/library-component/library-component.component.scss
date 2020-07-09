@@ -1,0 +1,14 @@
+@import "src/assets/styles/bases";
+
+.sc-library-component__code-block {
+  border: $border-project-secondary-light;
+  margin-top: $size-xmedium;
+}
+
+table {
+  width: 100%;
+}
+
+th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
+  padding: 0 1rem;
+}

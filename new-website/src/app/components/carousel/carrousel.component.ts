@@ -1,11 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-carousel',
-  templateUrl: './carousel.component.html',
-  styleUrls: ['./carousel.component.scss']
+  selector: 'app-carrousel',
+  templateUrl: './carrousel.component.html',
+  styleUrls: ['./carrousel.component.scss']
 })
-export class CarouselComponent implements OnInit {
+export class CarrouselComponent implements OnInit {
   @Input() multiple: boolean;
   @Input() type: 'taichi' | 'massage' | 'shiatsu' | 'entreprise';
 
