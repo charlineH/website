@@ -4,5 +4,5 @@ export enum MassageEnum {
   DRAINANT,
   THAILANDAIS,
   ENFANTS,
-  MINUTES
+  ASSIS
 }

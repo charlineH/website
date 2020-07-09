@@ -1,17 +1,56 @@
 @import "src/assets/styles/bases";
 
+img {
+  width: 100%;
+
+  @media(min-width: $small-desktop-window) {
+    width: inherit;
+  }
+}
+
+::ng-deep .carousel-item {
+  height: 3.5*$size-xmedium;
+
+  @media(min-width: $small-desktop-window) {
+    height: inherit;
+  }
+}
+
 .carousel-caption {
-  h3 {
-    font-size: $txt-size-xxl;
+  padding: 5px 0;
+  bottom: 5px;
+  left: 5%;
+  right: 5%;
+  background-color: rgba($color-default-secondary, .5);
+
+  @media (min-width: $small-desktop-window) {
+    padding: 20px 0;
+    bottom: 20px;
+    left: 15%;
+    right: 15%;
+    background-color: inherit;
+  }
+
+  h1 {
+    font-size: $size-medium;
     font-weight: $txt-bold-default;
     text-transform: uppercase;
     text-shadow: 0 2px 6px #000000;
+
+    @media (min-width: $small-desktop-window) {
+      font-size: $txt-size-xxl;
+    }
   }
 
   p {
+    display: none;
     font-size: $txt-size-large;
     font-weight: $txt-bold-default;
     text-transform: uppercase;
     text-shadow: 0 2px 6px #000000;
+
+    @media (min-width: $small-desktop-window) {
+      display: block;
+    }
   }
 }

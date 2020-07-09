@@ -2,60 +2,89 @@
 
 .news {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background-color: $color-default-secondary;
   box-shadow: 0 2px 1px -1px rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 3px 0 rgba(0, 0, 0, .12);
   border-radius: $border-radius-default;
   width: 100%;
   min-height: $size-xlarge;
+
+
+  @media (min-width: $medium-desktop-window) {
+    flex-direction: row;
+  }
 }
 
 .news--reverse {
-  flex-direction: row-reverse;
+  flex-direction: column;
 
-  .news__img {
-    border-left: none;
-    border-right: $size-default solid $color-project-primary-light;
-    border-radius: 0 $border-radius-default $border-radius-default 0;
+  @media (min-width: $medium-desktop-window) {
+    flex-direction: row-reverse;
+    .news__img {
 
-    &.yellow {
-      border-right: $size-default solid $color-project-secondary-light;
+      border-left: none;
+      border-top: none;
+      border-right: $size-default solid $color-project-primary-light;
+      border-radius: 0 $border-radius-default $border-radius-default 0;
+
+
+      &.yellow {
+        border-right: $size-default solid $color-project-secondary-light;
+      }
+
+      &.blue {
+        border-right: $size-default solid $color-project-tertiary;
+      }
+
+      &.grey {
+        border-right: $size-default solid $color-empty;
+      }
     }
 
-    &.blue {
-      border-right: $size-default solid $color-project-tertiary;
+    .news__title {
+      align-self: flex-end;
     }
 
-    &.grey {
-      border-right: $size-default solid $color-empty;
+    .news__text {
+      text-align: right;
     }
-  }
-
-  .news__title {
-    align-self: flex-end;
-  }
-
-  .news__text {
-    text-align: right;
   }
 }
 
 .news__img {
-  border-radius: $border-radius-default 0 0 $border-radius-default;
-  border-left: $size-default solid $color-project-primary-light;
+  border-radius: $border-radius-default $border-radius-default 0 0;
+  border-top: $size-default solid $color-project-primary-light;
   width: 100%;
   max-width: 384px;
 
   &.yellow {
-    border-left: $size-default solid $color-project-secondary-light;
+    border-top: $size-default solid $color-project-secondary-light;
   }
 
   &.blue {
-    border-left: $size-default solid $color-project-tertiary;
+    border-top: $size-default solid $color-project-tertiary;
   }
 
   &.grey {
-    border-left: $size-default solid $color-empty;
+    border-top: $size-default solid $color-empty;
+  }
+
+  @media (min-width: $medium-desktop-window) {
+    border-top: none;
+    border-radius: $border-radius-default 0 0 $border-radius-default;
+    border-left: $size-default solid $color-project-primary-light;
+
+    &.yellow {
+      border-left: $size-default solid $color-project-secondary-light;
+    }
+
+    &.blue {
+      border-left: $size-default solid $color-project-tertiary;
+    }
+
+    &.grey {
+      border-left: $size-default solid $color-empty;
+    }
   }
 }
 
