@@ -1,0 +1,11 @@
+@import "src/assets/styles/bases";
+
+.sc-library {
+  margin: $size-medium auto;
+}
+
+.sc-library__component {
+  margin-top: $size-large;
+  padding-bottom: $size-large;
+  border-bottom: $border-project-primary;
+}

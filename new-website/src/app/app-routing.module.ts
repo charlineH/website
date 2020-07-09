@@ -6,6 +6,9 @@ import { TaichiComponent } from './pages/taichi/taichi.component';
 import { RoutesPath } from './enum/routes.enum';
 import { ShiatsuComponent } from './pages/shiatsu/shiatsu.component';
 import { EntrepriseComponent } from './pages/entreprise/entreprise.component';
+import { NotProductionGuard } from './guard/not-production.guard';
+import { GallerieComponent } from './pages/gallerie/gallerie.component';
+import { LibraryComponent } from './pages/library/library.component';
 
 const routes: Routes = [
   {path: RoutesPath.HOME, component: HomeComponent},
@@ -13,8 +16,8 @@ const routes: Routes = [
   {path: RoutesPath.TAICHI, component: TaichiComponent},
   {path: RoutesPath.SHIATSU, component: ShiatsuComponent},
   {path: RoutesPath.ENTREPRISE, component: EntrepriseComponent},
-  // FIXME: uncomment when gallerie is ready.
-  // {path: RoutesPath.GALLERY, component: GallerieComponent}
+  {path: 'library', canActivate: [NotProductionGuard], component: LibraryComponent},
+  {path: RoutesPath.GALLERY, component: GallerieComponent, canActivate: [NotProductionGuard]},
   {path: '**', redirectTo: '/'}
 ];
 

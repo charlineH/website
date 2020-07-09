@@ -1,7 +1,7 @@
 import { AfterViewInit, Component } from '@angular/core';
 import { RoutesPath } from '../../enum/routes.enum';
 import { ActivatedRoute } from '@angular/router';
-import { Massage } from '../../model/massage.model';
+import { ImageItem } from '../../model/massage.model';
 import { MassageEnum } from '../../model/massage.enum';
 
 
@@ -13,7 +13,7 @@ import { MassageEnum } from '../../model/massage.enum';
 export class MassageComponent implements AfterViewInit {
 
   readonly page = RoutesPath.MASSAGE;
-  readonly typesMassage: Massage[] = [
+  readonly typesMassage: ImageItem[] = [
     {
       img: 'assets/images/massage/massage-ayurvedique-dos-300x200.jpg',
       title: 'Massage Ayurvédique',
