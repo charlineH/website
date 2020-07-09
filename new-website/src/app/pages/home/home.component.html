@@ -3,10 +3,26 @@
   <app-carrousel [multiple]="true"></app-carrousel>
   <div class="home__thumbnails">
     <div class="thumbnails-container">
-      <app-thumbnail class="thumbnails__item" text="tai chi" type="taichi"></app-thumbnail>
-      <app-thumbnail class="thumbnails__item" text="Massage-Bien-Etre" type="massage"></app-thumbnail>
-      <app-thumbnail class="thumbnails__item" text="Shiatsu" type="shiatsu"></app-thumbnail>
-      <app-thumbnail class="thumbnails__item" text="Et pour votre entreprise?" type="entreprise"></app-thumbnail>
+      <app-thumbnail
+        class="thumbnails__item"
+        text="tai chi"
+        type="taichi"
+      ></app-thumbnail>
+      <app-thumbnail
+        class="thumbnails__item"
+        text="Massage-Bien-Etre"
+        type="massage"
+      ></app-thumbnail>
+      <app-thumbnail
+        class="thumbnails__item"
+        text="Shiatsu"
+        type="shiatsu"
+      ></app-thumbnail>
+      <app-thumbnail
+        class="thumbnails__item"
+        text="Et pour votre entreprise?"
+        type="entreprise"
+      ></app-thumbnail>
     </div>
   </div>
   <div class="home__presentation">
@@ -14,40 +30,51 @@
       Une philosophie d’accompagnement vers le Bien Etre …
     </span>
     <div class="presentation__text">
-      <p>Pas comme l’illusion d’être toujours heureux, jamais malade … Le Bien Etre, comme une recherche d’équilibre
-        permanente.</p>
       <p>
-        Cette recherche d’équilibre, en mouvement, est la vie … <br>
-        Elle est passionnante.<br>
-        Elle est accessible à tous.<br>
-        Elle nous transforme silencieusement, sans en avoir l’air, à notre rythme.</p>
+        Pas comme l’illusion d’être toujours heureux, ade …jamais mal Le Bien
+        Etre, comme une recherche d’équilibre permanente.
+      </p>
+      <p>
+        Cette recherche d’équilibre, en mouvement, est la vie … <br />
+        Elle est passionnante.<br />
+        Elle est accessible à tous.<br />
+        Elle nous transforme silencieusement, sans en avoir l’air, à notre
+        rythme.
+      </p>
     </div>
   </div>
   <app-img-band [title]="'Actualités'" [type]="'ears-bonze'"></app-img-band>
 
-
   <div class="home__news">
-    <app-news [left]="true"
-              class="news__item"
-              img="assets/images/taichi/cours-taichi-qigong-meditation.jpg"
-              title="Confinement : Les cours de taichi sont suspendus jusqu'à nouvel ordre"
-              type="yellow">
-      Le confinement nous empêche de pratiquer ensemble. Il peut devenir aussi un formidable moment pour développer
-      notre pratique personnelle.
-      <br>Pour vous accompagner chaque semaine je vous propose des audios ou fiches. Nous nous
-      appuyons sur ce qui a déjà été vu pendant les cours.
+    <app-news
+      [left]="true"
+      class="news__item"
+      img="assets/images/taichi/cours-taichi-qigong-meditation.jpg"
+      title="Confinement : Les cours de taichi sont suspendus jusqu'à nouvel ordre"
+      type="yellow"
+    >
+      Le confinement nous empêche de pratiquer ensemble. Il peut devenir aussi
+      un formidable moment pour développer notre pratique personnelle.
+      <br />Pour vous accompagner chaque semaine je vous propose des audios ou
+      fiches. Nous nous appuyons sur ce qui a déjà été vu pendant les cours.
     </app-news>
-    <app-news class="news__item"
-              img="assets/images/taichi/tai-chi-s_accorder-300x225.jpg"
-              title="Symposium 12 Mars à partir de 13 Mars 2021">
-      Comment peut-il transformer notre quotidien à une époque où nous sommes insidieusement
-      malmenés (sédentarisme,
-      pollution, dictature de l’esthétisme, de la performance...) ? Depuis 30 ans, l’association des Quatre Piliers
-      participe à la pratique et à l’enseignement du Tai Chi, du Qi Gong et du Stretching Postural®. Notre approche
-      est le fruit d’une recherche dans un juste équilibre entre le goût de l’effort et le respect des limites de
-      chacun. Sensibilité, écoute, harmonie, équilibre, puissance et fluidité, conscience de soi en sont l’apanage !
-      <br><a href="https://youtu.be/IECrIIzitVQ">La vidéo</a>.
-      <br><a href="https://symposiumcorpsvivant.wordpress.com/">Le site du symposium</a>
+    <app-news
+      class="news__item"
+      img="assets/images/taichi/tai-chi-s_accorder-300x225.jpg"
+      title="Symposium 12 Mars à partir de 13 Mars 2021"
+    >
+      Comment peut-il transformer notre quotidien à une époque où nous sommes
+      insidieusement malmenés (sédentarisme, pollution, dictature de
+      l’esthétisme, de la performance...) ? Depuis 30 ans, l’association des
+      Quatre Piliers participe à la pratique et à l’enseignement du Tai Chi, du
+      Qi Gong et du Stretching Postural®. Notre approche est le fruit d’une
+      recherche dans un juste équilibre entre le goût de l’effort et le respect
+      des limites de chacun. Sensibilité, écoute, harmonie, équilibre, puissance
+      et fluidité, conscience de soi en sont l’apanage !
+      <br /><a href="https://youtu.be/IECrIIzitVQ">La vidéo</a>. <br /><a
+        href="https://symposiumcorpsvivant.wordpress.com/"
+        >Le site du symposium</a
+      >
     </app-news>
   </div>
 </div>
