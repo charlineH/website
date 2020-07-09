@@ -1,0 +1,40 @@
+<h2>{{title}}</h2>
+
+<h4>Visuel</h4>
+
+<ng-content></ng-content>
+<br>
+<h4>Attributs</h4>
+<table [dataSource]="dataSource" class="mat-elevation-z8" mat-table>
+
+  <ng-container matColumnDef="name">
+    <th *matHeaderCellDef mat-header-cell> Attribut</th>
+    <td *matCellDef="let element" mat-cell> {{element.name}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="type">
+    <th *matHeaderCellDef mat-header-cell> Type</th>
+    <td *matCellDef="let element" mat-cell> {{element.type}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="default">
+    <th *matHeaderCellDef mat-header-cell> Valeur par défaut</th>
+    <td *matCellDef="let element" mat-cell> {{element.default}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="required">
+    <th *matHeaderCellDef mat-header-cell> Obligatoire</th>
+    <td *matCellDef="let element" mat-cell> {{element.required}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="description">
+    <th *matHeaderCellDef mat-header-cell> Description</th>
+    <td *matCellDef="let element" mat-cell> {{element.description}} </td>
+  </ng-container>
+
+  <tr *matHeaderRowDef="displayedColumns" mat-header-row></tr>
+  <tr *matRowDef="let row; columns: displayedColumns;" mat-row></tr>
+</table>
+<br>
+<h4>Code HTML</h4>
+<pre class="sc-library-component__code-block"><code>{{htmlCode}}</code></pre>

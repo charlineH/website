@@ -1,8 +1,19 @@
-import { MassageEnum } from './massage.enum';
-
-export class Massage {
+export class ImageItem {
+  /**
+   * The img path.
+   */
   img: string;
+  /**
+   * The title to display.
+   */
   title: string;
-  type: MassageEnum;
+
+  /**
+   * The type to emit
+   */
+  type: number;
+  /**
+   * True, display the title in dark. Use if the image is too dark;
+   */
   dark?: boolean;
 }

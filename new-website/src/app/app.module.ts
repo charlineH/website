@@ -22,12 +22,15 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ThumbnailComponent } from './components/thumbnail/thumbnail.component';
 import { NewsComponent } from './components/news/news.component';
-import { CarouselComponent } from './components/carousel/carousel.component';
+import { CarrouselComponent } from './components/carousel/carrousel.component';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { ChapterComponent } from './components/chapter/chapter.component';
 import { TestimonyComponent } from './components/testimony/testimony.component';
 import { ArticleComponent } from './components/article/article.component';
 import { PostComponent } from './components/post/post.component';
+import { MatTableModule } from '@angular/material/table';
+import { LibraryComponent } from './pages/library/library.component';
+import { LibraryComponentComponent } from './pages/library/library-component/library-component.component';
 
 @NgModule({
   declarations: [
@@ -48,11 +51,13 @@ import { PostComponent } from './components/post/post.component';
     FooterComponent,
     ThumbnailComponent,
     NewsComponent,
-    CarouselComponent,
+    CarrouselComponent,
     ChapterComponent,
     TestimonyComponent,
     ArticleComponent,
-    PostComponent
+    PostComponent,
+    LibraryComponent,
+    LibraryComponentComponent
   ],
   imports: [
     BrowserModule,
@@ -61,8 +66,12 @@ import { PostComponent } from './components/post/post.component';
     MatIconModule,
     HttpClientModule,
     NgbCarouselModule,
+    MatTableModule,
   ],
   providers: [],
+  exports: [
+    ArticleComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {

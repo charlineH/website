@@ -1,6 +1,6 @@
 <app-nav-bar [page]="page"></app-nav-bar>
 <div class="massage-page">
-  <app-carousel [multiple]="false" type="massage"></app-carousel>
+  <app-carrousel [multiple]="false" type="massage"></app-carrousel>
   <div class="massage-page__presentation">
     <p class="presentation__title">
       Marie-Laure, coach corporel par le Tai Chi, le Qi Gong, la Méditation et les Massages Bien-être...
@@ -26,7 +26,7 @@
       </p>
     </div>
   </div>
-  <app-multiple-img-band (select)="scrollToMassage($event)" [images]="typesMassage"></app-multiple-img-band>
+  <app-multiple-img-band (selectItem)="scrollToMassage($event)" [images]="typesMassage"></app-multiple-img-band>
   <div class="massage-page__presentation">
     <p>
       Au fil du temps les massages développent la conscience de la globalité de notre corps. Notre corps conscient

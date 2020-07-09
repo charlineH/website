@@ -1,0 +1,170 @@
+<div class="sc-library container ">
+  <h1>Bibliothèque de composants</h1>
+  <div class="sc-library__component" id="article">
+    <app-library-component
+      [dataSource]="articleDataSource"
+      [htmlCode]="htmlArticle"
+      title="Composant article">
+      <app-article
+        id="enfants"
+        src="assets/images/logo/misa-france-146x250.jpg"
+        title="MASSAGE ENTRE ENFANTS 'MASSAGE IN SCHOOLS ASSOCIATION'">
+        <p>
+          Programme de massage enfants pour les écoles, accueils périscolaires, centre de loisirs, ateliers parents
+          enfants. Les enfants se massent les uns les autres. Ils se demandent la permission et se remercient. Le
+          massage
+          se fait sur les vêtements. Il se compose de 15 mouvements simples et ludiques appelés "Routine". Des massages
+          contés ou jeux kiné tactiles peuvent la compléter. Ni l'instructeur ni l'enseignant ne masse les enfants.
+          L'adulte guide les mouvements. Le programme s'adresse aux enfants de 4 à 12 ans. (Dans le cadre des ateliers
+          parents enfants, enfants et parents se massent réciproquement).
+        </p>
+      </app-article>
+    </app-library-component>
+  </div>
+  <div class="sc-library__component" id="carrousel">
+    <app-library-component
+      [dataSource]="carouselDataSource"
+      [htmlCode]="htmlCaroussel"
+      title="Composant carrousel">
+      <app-carrousel [multiple]="true"></app-carrousel>
+    </app-library-component>
+  </div>
+  <div class="sc-library__component" id="chapter">
+    <app-library-component
+      [dataSource]="chapterDataSource"
+      [htmlCode]="htmlChapter"
+      title="Composant chapitre">
+      <app-chapter img="assets/images/taichi/tai-chi-s_accorder-445x203.png"
+                   title="Une pratique chinoise millénaire">
+        <p class="chapter__teaser">
+          Le Tai Chi, le Qi Gong et la méditation sont accessibles à tous. Leur pratique développe la souplesse,
+          l’équilibre, la respiration, le lâcher-prise, la relation aux autres … globalement le bien-être au
+          quotidien.
+          <br/>
+          Les cours associent des temps de relaxation, d’assouplissement, de méditation en parallèle des mouvements
+          lents pour retrouver le plaisir de se mouvoir dans l’espace.
+          <br/>
+        </p>
+      </app-chapter>
+    </app-library-component>
+  </div>
+  <div class="sc-library__component" id="img-band">
+    <app-library-component
+      [dataSource]="imgBandDataSource"
+      [htmlCode]="htmlImgBand"
+      title="Composant bandeau image">
+      <h5>Bandeau avec cadre</h5>
+      <app-img-band [cadre]="true" class="massage__band" title="Témoignages" type="stage"></app-img-band>
+      <br>
+      <h5>Bandeau sans le cadre</h5>
+      <app-img-band [title]="'Actualités'" [type]="'ears-bonze'"></app-img-band>
+      <br>
+      <h5>Bandeau avec une image</h5>
+      <app-img-band [cadre]="true" class="massage__band" img="assets/images/bandeau/IMG_4635_1680x658.png"
+                    title="Les massages"></app-img-band>
+    </app-library-component>
+  </div>
+  <div class="sc-library__component" id="multiple-img-band">
+    <app-library-component
+      [dataSource]="multipleImgBandDataSource"
+      [htmlCode]="htmlMultipleImgBand"
+      title="Composant bandeau avec plusieurs images">
+      <app-multiple-img-band [images]="typesMassage"></app-multiple-img-band>
+    </app-library-component>
+  </div>
+  <div class="sc-library__component" id="news">
+    <app-library-component
+      [dataSource]="newsDataSource"
+      [htmlCode]="htmlNews">
+      <br>
+      <h4>Affichage de la photo à droite</h4>
+      <app-news class="news__item"
+                img="assets/images/taichi/cours-taichi-qigong-meditation.jpg"
+                title="Confinement : Les cours de taichi sont suspendus jusqu'à nouvel ordre">
+        Le confinement nous empêche de pratiquer ensemble. Il peut devenir aussi un formidable moment pour développer
+        notre pratique personnelle.
+        <br>Pour vous accompagner chaque semaine je vous propose des audios ou fiches. Nous nous
+        appuyons sur ce qui a déjà été vu pendant les cours.
+      </app-news>
+      <br>
+      <h4>Affichage de la photo à gauche</h4>
+      <app-news [left]="true"
+                class="news__item"
+                img="assets/images/taichi/cours-taichi-qigong-meditation.jpg"
+                title="Confinement : Les cours de taichi sont suspendus jusqu'à nouvel ordre">
+        Le confinement nous empêche de pratiquer ensemble. Il peut devenir aussi un formidable moment pour développer
+        notre pratique personnelle.
+        <br>Pour vous accompagner chaque semaine je vous propose des audios ou fiches. Nous nous
+        appuyons sur ce qui a déjà été vu pendant les cours.
+      </app-news>
+      <br>
+      <h4>Affichage du bloc en jaune</h4>
+      <app-news buttonLabel="En savoir plus sur google ..."
+                class="news__item"
+                img="assets/images/taichi/cours-taichi-qigong-meditation.jpg"
+                title="Confinement : Les cours de taichi sont suspendus jusqu'à nouvel ordre"
+                type="yellow">
+        Le confinement nous empêche de pratiquer ensemble. Il peut devenir aussi un formidable moment pour
+        développer
+        notre pratique personnelle.
+        <br>Pour vous accompagner chaque semaine je vous propose des audios ou fiches. Nous nous
+        appuyons sur ce qui a déjà été vu pendant les cours.
+      </app-news>
+      <br>
+      <h4>Affichage du bloc en bleu</h4>
+      <app-news buttonLabel="En savoir plus sur google ..."
+                class="news__item"
+                img="assets/images/taichi/cours-taichi-qigong-meditation.jpg"
+                title="Confinement : Les cours de taichi sont suspendus jusqu'à nouvel ordre"
+                type="blue">
+        Le confinement nous empêche de pratiquer ensemble. Il peut devenir aussi un formidable moment pour
+        développer
+        notre pratique personnelle.
+        <br>Pour vous accompagner chaque semaine je vous propose des audios ou fiches. Nous nous
+        appuyons sur ce qui a déjà été vu pendant les cours.
+      </app-news>
+
+      <br>
+      <h4>Affichage du bloc en gris</h4>
+      <app-news buttonLabel="En savoir plus sur google ..."
+                class="news__item"
+                img="assets/images/taichi/cours-taichi-qigong-meditation.jpg"
+                title="Confinement : Les cours de taichi sont suspendus jusqu'à nouvel ordre"
+                type="grey">
+        Le confinement nous empêche de pratiquer ensemble. Il peut devenir aussi un formidable moment pour
+        développer
+        notre pratique personnelle.
+        <br>Pour vous accompagner chaque semaine je vous propose des audios ou fiches. Nous nous
+        appuyons sur ce qui a déjà été vu pendant les cours.
+      </app-news>
+
+      <br>
+      <h4>Affichage du bloc avec bouton et redirection vers l'externe</h4>
+      <app-news buttonLabel="En savoir plus sur google ..."
+                class="news__item"
+                img="assets/images/taichi/cours-taichi-qigong-meditation.jpg"
+                redirect="http://www.google.fr"
+                title="Confinement : Les cours de taichi sont suspendus jusqu'à nouvel ordre">
+        Le confinement nous empêche de pratiquer ensemble. Il peut devenir aussi un formidable moment pour
+        développer
+        notre pratique personnelle.
+        <br>Pour vous accompagner chaque semaine je vous propose des audios ou fiches. Nous nous
+        appuyons sur ce qui a déjà été vu pendant les cours.
+      </app-news>
+
+      <br>
+      <h4>Affichage du bloc avec bouton et redirection vers le site</h4>
+      <app-news buttonLabel="En savoir plus sur google ..."
+                class="news__item"
+                img="assets/images/taichi/cours-taichi-qigong-meditation.jpg"
+                redirect="/massage"
+                title="Confinement : Les cours de taichi sont suspendus jusqu'à nouvel ordre">
+        Le confinement nous empêche de pratiquer ensemble. Il peut devenir aussi un formidable moment pour
+        développer
+        notre pratique personnelle.
+        <br>Pour vous accompagner chaque semaine je vous propose des audios ou fiches. Nous nous
+        appuyons sur ce qui a déjà été vu pendant les cours.
+      </app-news>
+    </app-library-component>
+  </div>
+</div>
