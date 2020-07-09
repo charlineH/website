@@ -7,26 +7,40 @@
   display: flex;
   justify-content: flex-start;
   width: 100%;
-  height: $size-header;
+  height: $size-header-mobile;
   top: 0;
   z-index: 99999;
 
   @media(min-width: $small-mobile-window) {
     justify-content: space-between;
   }
+
+  @media(min-width: $small-desktop-window) {
+    height: $size-header-desktop;
+
+  }
 }
 
 .nav-bar__menu {
   color: $color-project-primary;
-  font-size: $txt-size-regular;
-  padding: $size-medium;
+  font-size: $txt-size-default;
+  padding: $size-lower $size-default;
 
   &:hover {
     opacity: .5;
+
+    @media(min-width: $small-desktop-window) {
+      opacity: 1;
+    }
   }
 
   @media(min-width: $small-mobile-window) {
     display: none;
+  }
+
+  @media(min-width: $small-desktop-window) {
+    font-size: $txt-size-regular;
+    padding: $size-medium;
   }
 }
 
@@ -41,7 +55,7 @@
 }
 
 .website-info__logo {
-  background-image: url("/old-website/assets/images/favicon.png");
+  background-image: url("/assets/images/favicon.png");
   background-size: contain;
   border-radius: 50%;
   width: $size-xlarge;
@@ -68,7 +82,8 @@
   flex-direction: column;
   background-color: $color-project-primary;
   position: absolute;
-  height: 104vh;
+  height: 100vh;
+  padding-top: $size-default;
   left: 0;
 
   .item:hover .item__list {
@@ -77,10 +92,12 @@
 
   .item {
     color: $color-project-primary-very-light;
+    font-size: $txt-size-default;
     margin-bottom: $size-default;
   }
 
   .item__title {
+    padding: 0 $size-default;
 
     &:hover {
       background-color: $color-project-primary;

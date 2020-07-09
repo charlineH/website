@@ -39,8 +39,8 @@ export class MassageComponent implements AfterViewInit {
       dark: true
     }, {
       img: 'assets/images/massage/massage-main-300x200.jpg',
-      title: 'Massage minutes',
-      type: MassageEnum.MINUTES
+      title: 'Massage assis',
+      type: MassageEnum.ASSIS
     }
   ];
   readonly testimonies: { author: string, testimony: string }[] = [
@@ -83,7 +83,7 @@ export class MassageComponent implements AfterViewInit {
       case MassageEnum.ENFANTS:
         anchor = 'enfants';
         break;
-      case MassageEnum.MINUTES:
+      case MassageEnum.ASSIS:
         anchor = 'minutes';
         break;
       default:
