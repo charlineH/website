@@ -24,7 +24,11 @@ app-carousel {
 
 .presentation__image {
   height: 100%;
-  margin-right: $size-xmedium;
+
+  @media (min-width: $medium-desktop-window) {
+    margin-right: $size-xmedium;
+  }
+
 }
 
 .presentation__text {
@@ -37,6 +41,7 @@ app-carousel {
   .img-certification-taichi {
     cursor: pointer;
     align-self: center;
+    width: 100%;
     height: 100%;
   }
 }

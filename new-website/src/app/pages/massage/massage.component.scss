@@ -16,8 +16,12 @@ p {
 }
 
 .massage-page__presentation {
-  width: 60%;
+  width: 80%;
   margin: $size-large 0;
+
+  @media (min-width: $small-desktop-window) {
+    width: 60%;
+  }
 
 }
 
@@ -28,15 +32,31 @@ p {
 
 .presentation__image {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $small-desktop-window) {
+    flex-direction: row;
+  }
 
   img {
     width: 3*$size-large;
   }
 
   p {
-    width: 80%;
+
+    @media (min-width: $small-desktop-window) {
+      width: 80%;
+    }
+  }
+}
+
+.massage__multiple_img_band {
+  display: none;
+  @media (min-width: $small-desktop-window) {
+    display: block;
+
   }
 }
 
@@ -45,8 +65,12 @@ p {
 }
 
 .massage-page__massages {
-  width: 60%;
+  width: 80%;
   margin: $size-large 0;
+
+  @media (min-width: $small-desktop-window) {
+    width: 60%;
+  }
 }
 
 app-article {
@@ -58,7 +82,12 @@ app-article {
   display: flex;
   flex-wrap: wrap;
   width: 80%;
-  margin: 4*$size-default 0;
+  margin-bottom: 2*$size-default;
+
+  @media(min-width: $small-desktop-window) {
+    margin: 4*$size-default 0;
+
+  }
 
   app-testimony {
     width: 100%;
@@ -67,10 +96,6 @@ app-article {
     @media (min-width: $small-desktop-window) {
       width: 40%;
       margin-right: $size-xmedium;
-    }
-
-    @media(min-width: $medium-desktop-window) {
-      width: 30%;
     }
   }
 }

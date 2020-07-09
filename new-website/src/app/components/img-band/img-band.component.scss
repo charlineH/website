@@ -2,8 +2,12 @@
 
 %band--img {
   color: $color-project-primary-very-light;
-  background: $color-project-primary fixed;
+  background: $color-project-primary local;
   background-size: cover;
+
+  @media(min-width: $small-desktop-window) {
+    background-attachment: fixed;
+  }
 }
 
 $cadre-offset: 7*$size-default;
@@ -80,9 +84,16 @@ $cadre-offset: 7*$size-default;
   background-color: rgba($color-project-tertiary-very-light, .65);
   display: flex;
   justify-content: center;
-  width: 60%;
-  height: 2*$cadre-offset;
-  margin-top: 1.5*$cadre-offset;
+  width: 80%;
+  height: $cadre-offset;
+  margin-top: 1.25 * $cadre-offset;
+
+  @media (min-width: $medium-desktop-window) {
+    width: 60%;
+    height: 2*$cadre-offset;
+    margin-top: 1.5*$cadre-offset;
+  }
+
 
   h3 {
     color: $color-project-tertiary-dark;

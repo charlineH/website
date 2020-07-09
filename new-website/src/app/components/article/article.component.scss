@@ -1,7 +1,15 @@
 @import "src/assets/styles/bases";
 
 .article {
-  margin-bottom: $size-xmedium;
+  padding-bottom: $size-default;
+  border-bottom: $border-project-terciary;
+  margin-bottom: $size-default;
+
+  @media (min-width: $small-desktop-window) {
+    border: none;
+    padding: 0;
+    margin-bottom: $size-xmedium;
+  }
 }
 
 .article__title {
@@ -14,9 +22,14 @@
 
 .article__content {
   display: flex;
+  flex-direction: column;
   align-items: center;
   color: $color-empty;
   font-size: $size-default;
+
+  @media (min-width: $small-desktop-window) {
+    flex-direction: row;
+  }
 }
 
 .content__image {
@@ -29,6 +42,12 @@
 }
 
 .content__text {
+  margin-top: $size-default;
+
+  @media (min-width: $small-desktop-window) {
+    margin-top: 0;
+  }
+
   strong {
     color: $color-project-primary;
   }

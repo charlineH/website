@@ -6,18 +6,26 @@
   padding: $size-xmedium;
   border-radius: $border-radius-default;
   box-shadow: 0 4px 6px rgba($color-default-primary, 0.16);
-  height: 4*$size-large;
 
   &.testimony--small {
     height: 4*$size-xmedium;
   }
+
+  @media(min-width: $small-desktop-window) {
+    height: 4*$size-large;
+  }
 }
 
 .testimony__icon {
+  display: none;
   border-radius: 50%;
   width: 4*$size-default;
   height: 4*$size-default;
   margin-right: $size-xmedium;
+
+  @media(min-width: $small-desktop-window) {
+    display: block;
+  }
 
   &.blue {
     background-color: $color-project-tertiary;

@@ -24,7 +24,10 @@ app-carousel {
 
 .presentation__image {
   height: 100%;
-  margin-right: $size-xmedium;
+
+  @media (min-width: $medium-desktop-window) {
+    margin-right: $size-xmedium;
+  }
 }
 
 .presentation__text {
@@ -37,6 +40,7 @@ app-carousel {
   .img-certification-taichi {
     cursor: pointer;
     align-self: center;
+    width: 100%;
     height: 100%;
   }
 }
@@ -45,13 +49,23 @@ app-carousel {
   color: $color-empty;
   font-weight: $txt-regular-medium;
   text-align: justify;
-  width: 80%;
+  width: 65%;
   margin-bottom: $size-large;
 }
 
 .taichi-chapters {
-  width: 65%;
-  margin-bottom: 6.5*$size-default;
+  width: 80%;
+  margin-bottom: 2.5*$size-default;
+
+  @media (min-width: $small-desktop-window) {
+    width: 75%;
+    margin-bottom: 4.5*$size-default;
+  }
+
+  @media (min-width: $medium-desktop-window) {
+    width: 65%;
+    margin-bottom: 6.5*$size-default;
+  }
 }
 
 .taichi__band {
@@ -59,8 +73,16 @@ app-carousel {
 }
 
 .taichi__chapter {
-  width: 60%;
-  margin-top: 4*$size-default;
+  width: 90%;
+  margin: $size-large 0;
+
+  @media (min-width: $small-desktop-window) {
+    width: 80%;
+  }
+
+  @media (min-width: $medium-desktop-window) {
+    width: 65%;
+  }
 }
 
 .chapter__introduction {
@@ -83,17 +105,28 @@ app-carousel {
 
 .chapter__stikers {
   display: flex;
-  margin: $size-xmedium -4*$size-default;
+  flex-direction: column;
+  margin: $size-medium 0;
+
+  @media (min-width: $medium-desktop-window) {
+    flex-direction: row;
+    margin: $size-xmedium -4*$size-default;
+  }
 }
 
 .stiker {
   flex: 1;
-  margin: 0 $size-default;
+  margin: $size-default 0;
   border-radius: $border-radius-default;
   box-shadow: 0 4px 6px rgba($color-default-primary, 0.16);
   display: flex;
   flex-direction: column;
   padding: $size-medium;
+
+
+  @media (min-width: $medium-desktop-window) {
+    margin: 0 $size-default;
+  }
 
   .stiker__title {
     font-size: $txt-size-regular;
@@ -112,6 +145,11 @@ app-carousel {
 
 .chapter-1__content--img {
   display: flex;
+  flex-direction: column-reverse;
+
+  @media (min-width: $medium-desktop-window) {
+    flex-direction: row;
+  }
 
   img {
     height: 100%;
@@ -121,11 +159,19 @@ app-carousel {
 
 .chapter-2__content--columns {
   display: flex;
+  flex-direction: column;
+
+  @media (min-width: $medium-desktop-window) {
+    flex-direction: row;
+  }
 
   .column {
     flex: 1;
     padding: $size-default;
-    margin-left: $size-xmedium;
+
+    @media (min-width: $medium-desktop-window) {
+      margin-left: $size-xmedium;
+    }
   }
 }
 

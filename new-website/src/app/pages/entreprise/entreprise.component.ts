@@ -22,15 +22,15 @@ export class EntrepriseComponent implements AfterViewInit {
   }
 
   goToChapter1() {
-    this.scrollToAnchor('explication');
+    this.scrollToAnchor('taichi');
   }
 
   goToChapter2() {
-    this.scrollToAnchor('cours');
+    this.scrollToAnchor('ateliers');
   }
 
   goToChapter3() {
-    this.scrollToAnchor('articles');
+    this.scrollToAnchor('massages-minute');
   }
 
   private scrollToAnchor(anchor: string): void {

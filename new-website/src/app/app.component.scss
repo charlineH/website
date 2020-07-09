@@ -1,6 +1,15 @@
 @import "src/assets/styles/bases";
 
 
+::ng-deep router-outlet + * {
+  display: block;
+  margin-top: $size-header-mobile;
+
+  @media(min-width: $small-desktop-window) {
+    margin-top: $size-header-desktop;
+  }
+}
+
 .footer {
   margin-top: auto;
 }
