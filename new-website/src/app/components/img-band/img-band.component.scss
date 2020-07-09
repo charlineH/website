@@ -35,37 +35,37 @@ $cadre-offset: 7*$size-default;
 
   &.band--eye-bonze {
     @extend %band--img;
-    background-image: url("src/assets/images/bandeau/overlay.png"), url("src/assets/images/bandeau/bonze-bandeau-1436x312.png") !important;
+    background-image: url("/../assets/images/bandeau/overlay.png"), url("/../assets/images/bandeau/bonze-bandeau-1436x312.png") !important;
   }
 
   &.band--ears-bonze {
     @extend %band--img;
-    background-image: url("src/assets/images/bandeau/overlay.png"), url("src/assets/images/bandeau/band_bonze_2.png");
+    background-image: url("/../assets/images/bandeau/overlay.png"), url("/../assets/images/bandeau/band_bonze_2.png");
   }
 
   &.band--mouse-bonze {
     @extend %band--img;
-    background-image: url("src/assets/images/bandeau/overlay.png"), url("src/assets/images/bandeau/band_bonze_3.png");
+    background-image: url("/../assets/images/bandeau/overlay.png"), url("/../assets/images/bandeau/band_bonze_3.png");
   }
 
   &.band--roses {
     @extend %band--img;
-    background-image: url("src/assets/images/bandeau/overlay.png"), url("src/assets/images/bandeau/IMG_4635_1680x658.png");
+    background-image: url("/../assets/images/bandeau/overlay.png"), url("/../assets/images/bandeau/IMG_4635_1680x658.png");
   }
 
   &.band--taichi {
     @extend %band--img;
-    background-image: url("src/assets/images/bandeau/overlay.png"), url("src/assets/images/bandeau/taichi_groupe_band.png");
+    background-image: url("/../assets/images/bandeau/overlay.png"), url("/../assets/images/bandeau/taichi_groupe_band.png");
   }
 
   &.band--stage {
     @extend %band--img;
-    background-image: url("src/assets/images/bandeau/stage-taichi_1680x658.png");
+    background-image: url("/../assets/images/bandeau/stage-taichi_1680x658.png");
   }
 
   &.band--meditation {
     @extend %band--img;
-    background-image: url("src/assets/images/bandeau/IMG_4625_1680x658.jpg");
+    background-image: url("/../assets/images/bandeau/IMG_4625_1680x658.jpg");
   }
 }
 
