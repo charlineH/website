@@ -3,60 +3,86 @@
   <app-carrousel [multiple]="false" type="massage"></app-carrousel>
   <div class="massage-page__presentation">
     <p class="presentation__title">
-      Marie-Laure, coach corporel par le Tai Chi, le Qi Gong, la Méditation et les Massages Bien-être...
+      Marie-Laure, accompagne la conscience du corps par le Tai Chi, le Qi Gong,
+      la Méditation et les Massages Bien-être...
     </p>
     <p>
-      Les massages-bien-être proposés prennent en compte chacun dans sa globalité. Ils partagent une vision globale du
-      corps. Ils ont comme point commun d’accompagner la détente, diminuer les effets du stress, développer la
-      conscience
-      du corps etc. Dans la durée, ils développent la conscience corporelle qui devient ainsi un véritable point d’appui
-      au quotidien.
-      Ils peuvent compléter la pratique du Tai Chi, s'intégrer dans un processus de prévention pour une meilleure santé
-      et se rapprocher de la définition de l'OMS : La santé est un état complet de bien-être physique, mental et social
-      et ne constitue pas seulement une absence de maladie ou d'infirmité. Pour ceux qui le souhaitent, ils peuvent
-      aussi participer à leur développement personnel.
+      Les massages-bien-être proposés prennent en compte chacun dans sa
+      globalité. Ils partagent une vision globale du corps. Ils ont comme point
+      commun d’accompagner la détente, diminuer les effets du stress, développer
+      la conscience du corps etc. Dans la durée, ils développent la conscience
+      corporelle qui devient ainsi un véritable point d’appui au quotidien. Ils
+      peuvent compléter la pratique du Tai Chi, s'intégrer dans un processus de
+      prévention pour une meilleure santé et se rapprocher de la définition de
+      l'OMS : La santé est un état complet de bien-être physique, mental et
+      social et ne constitue pas seulement une absence de maladie ou
+      d'infirmité. Pour ceux qui le souhaitent, ils peuvent aussi participer à
+      leur développement personnel.
     </p>
     <div class="presentation__image">
-      <img alt="Massage auyvédique du dos" src="assets/images/logo/massage-logo-ffmbe-couleur-260x200.jpg">
+      <img
+        alt="Massage auyvédique du dos"
+        src="assets/images/logo/massage-logo-ffmbe-couleur-260x200.jpg"
+      />
       <p>
-        Le Massage-Bien-Etre est un accompagnement personnalisé, par le toucher, utilisant un ensemble de techniques
-        manuelles pour favoriser, entretenir et optimiser le bien-être global du client. Il est réalisé par un
-        professionnel agréé FFMBE respectant son code de déontologie et le cadre juridique français.
-        <a aria-label="Site de la FFMBE" href="https://www.ffmbe.fr/">le site de la FFMBE.</a>
+        Le Massage-Bien-Etre est un accompagnement personnalisé, par le toucher,
+        utilisant un ensemble de techniques manuelles pour favoriser, entretenir
+        et optimiser le bien-être global du client. Il est réalisé par un
+        professionnel agréé FFMBE respectant son code de déontologie et le cadre
+        juridique français.
+        <a aria-label="Site de la FFMBE" href="https://www.ffmbe.fr/"
+          >le site de la FFMBE.</a
+        >
       </p>
     </div>
   </div>
-  <app-multiple-img-band (selectItem)="scrollToMassage($event)" [images]="typesMassage"></app-multiple-img-band>
+  <app-multiple-img-band
+    (selectItem)="scrollToMassage($event)"
+    [images]="typesMassage"
+  ></app-multiple-img-band>
   <div class="massage-page__presentation">
     <p>
-      Au fil du temps les massages développent la conscience de la globalité de notre corps. Notre corps conscient
-      devient
-      point d'appui et force intérieure, au quotidien. Cette conscience transforme, chacun à son rythme, dans son
-      rapport
-      à soi, aux autres et au monde... Ces transformations, le plus souvent silencieuses, demandent un accompagnement
-      éthique. J'ai choisi de réfléchir cet accompagnement à l'université de Tours, dans le cadre d'un diplôme
-      universitaire puis d'un Master 2 en sciences de l'éducation et de la formation. Même si mes recherches ont portées
-      sur les transformations du Tai Chi et leur accompagnement, les massages bénéficient du même fil conducteur,
-      conscience corporelle et force intérieure au quotidien.
+      Au fil du temps les massages développent la conscience de la globalité de
+      notre corps. Notre corps conscient devient point d'appui et force
+      intérieure, au quotidien. Cette conscience transforme, chacun à son
+      rythme, dans son rapport à soi, aux autres et au monde... Ces
+      transformations, le plus souvent silencieuses, demandent un accompagnement
+      éthique. J'ai choisi de réfléchir cet accompagnement à l'université de
+      Tours, dans le cadre d'un diplôme universitaire puis d'un Master 2 en
+      sciences de l'éducation et de la formation. Même si mes recherches ont
+      portées sur les transformations du Tai Chi et leur accompagnement, les
+      massages bénéficient du même fil conducteur, conscience corporelle et
+      force intérieure au quotidien.
     </p>
   </div>
-  <app-img-band [cadre]="true" class="massage__band" img="assets/images/bandeau/IMG_4635_1680x658.png"
-                title="Les massages"></app-img-band>
+  <app-img-band
+    [cadre]="true"
+    class="massage__band"
+    img="assets/images/bandeau/IMG_4635_1680x658.png"
+    title="Les massages"
+  ></app-img-band>
   <div class="massage-page__massages">
     <app-article
       bienfaits="Décontracte et efface la fatigue, dénoue les muscles et réduit les tensions, ressource et améliore la circulation, réduit les effets du stress..."
       duree="1h à 1h30"
       id="ayurvedique"
-      src="{{typesMassage[0].img}}"
+      src="{{ typesMassage[0].img }}"
       tarif="55€ à 75€"
-      title="{{typesMassage[0].title}}">
+      title="{{ typesMassage[0].title }}"
+    >
       <p>
-        L’art du toucher … pour un moment de bien-être et de relaxation. Toucher doux et bienveillant, à l’huile
-        biologique, pour détendre, rééquilibrer l’énergie et harmoniser le corps. Il est issu de la tradition
-        ayurvédique
-        et de la transmission d’un moine ayurvédiste népalais, Swami Yoga Anand, fondateur d'APMA (Association pour la
-        Promotion du Massage Ayurvédique).
-        <a aria-label="APMA" href="http://www.massage-ayurvedique.com/" target="_blank" title="APMA">
+        L’art du toucher … pour un moment de bien-être et de relaxation. Toucher
+        doux et bienveillant, à l’huile biologique, pour détendre, rééquilibrer
+        l’énergie et harmoniser le corps. Il est issu de la tradition
+        ayurvédique et de la transmission d’un moine ayurvédiste népalais, Swami
+        Yoga Anand, fondateur d'APMA (Association pour la Promotion du Massage
+        Ayurvédique).
+        <a
+          aria-label="APMA"
+          href="http://www.massage-ayurvedique.com/"
+          target="_blank"
+          title="APMA"
+        >
           le site de l'APMA
         </a>
       </p>
@@ -65,82 +91,105 @@
       bienfaits="Décontracte, relaxe et ressource, soulage les douleurs, réduit les effets du stress, s'associe aux besoins du moment..."
       duree="1h à 1h30"
       id="vitalisant"
-      src="{{typesMassage[1].img}}"
+      src="{{ typesMassage[1].img }}"
       tarif="55€ à 75€"
-      title="{{typesMassage[1].title}}">
+      title="{{ typesMassage[1].title }}"
+    >
       <p>
-        L’art du toucher … pour un moment de bien-être et de relaxation. Alliance de toucher doux, de respiration et de
-        circulation énergétique, de Chi. Ecoute fine liée au mouvement de respiration primaire, pour détendre et
-        soulager les douleurs, en lien au moment présent. Il développe notre présence au quotidien. Il est à la croisée
-        du prendre soin énergétique et du massage. Au besoin, des exercices personnalisés accompagnent cette détente
-        pour favoriser une coloration du quotidien.
+        L’art du toucher … pour un moment de bien-être et de relaxation.
+        Alliance de toucher doux, de respiration et de circulation énergétique,
+        de Chi. Ecoute fine liée au mouvement de respiration primaire, pour
+        détendre et soulager les douleurs, en lien au moment présent. Il
+        développe notre présence au quotidien. Il est à la croisée du prendre
+        soin énergétique et du massage. Au besoin, des exercices personnalisés
+        accompagnent cette détente pour favoriser une coloration du quotidien.
       </p>
     </app-article>
     <app-article
       bienfaits="Défatigue et améliore la vitalité. Redonne une sensation de légèreté"
       duree="1h"
       id="drainant"
-      src="{{typesMassage[2].img}}"
+      src="{{ typesMassage[2].img }}"
       tarif="55€. Ce massage nécessite le plus souvent au départ des scéances rapprochées. Forfait de 3 scéances 150€."
-      title=" {{typesMassage[2].title}}">
+      title=" {{ typesMassage[2].title }}"
+    >
       <p>
-        L’art du toucher… pour accompagner une période de régime ou une sensation de jambes fatiguées. Alliance de
-        pressions et d’effleurements sur tout le corps. Ce massage relaxe et défatigue en stimulant le système veineux
-        lymphatique.
+        L’art du toucher… pour accompagner une période de régime ou une
+        sensation de jambes fatiguées. Alliance de pressions et d’effleurements
+        sur tout le corps. Ce massage relaxe et défatigue en stimulant le
+        système veineux lymphatique.
       </p>
     </app-article>
     <app-article
       bienfaits="Défatigue et stimule le corps tant mentalement que physiquement."
       duree="1h à 1h30"
       id="thailandais"
-      src="{{typesMassage[3].img}}"
+      src="{{ typesMassage[3].img }}"
       tarif="Format découverte 65€ / 2h 120€"
-      title="MASSAGE THAÏLANDAIS ANCESTRAL : NUAD-BO-RARN">
+      title="MASSAGE THAÏLANDAIS ANCESTRAL : NUAD-BO-RARN"
+    >
       <p>
-        L’art du toucher … pour un moment de bien-être et de relaxation de 2 heures à la fois massage et gym douce. Le
-        nuad-bo-rarn est une technique puissante qui induit une profonde relaxation et stimule en profondeur le flux de
-        l'énergie et du sang dans le corps. Les pieds, les mains, le dos, le visage, tout le corps est pétri, étiré,
-        comprimé. L’énergie, les points et les méridiens sont stimulés.
-        Le corps est sollicité dans son ensemble.
-        Prévoir une tenue souple et confortable, si possible en coton, avec manches et pantalon.
+        L’art du toucher … pour un moment de bien-être et de relaxation de 2
+        heures à la fois massage et gym douce. Le nuad-bo-rarn est une technique
+        puissante qui induit une profonde relaxation et stimule en profondeur le
+        flux de l'énergie et du sang dans le corps. Les pieds, les mains, le
+        dos, le visage, tout le corps est pétri, étiré, comprimé. L’énergie, les
+        points et les méridiens sont stimulés. Le corps est sollicité dans son
+        ensemble. Prévoir une tenue souple et confortable, si possible en coton,
+        avec manches et pantalon.
       </p>
     </app-article>
     <app-article
       id="enfants"
-      src="{{typesMassage[4].img}}"
-      title="MASSAGE ENTRE ENFANTS 'MASSAGE IN SCHOOLS ASSOCIATION'">
+      src="{{ typesMassage[4].img }}"
+      title="MASSAGE ENTRE ENFANTS 'MASSAGE IN SCHOOLS ASSOCIATION'"
+    >
       <p>
-        Programme de massage enfants pour les écoles, accueils périscolaires, centre de loisirs, ateliers parents
-        enfants. Les enfants se massent les uns les autres. Ils se demandent la permission et se remercient. Le massage
-        se fait sur les vêtements. Il se compose de 15 mouvements simples et ludiques appelés "Routine". Des massages
-        contés ou jeux kiné tactiles peuvent la compléter. Ni l'instructeur ni l'enseignant ne masse les enfants.
-        L'adulte guide les mouvements. Le programme s'adresse aux enfants de 4 à 12 ans. (Dans le cadre des ateliers
-        parents enfants, enfants et parents se massent réciproquement).
+        Programme de massage enfants pour les écoles, accueils périscolaires,
+        centre de loisirs, ateliers parents enfants. Les enfants se massent les
+        uns les autres. Ils se demandent la permission et se remercient. Le
+        massage se fait sur les vêtements. Il se compose de 15 mouvements
+        simples et ludiques appelés "Routine". Des massages contés ou jeux kiné
+        tactiles peuvent la compléter. Ni l'instructeur ni l'enseignant ne masse
+        les enfants. L'adulte guide les mouvements. Le programme s'adresse aux
+        enfants de 4 à 12 ans. (Dans le cadre des ateliers parents enfants,
+        enfants et parents se massent réciproquement).
       </p>
     </app-article>
     <app-article
       bienfaits="Déstresse et détend, stimule et vitalise"
       duree="45 min"
       id="minutes"
-      src="{{typesMassage[5].img}}"
-      title="{{typesMassage[5].title}}">
+      src="{{ typesMassage[5].img }}"
+      title="{{ typesMassage[5].title }}"
+    >
       <p>
-        Pour faciliter votre déconfinement, massage habillé sans contact direct avec la peau. Il soulage le dos, les
-        épaules et aussi la tête des tensions liées aux peurs et à la fatigue accumulée avec cette période particulière.
+        Pour faciliter votre déconfinement, massage habillé sans contact direct
+        avec la peau. Il soulage le dos, les épaules et aussi la tête des
+        tensions liées aux peurs et à la fatigue accumulée avec cette période
+        particulière.
       </p>
     </app-article>
   </div>
   <div class="massage-page__presentation">
     <p>
-      Les prestations n’ont aucun but thérapeutique et en raison de leur nature, ne s’apparentent en rien, ni dans les
-      contenus ni dans les objectifs, à la pratique de la masso-kinésithérapie, ainsi qu’à toute pratique médicale.
+      Les prestations n’ont aucun but thérapeutique et en raison de leur nature,
+      ne s’apparentent en rien, ni dans les contenus ni dans les objectifs, à la
+      pratique de la masso-kinésithérapie, ainsi qu’à toute pratique médicale.
     </p>
   </div>
-  <app-img-band [cadre]="true" class="massage__band" title="Témoignages" type="stage"></app-img-band>
+  <app-img-band
+    [cadre]="true"
+    class="massage__band"
+    title="Témoignages"
+    type="stage"
+  ></app-img-band>
   <div class="massage__testimonies">
-    <app-testimony *ngFor="let testimony of testimonies"
-                   [author]="testimony.author">
-      {{testimony.testimony}}
+    <app-testimony
+      *ngFor="let testimony of testimonies"
+      [author]="testimony.author"
+    >
+      {{ testimony.testimony }}
     </app-testimony>
   </div>
 </div>
