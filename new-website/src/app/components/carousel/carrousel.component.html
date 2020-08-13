@@ -1,16 +1,29 @@
-<ngb-carousel [showNavigationArrows]="false" [showNavigationIndicators]="false">
-  <ng-template *ngIf="multiple " ngbSlide>
+<ngb-carousel
+  [showNavigationArrows]="false"
+  [showNavigationIndicators]="false"
+  [interval]="3000"
+>
+  <ng-template *ngIf="multiple" ngbSlide>
     <div class="picsum-img-wrapper">
-      <img alt="Random first slide" src="assets/images/caroussel/IMG_4628_1920x447.png">
+      <img
+        alt="Random first slide"
+        src="assets/images/caroussel/IMG_4628_1920x447.png"
+      />
     </div>
     <div class="carousel-caption">
       <h1>Marie-laure, une philosophie d'accompagnement</h1>
-      <p>à travers le tai chi, le qi gong, les Massages-Bien-Etre et bientôt le shiatsu...</p>
+      <p>
+        à travers le tai chi, le qi gong, les Massages-Bien-Etre et bientôt le
+        shiatsu...
+      </p>
     </div>
   </ng-template>
   <ng-template *ngIf="multiple || type === 'taichi'" ngbSlide>
     <div class="picsum-img-wrapper">
-      <img alt="Random second slide" src="assets/images/caroussel/mieux-vivre_1920x448.png">
+      <img
+        alt="Random second slide"
+        src="assets/images/caroussel/mieux-vivre_1920x448.png"
+      />
     </div>
     <div class="carousel-caption">
       <h1>Tai chi - Qi Gong</h1>
@@ -19,7 +32,10 @@
   </ng-template>
   <ng-template *ngIf="multiple || type === 'massage'" ngbSlide>
     <div class="picsum-img-wrapper">
-      <img alt="Random second slide" src="assets/images/caroussel/IMG_4643_1920x447.png">
+      <img
+        alt="Random second slide"
+        src="assets/images/caroussel/IMG_4643_1920x447.png"
+      />
     </div>
     <div class="carousel-caption">
       <h1>Massages-Bien-Etre</h1>
@@ -27,7 +43,10 @@
   </ng-template>
   <ng-template *ngIf="multiple || type === 'shiatsu'" ngbSlide>
     <div class="picsum-img-wrapper">
-      <img alt="Random second slide" src="assets/images/caroussel/IMG_4656_1920x448.png">
+      <img
+        alt="Random second slide"
+        src="assets/images/caroussel/IMG_4656_1920x448.png"
+      />
     </div>
     <div class="carousel-caption">
       <h1>Shiatsu</h1>
@@ -35,7 +54,10 @@
   </ng-template>
   <ng-template *ngIf="multiple || type === 'entreprise'" ngbSlide>
     <div class="picsum-img-wrapper">
-      <img alt="Random second slide" src="assets/images/caroussel/IMG_4637_1920x448.png">
+      <img
+        alt="Random second slide"
+        src="assets/images/caroussel/IMG_4637_1920x448.png"
+      />
     </div>
     <div class="carousel-caption">
       <h1>Entreprise</h1>
