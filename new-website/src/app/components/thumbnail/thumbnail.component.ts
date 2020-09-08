@@ -33,6 +33,26 @@ export class ThumbnailComponent {
     return icon;
   }
 
+  getColorClasses(): string {
+    let color: string;
+    switch (this.type) {
+      case 'taichi':
+      default:
+        color = 'primary';
+        break;
+      case 'shiatsu':
+        color = 'tertiary';
+        break;
+      case 'massage':
+        color = 'grey';
+        break;
+      case 'entreprise':
+        color = 'secondary';
+        break;
+    }
+    return `thumbnail--${ color }`;
+  }
+
   redirectTo(): void {
     let redirect: RoutesPath;
     switch (this.type) {

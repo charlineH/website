@@ -37,7 +37,7 @@ app-carousel {
   margin: $size-medium 0;
 }
 
-.content__text--red {
+.content__text--primary {
   @extend .content__text;
   color: $color-project-primary;
   font-weight: $txt-bold-default;
