@@ -1,6 +1,6 @@
 <div class="chapter">
   <div class="chapter__text">
-    <h3 class="chapter__title">{{title}}</h3>
+    <h3 [ngClass]="color" class="chapter__title">{{title}}</h3>
     <ng-content></ng-content>
   </div>
   <img class="chapter-image" src="{{img}}">

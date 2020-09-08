@@ -9,5 +9,7 @@ export class ChapterComponent {
 
   @Input() title: string;
   @Input() img: string;
+  @Input() color: 'primary' | 'secondary' | 'tertiary' | 'grey' = 'tertiary';
+
 
 }

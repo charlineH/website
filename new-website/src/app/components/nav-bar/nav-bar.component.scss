@@ -22,7 +22,7 @@
 }
 
 .nav-bar__menu {
-  color: $color-project-primary;
+  color: $color-project-primary-dark;
   font-size: $txt-size-default;
   padding: $size-lower $size-default;
 
@@ -80,18 +80,22 @@
 .nav-bar__items--mobile {
   display: flex !important;
   flex-direction: column;
-  background-color: $color-project-primary;
+  background-color: $color-project-primary-very-light;
   position: absolute;
   height: 100vh;
   padding-top: $size-default;
   left: 0;
 
-  .item:hover .item__list {
-    display: none;
+  .item:hover {
+    background-color: $color-project-primary-dark;
+
+    .item__list {
+      display: none;
+    }
   }
 
   .item {
-    color: $color-project-primary-very-light;
+    color: $color-project-primary-dark;
     font-size: $txt-size-default;
     margin-bottom: $size-default;
   }
@@ -99,9 +103,6 @@
   .item__title {
     padding: 0 $size-default;
 
-    &:hover {
-      background-color: $color-project-primary;
-    }
   }
 }
 
@@ -119,19 +120,20 @@
 
 .item {
   font-size: $txt-size-regular;
-  color: $color-empty;
+  color: $color-project-primary-dark;
 
   &.active {
-    color: $color-project-primary;
+    color: $color-project-secondary-dark;
   }
 }
 
 .item__title {
   padding: $size-medium $size-default;
-  border-radius: $border-radius-default;
 
   &:hover {
-    background-color: $color-project-primary-very-light;
+    background-color: $color-project-primary-dark;
+    color: $color-project-primary-very-light;
+    font-weight: $txt-bold-default;
   }
 }
 
@@ -155,7 +157,9 @@
     padding: $size-lower $size-large $size-lower $size-default;
 
     &:hover {
-      background-color: $color-project-tertiary-very-light;
+      background-color: $color-project-tertiary-dark;
+      color: $color-project-tertiary-very-light;
+      font-weight: $txt-bold-default;
     }
   }
 }

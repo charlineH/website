@@ -8,21 +8,22 @@ import { Component, Input, OnInit } from '@angular/core';
 export class TestimonyComponent implements OnInit {
   @Input() author: string;
   @Input() small: boolean;
-
-  color: 'blue' | 'yellow' | 'pink';
+  @Input() color: 'tertiary' | 'secondary' | 'primary' | 'grey';
 
   ngOnInit(): void {
-    const random = Math.floor(Math.random() * Math.floor(3));
-    switch (random) {
-      case 0:
-        this.color = 'blue';
-        break;
-      case 1:
-        this.color = 'yellow';
-        break;
-      default :
-        this.color = 'pink';
-        break;
+    if (!this.color) {
+      const random = Math.floor(Math.random() * Math.floor(3));
+      switch (random) {
+        case 0:
+          this.color = 'tertiary';
+          break;
+        case 1:
+          this.color = 'secondary';
+          break;
+        default :
+          this.color = 'primary';
+          break;
+      }
     }
   }
 
