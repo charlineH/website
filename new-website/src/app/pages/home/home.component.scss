@@ -64,3 +64,15 @@
     margin-bottom: $size-xmedium;
   }
 }
+
+.home__about {
+  background-color: $color-default-secondary;
+  display: flex;
+  justify-content: center;
+}
+
+.about__timeline {
+  background-color: $color-empty-very-light;
+  padding: $size-default $size-large;
+  margin: $size-large 0;
+}

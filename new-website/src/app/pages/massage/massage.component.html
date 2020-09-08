@@ -1,8 +1,8 @@
 <app-nav-bar [page]="page"></app-nav-bar>
 <div class="massage-page">
   <app-carrousel [multiple]="false" type="massage"></app-carrousel>
-  <div class="massage-page__presentation">
-    <p class="presentation__title">
+  <div class="c-presentation  my-5">
+    <p class="c-presentation__title c-presentation__title--grey">
       Marie-Laure, accompagne la conscience du corps par le Tai Chi, le Qi Gong,
       la Méditation et les Massages Bien-être...
     </p>
@@ -19,9 +19,10 @@
       d'infirmité. Pour ceux qui le souhaitent, ils peuvent aussi participer à
       leur développement personnel.
     </p>
-    <div class="presentation__image">
+    <div class="c-presentation--row">
       <img
         alt="Massage auyvédique du dos"
+        class="c-presentation__image img--ffmbe"
         src="assets/images/logo/massage-logo-ffmbe-couleur-260x200.jpg"
       />
       <p>
@@ -31,7 +32,7 @@
         professionnel agréé FFMBE respectant son code de déontologie et le cadre
         juridique français.
         <a aria-label="Site de la FFMBE" href="https://www.ffmbe.fr/"
-          >le site de la FFMBE.</a
+        >le site de la FFMBE.</a
         >
       </p>
     </div>
@@ -40,7 +41,7 @@
     (selectItem)="scrollToMassage($event)"
     [images]="typesMassage"
   ></app-multiple-img-band>
-  <div class="massage-page__presentation">
+  <div class="c-presentation my-5">
     <p>
       Au fil du temps les massages développent la conscience de la globalité de
       notre corps. Notre corps conscient devient point d'appui et force
