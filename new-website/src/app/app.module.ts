@@ -8,7 +8,6 @@ import { MassageComponent } from './pages/massage/massage.component';
 import { TaichiComponent } from './pages/taichi/taichi.component';
 import { GallerieComponent } from './pages/gallerie/gallerie.component';
 import { EntrepriseComponent } from './pages/entreprise/entreprise.component';
-import { AboutComponent } from './pages/about/about.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { MultipleImgBandComponent } from './components/multiple-img-band/multiple-img-band.component';
 import { ImgBandComponent } from './components/img-band/img-band.component';
@@ -42,7 +41,6 @@ import { MatListModule } from '@angular/material/list';
     TaichiComponent,
     GallerieComponent,
     EntrepriseComponent,
-    AboutComponent,
     NavBarComponent,
     MultipleImgBandComponent,
     ImgBandComponent,

@@ -1,13 +1,8 @@
 <app-nav-bar [page]="page"></app-nav-bar>
 <div class="entreprise__page">
   <app-carrousel [multiple]="false" type="entreprise"></app-carrousel>
-  <div class="entreprise__presentation">
-    <img
-      alt="Marie-Laure Humeau, professeur de Tai Chi, Le Mans"
-      class="presentation__image"
-      src="assets/images/taichi/noirmoutier guitare 300x224.jpg"
-    />
-    <p class="presentation__text">
+  <div class="c-presentation c-presentation--lg c-presentation--row mt-5">
+    <p class="c-presentation__text">
       Marie laure, accompagne la conscience du corps par le Tai Chi, le Qi Gong,
       la méditation et les Massages Bien-être…
       <br/>
@@ -23,21 +18,26 @@
       J’accompagne ces transformations au rythme de chacun auprès des
       particuliers comme en entreprise.
     </p>
+    <img
+      alt="Marie-Laure Humeau, professeur de Tai Chi, Le Mans"
+      class="c-presentation__image c-presentation__image--right"
+      src="assets/images/taichi/noirmoutier guitare 300x224.jpg"
+    />
   </div>
-  <div class="entreprise__presentation mb-5">
-    <span (click)="goToQuatrePilier()"
-          aria-label="Site des quatres piliers"
-          class="presentation__image"
-          style="align-self: center;"
+  <div class="c-presentation c-presentation--lg c-presentation--row mb-5">
+    <span
+      (click)="goToQuatrePilier()"
+      aria-label="Site des quatres piliers"
+      class="align-self-center"
     >
       <img
         alt="Enseignant certifié corps vivant corps conscient"
-        class="img-certification-taichi"
+        class="c-presentation__image--certification-taichi"
         src="assets/images/logo/corps-viviant-corps-conscient.jpg"
         style="width: 300px"
       />
     </span>
-    <p class="presentation__text">
+    <p class="c-presentation__text">
       Je pratique le Tai Chi, le Qi Gong et la méditation depuis une quinzaine
       d’années. Je participe au rayonnement du réseau Corps Vivant Corps
       Conscient dans le monde du travail.
@@ -55,6 +55,7 @@
   <div class="entreprise__chapters">
     <app-chapter
       (click)="goToChapter1()"
+      color="secondary"
       img="assets/images/taichi/tai-chi-s_accorder-445x203.png"
       title="Cours à l'année : Tai Chi, Qi Gong et méditation"
     >
@@ -72,6 +73,7 @@
     </app-chapter>
     <app-chapter
       (click)="goToChapter2()"
+      color="secondary"
       img="assets/images/taichi/qi-gong-entreprise-2-363x186.png"
       title="Ateliers ponctuels : Collectifs ou individuels"
     >
@@ -86,6 +88,7 @@
     </app-chapter>
     <app-chapter
       (click)="goToChapter3()"
+      color="secondary"
       img="assets/images/massage/massage-assis-200x260.jpg"
       title="Massages-bien-être minutes"
     >
@@ -100,6 +103,7 @@
   <app-img-band
     [cadre]="true"
     class="entreprise__band"
+    color="secondary"
     id="taichi"
     img="assets/images/bandeau/IMG_4627_1680x658.png"
     title=" Cours à l'année : Tai Chi, Qi Gong et méditation"
@@ -140,28 +144,24 @@
       </app-testimony>
       <app-testimony [small]="true"
       >Je me sens beaucoup plus légère et détendue.
-      </app-testimony
-      >
+      </app-testimony>
       <app-testimony [small]="true"
       >Mon dos est moins endolori et plus souple, ma respiration facilitée et
         plus souple.
       </app-testimony>
       <app-testimony [small]="true"
       >Mon sommeil est plus réparateur.
-      </app-testimony
-      >
+      </app-testimony>
       <app-testimony [small]="true">
         J’ai aimé les fous rires, la détente, l’harmonie, sentir mes mouvements
         se déverrouiller, cela fait du bien tout simplement.
       </app-testimony>
       <app-testimony [small]="true"
       >Mes relations sont plus apaisées, je suis plus calme.
-      </app-testimony
-      >
+      </app-testimony>
       <app-testimony [small]="true"
       >J'ai pris du recul avec des situations même stressantes.
-      </app-testimony
-      >
+      </app-testimony>
       <app-testimony [small]="true">
         Mes relations sont plus apaisées, je suis peut-être plus à l’écoute et
         moins dans le rentre dedans.
@@ -171,6 +171,7 @@
   <app-img-band
     [cadre]="true"
     class="entreprise__band"
+    color="secondary"
     id="ateliers"
     img="assets/images/bandeau/IMG_4627_1680x658.png"
     title="Ateliers ponctuels : Collectifs ou individuels"
@@ -196,8 +197,7 @@
     <h4 class="chapter__subtitle mb-3">RETOURS DES PARTICIPANTS</h4>
     <div class="chapter__testimonies">
       <app-testimony [small]="true">
-        J’ai aimé prendre conscience de mon corps pour me
-        détendre.
+        J’ai aimé prendre conscience de mon corps pour me détendre.
       </app-testimony>
       <app-testimony [small]="true">
         J’ai aimé apprendre plusieurs relax.
@@ -228,6 +228,7 @@
   <app-img-band
     [cadre]="true"
     class="entreprise__band"
+    color="secondary"
     id="massages-minute"
     img="assets/images/bandeau/IMG_4627_1680x658.png"
     title="MASSAGES-BIEN-ÊTRE MINUTES"

@@ -15,41 +15,8 @@ p {
   color: $color-empty;
 }
 
-.massage-page__presentation {
-  width: 80%;
-  margin: $size-large 0;
-
-  @media (min-width: $small-desktop-window) {
-    width: 60%;
-  }
-
-}
-
-.presentation__title {
-  color: $color-project-primary;
-  font-weight: $txt-bold-default;
-}
-
-.presentation__image {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-
-  @media (min-width: $small-desktop-window) {
-    flex-direction: row;
-  }
-
-  img {
-    width: 3*$size-large;
-  }
-
-  p {
-
-    @media (min-width: $small-desktop-window) {
-      width: 80%;
-    }
-  }
+.img--ffmbe {
+  height: 3*$size-large;
 }
 
 .massage__multiple_img_band {

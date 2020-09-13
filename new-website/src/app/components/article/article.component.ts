@@ -11,5 +11,6 @@ export class ArticleComponent {
   @Input() duree: string;
   @Input() tarif: string;
   @Input() bienfaits: string;
+  @Input() color: 'primary' | 'secondary' | 'tertiary' | 'grey' | 'primary-dark' = 'primary-dark';
 
 }

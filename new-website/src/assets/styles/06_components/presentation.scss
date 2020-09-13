@@ -1,0 +1,82 @@
+@import '../bases';
+
+.c-presentation {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+
+  @media (min-width: $small-desktop-window) {
+    width: 60%;
+  }
+}
+
+.c-presentation--lg {
+  @media (min-width: $small-desktop-window) {
+    width: 80%;
+  }
+}
+
+.c-presentation--row {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $medium-desktop-window) {
+    flex-direction: row;
+  }
+}
+
+.c-presentation__title {
+  font-size: $txt-size-regular;
+  font-weight: $txt-bold-default;
+  margin: 0;
+}
+
+.c-presentation__image {
+  height: 100%;
+
+  @media (min-width: $medium-desktop-window) {
+    margin-right: $size-xmedium;
+  }
+}
+
+.c-presentation__image--right {
+  margin-left: $size-xmedium;
+  margin-right: 0;
+}
+
+
+.c-presentation__text {
+  color: $color-empty;
+  text-align: justify;
+  display: flex;
+  padding-top: $size-medium;
+  margin: 0;
+}
+
+.c-presentation__image--certification-taichi {
+  @extend .c-presentation__image;
+  cursor: pointer;
+  align-self: center;
+  width: 100%;
+  height: 100%;
+}
+
+.c-presentation--grey {
+  background-color: $color-project-tertiary-very-light;
+}
+
+.c-presentation__title--grey, .c-presentation__text--grey {
+  color: $color-empty-dark;
+}
+
+.c-presentation__text--primary, .c-presentation__title--primary {
+  color: $color-project-primary-dark
+}
+
+.c-presentation__text--secondary, .c-presentation__title--secondary {
+  color: $color-project-secondary-dark
+}
+
+.c-presentation__text--tertiary, .c-presentation__title--tertiary {
+  color: $color-project-tertiary-dark
+}

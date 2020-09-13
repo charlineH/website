@@ -2,7 +2,7 @@
 
 .article {
   padding-bottom: $size-default;
-  border-bottom: $border-project-terciary;
+  border-bottom: $border-project-tertiary;
   margin-bottom: $size-default;
 
   @media (min-width: $small-desktop-window) {
@@ -13,11 +13,26 @@
 }
 
 .article__title {
-  color: $color-project-primary;
   text-transform: uppercase;
   font-weight: $txt-bold-default;
   font-size: $txt-size-regular;
   margin-bottom: $size-xmedium;
+
+  &.primary {
+    color: $color-project-primary;
+  }
+
+  &.secondary {
+    color: $color-project-secondary;
+  }
+
+  &.tertiary {
+    color: $color-project-tertiary;
+  }
+
+  &.grey {
+    color: $color-empty;
+  }
 }
 
 .article__content {

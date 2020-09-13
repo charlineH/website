@@ -1,25 +1,24 @@
-@import 'concrete-color';
+@import "concrete-color";
 
 $color-default-primary: $dark;
 $color-default-secondary: $white;
 
-$color-project-primary-very-light: $vanilla-ice;
-$color-project-primary-light: $framboise;
-$color-project-primary: $monarch;
-$color-project-primary-dark: $sepia-black;
+$color-project-primary-very-light: #f1f7f8;
+$color-project-primary-light: $steel-blue;
+$color-project-primary: #5898b0;
+$color-project-primary-dark: #373f51;
 
-$color-project-secondary-very-light: $buttermilk;
-$color-project-secondary-light: $sandy-brown;
-$color-project-secondary: $sea-buckthorn;
-$color-project-secondary-dark: $flush-orange;
+$color-project-secondary-very-light: #fcedef;
+$color-project-secondary-light: #e6606b;
+$color-project-secondary: #ed6270;
+$color-project-secondary-dark: #bc2c1a;
 
-$color-project-tertiary-very-light: $periwinkle;
-$color-project-tertiary-light: $polo-blue;
-$color-project-tertiary: $steel-blue;
-$color-project-tertiary-dark: $kashmir-blue;
+$color-project-tertiary-very-light: #f3f6f4;
+$color-project-tertiary-light: #c5efcb;
+$color-project-tertiary: #6f9774;
+$color-project-tertiary-dark: #617564;
 
 $color-empty-dark: $grey-dark;
 $color-empty: $grey;
 $color-empty-light: $grey-light;
 $color-empty-very-light: $grey-very-light;
-

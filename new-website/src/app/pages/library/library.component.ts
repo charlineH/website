@@ -53,6 +53,12 @@ export class LibraryComponent {
       default: '-',
       required: 'non',
       description: 'Pour les prestions. La durée de la prestation à afficher'
+    }, {
+      name: 'color',
+      type: 'string',
+      default: 'primary',
+      required: 'Non',
+      description: `Valeur possible : 'primary', 'secondary', 'tertiary' et 'grey'`
     }
   ];
   readonly carouselDataSource: LibraryData[] = [
@@ -84,6 +90,12 @@ export class LibraryComponent {
       default: '-',
       required: 'Non',
       description: `Chemin de l'image du chapitre`
+    }, {
+      name: 'color',
+      type: 'string',
+      default: 'tertiary',
+      required: 'Non',
+      description: `Valeur possible : 'primary', 'secondary', 'tertiary' et 'grey'`
     }
   ];
   readonly imgBandDataSource: LibraryData[] = [
@@ -162,7 +174,7 @@ export class LibraryComponent {
       description: `url de redirection au click sur le bouton. Elle peut être interne au site ou externe`
     }, {
       name: 'type',
-      type: `'yellow' ou 'blue' ou 'grey'`,
+      type: `'secondary' ou 'tertiary' ou 'grey'`,
       default: '-',
       required: 'Non',
       description: `Change la couleur du titre et du bouton de la news.
@@ -215,6 +227,13 @@ export class LibraryComponent {
       default: 'false',
       required: 'Non',
       description: `True - affiche le témoignage dans sa version small. L'auteur n'est pas affiché`
+    },
+    {
+      name: 'color',
+      type: 'string',
+      default: '-',
+      required: 'Non',
+      description: `Valeur possible : 'primary', 'secondary', 'tertiary' et 'grey'`
     }
   ];
 
@@ -313,7 +332,7 @@ export class LibraryComponent {
     </app-news>
 
   Affichage du bloc en jaune
-  <app-news type="yellow"
+  <app-news type="secondary"
             class="news__item"
             img="assets/images/taichi/cours-taichi-qigong-meditation.jpg"
             title="Confinement : Les cours de taichi sont suspendus jusqu'à nouvel ordre"
@@ -325,7 +344,7 @@ export class LibraryComponent {
     </app-news>
 
   Affichage du bloc en bleu
-  <app-news type="blue"
+  <app-news type="tertiary"
             class="news__item"
             img="assets/images/taichi/cours-taichi-qigong-meditation.jpg"
             title="Confinement : Les cours de taichi sont suspendus jusqu'à nouvel ordre"

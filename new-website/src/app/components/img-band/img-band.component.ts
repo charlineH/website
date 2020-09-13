@@ -10,6 +10,7 @@ export class ImgBandComponent implements OnInit {
   @Input() type: 'eye-bonze' | 'ears-bonze' | 'mouse-bonze' | 'roses' | 'taichi' | 'primary' | 'meditation' | 'stage';
   @Input() title: string;
   @Input() cadre: boolean;
+  @Input() color: 'primary' | 'secondary' | 'tertiary' | 'grey' = 'primary';
 
   constructor() {
   }

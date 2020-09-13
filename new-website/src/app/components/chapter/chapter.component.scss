@@ -24,11 +24,26 @@
 }
 
 .chapter__title {
-  color: $color-project-tertiary;
   font-size: $txt-size-regular;
   font-weight: $txt-bold-default;
   text-transform: uppercase;
   margin-bottom: $size-xmedium;
+
+  &.primary {
+    color: $color-project-primary;
+  }
+
+  &.secondary {
+    color: $color-project-secondary;
+  }
+
+  &.tertiary {
+    color: $color-project-tertiary;
+  }
+
+  &.grey {
+    color: $color-empty;
+  }
 }
 
 ::ng-deep .chapter__teaser {

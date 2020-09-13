@@ -1,42 +1,45 @@
 @import "src/assets/styles/bases";
 
-
 .testimony {
   display: flex;
-  padding: $size-xmedium;
+  padding: $size-medium;
   border-radius: $border-radius-default;
   box-shadow: 0 4px 6px rgba($color-default-primary, 0.16);
 
   &.testimony--small {
-    height: 4*$size-xmedium;
+    height: 4 * $size-xmedium;
   }
 
-  @media(min-width: $small-desktop-window) {
-    height: 4*$size-large;
+  @media (min-width: $small-desktop-window) {
+    height: 4 * $size-large;
   }
 }
 
 .testimony__icon {
   display: none;
   border-radius: 50%;
-  width: 4*$size-default;
-  height: 4*$size-default;
-  margin-right: $size-xmedium;
+  width: 2 * $size-default;
+  height: 2 * $size-default;
+  margin-right: $size-medium;
 
-  @media(min-width: $small-desktop-window) {
+  @media (min-width: $small-desktop-window) {
     display: block;
   }
 
-  &.blue {
+  &.tertiary {
     background-color: $color-project-tertiary;
   }
 
-  &.pink {
+  &.primary {
     background-color: $color-project-primary;
   }
 
-  &.yellow {
+  &.secondary {
     background-color: $color-project-secondary;
+  }
+
+  &.grey {
+    background-color: $color-empty;
   }
 }
 
@@ -45,15 +48,15 @@
   font-weight: $txt-regular-medium;
   margin-bottom: $size-small;
 
-  &.blue {
+  &.tertiary {
     color: $color-project-tertiary;
   }
 
-  &.pink {
+  &.primary {
     color: $color-project-primary;
   }
 
-  &.yellow {
+  &.secondary {
     color: $color-project-secondary;
   }
 }
