@@ -40,31 +40,31 @@ $cadre-offset: 7 * $size-default;
   &.band--eye-bonze {
     @extend %band--img;
     background-image: url("/../assets/images/bandeau/overlay.png"),
-      url("/../assets/images/bandeau/bonze-bandeau-1436x312.png") !important;
+    url("/../assets/images/bandeau/bonze-bandeau-1436x312.png") !important;
   }
 
   &.band--ears-bonze {
     @extend %band--img;
     background-image: url("/../assets/images/bandeau/overlay.png"),
-      url("/../assets/images/bandeau/band_bonze_2.png");
+    url("/../assets/images/bandeau/band_bonze_2.png");
   }
 
   &.band--mouse-bonze {
     @extend %band--img;
     background-image: url("/../assets/images/bandeau/overlay.png"),
-      url("/../assets/images/bandeau/band_bonze_3.png");
+    url("/../assets/images/bandeau/band_bonze_3.png");
   }
 
   &.band--roses {
     @extend %band--img;
     background-image: url("/../assets/images/bandeau/overlay.png"),
-      url("/../assets/images/bandeau/IMG_4635_1680x658.png");
+    url("/../assets/images/bandeau/IMG_4635_1680x658.png");
   }
 
   &.band--taichi {
     @extend %band--img;
     background-image: url("/../assets/images/bandeau/overlay.png"),
-      url("/../assets/images/bandeau/taichi_groupe_band.png");
+    url("/../assets/images/bandeau/taichi_groupe_band.png");
   }
 
   &.band--stage {
@@ -100,11 +100,22 @@ $cadre-offset: 7 * $size-default;
   }
 
   h3 {
-    color: $color-project-primary-dark;
     font-weight: $txt-bold-default;
     text-transform: uppercase;
     text-align: center;
     align-self: center;
+
+    &.primary {
+      color: $color-project-primary-dark;
+    }
+
+    &.secondary {
+      color: $color-project-secondary-dark;
+    }
+
+    &.tertiary {
+      color: $color-project-tertiary-dark;
+    }
 
     @media (min-width: $small-mobile-window) {
       font-size: $txt-size-regular;

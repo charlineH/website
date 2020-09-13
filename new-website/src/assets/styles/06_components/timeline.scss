@@ -1,0 +1,105 @@
+@import "../bases";
+
+.c-timeline {
+  position: relative;
+  max-width: $medium-desktop-window;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: $size-small;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin-left: -$size-small;
+  }
+}
+
+.c-timeline__item {
+  padding: $size-small + $size-lower 5*$size-lower;
+  position: relative;
+  background-color: inherit;
+  width: 100%;
+  left: 0;
+
+  &::after {
+    content: '';
+    border: 2px solid $color-default-secondary;
+    position: absolute;
+    width: $size-medium;
+    height: $size-medium;
+    left: -14px;
+    top: $size-default;
+    border-radius: 50%;
+    z-index: 1;
+  }
+}
+
+.c-timeline__title {
+  font-size: $txt-size-regular;
+  font-weight: $txt-bold-default;
+}
+
+.c-timeline__text {
+  margin: 0 0 0 $size-large;
+}
+
+.c-timeline__content {
+  padding: $size-default;
+  background-color: $color-empty-very-light;
+  position: relative;
+}
+
+.c-timeline.primary {
+  &::after {
+    background-color: $color-project-primary-dark;
+  }
+
+  .c-timeline__item::after {
+    background-color: $color-project-primary-dark;
+  }
+
+  .c-timeline__title {
+    color: $color-project-primary;
+  }
+}
+
+.c-timeline.secondary {
+  &::after {
+    background-color: $color-project-secondary-dark;
+  }
+
+  .c-timeline__item::after {
+    background-color: $color-project-secondary-dark;
+  }
+
+  .c-timeline__title {
+    color: $color-project-secondary;
+  }
+}
+
+.c-timeline.tertiary {
+  &::after {
+    background-color: $color-project-tertiary-dark;
+  }
+
+  .c-timeline__item::after {
+    background-color: $color-project-tertiary-dark;
+  }
+
+  .c-timeline__title {
+    color: $color-project-tertiary;
+  }
+}
+
+.c-timeline__item--white {
+  &::before {
+    border-color: transparent $color-default-secondary transparent transparent;
+  }
+
+  .c-timeline__content {
+    background-color: $color-default-secondary;
+  }
+}
+
+
