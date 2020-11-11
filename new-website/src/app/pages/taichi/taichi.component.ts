@@ -1,13 +1,14 @@
 import { AfterViewInit, Component } from '@angular/core';
 import { RoutesPath } from '../../enum/routes.enum';
 import { ActivatedRoute } from '@angular/router';
+import { HasTitle } from '../../model/has-title.model';
 
 @Component({
   selector: 'app-taichi',
   templateUrl: './taichi.component.html',
   styleUrls: ['./taichi.component.scss']
 })
-export class TaichiComponent implements AfterViewInit {
+export class TaichiComponent implements AfterViewInit, HasTitle {
 
   readonly page = RoutesPath.TAICHI;
 
@@ -87,6 +88,8 @@ export class TaichiComponent implements AfterViewInit {
   épaules et un meilleur équilibre.`
     }
   ];
+
+  title = 'Tai Chi & Qi Gong et Méditation, au Mans (72) | Humoe';
 
   constructor(private readonly route: ActivatedRoute) {
   }

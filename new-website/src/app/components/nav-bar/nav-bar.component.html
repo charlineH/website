@@ -1,4 +1,4 @@
-<div class="nav-bar">
+<header class="nav-bar" role="navigation">
   <div (click)="showHideMenu()" class="nav-bar__menu">
     Menu
   </div>
@@ -11,14 +11,14 @@
        [ngClass]="{'nav-bar__items--mobile': displayMobileMenu}"
        appClickOutside
        class="nav-bar__items">
-    <div [ngClass]="{'active': page === homePage}"
-         class="item">
+    <h3 [ngClass]="{'active': page === homePage}"
+        class="item">
       <a (click)="hideMenu()"
          class="item__title none"
          routerLink="/{{homePage}}">Accueil</a>
-    </div>
-    <div [ngClass]="{'active': page === taichiPage}"
-         class="item">
+    </h3>
+    <h3 [ngClass]="{'active': page === taichiPage}"
+        class="item">
       <a (click)="hideMenu()"
          class="item__title none"
          routerLink="/{{taichiPage}}">Tai Chi</a>
@@ -28,9 +28,9 @@
         <a [queryParams]="{anchor: 'articles'}" class="none" routerLink="/{{taichiPage}}">Articles parus</a>
         <!--        <a [queryParams]="{anchor: 'stage'}" class="none" routerLink="/{{taichiPage}}">Stages et ateliers</a>-->
       </div>
-    </div>
-    <div [ngClass]="{'active': page === massagePage}"
-         class="item">
+    </h3>
+    <h3 [ngClass]="{'active': page === massagePage}"
+        class="item">
       <a (click)="hideMenu()"
          class="item__title none"
          routerLink="/{{massagePage}}">Massages-Bien-Etre</a>
@@ -42,18 +42,18 @@
         <a [queryParams]="{anchor: 'enfants'}" class="none" routerLink="/{{massagePage}}">Massage avec les enfants</a>
         <a [queryParams]="{anchor: 'minutes'}" class="none" routerLink="/{{massagePage}}">Massage minutes</a>
       </div>
-    </div>
-    <div [ngClass]="{'active': page === shiatsuPage}"
-         class="item">
+    </h3>
+    <h3 [ngClass]="{'active': page === shiatsuPage}"
+        class="item">
       <a (click)="hideMenu()"
          class="item__title none"
          routerLink="/{{shiatsuPage}}">Shiatsu</a>
-    </div>
-    <div [ngClass]="{'active': page === entreprisePage}"
-         class="item">
+    </h3>
+    <h3 [ngClass]="{'active': page === entreprisePage}"
+        class="item">
       <a (click)="hideMenu()"
          class="item__title none"
          routerLink="/{{entreprisePage}}">Entreprise</a>
-    </div>
+    </h3>
   </div>
-</div>
+</header>

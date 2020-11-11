@@ -1,6 +1,7 @@
 <app-nav-bar [page]="page"></app-nav-bar>
 <div class="taichi-page">
   <app-carrousel [multiple]="false" type="taichi"></app-carrousel>
+  <h2 class="sr-only">Introduction</h2>
   <div class="taichi__presentation">
     <img
       alt="Marie-Laure Humeau, professeur de Tai Chi, Le Mans"
@@ -23,7 +24,6 @@
   <div class="taichi__presentation">
     <span
       (click)="goToQuatrePilier()"
-      aria-label="Site des quatres piliers"
       style="align-self: center"
       title="Site des quatres pilier"
     >
@@ -52,6 +52,7 @@
   </div>
 
   <div class="taichi-chapters">
+    <h2 class="sr-only">Chapitres</h2>
     <app-chapter
       (click)="goToChapter1()"
       color="primary"
@@ -111,11 +112,11 @@
   <div class="taichi__chapter taichi__chapter--1">
     <p class="chapter__introduction">
       La pratique du Tai chi, du Qi Gong et de la méditation est accessible à
-      <strong>tous</strong>. Chacun, à son rythme, peut se
-      <strong>détendre</strong>, se <strong>ressourcer</strong>,
-      <strong>respirer</strong>,
-      <strong>influencer</strong>
-      sa posture, <strong>soulager</strong> ses douleurs etc. Chacun développe,
+      <strong class="primary">tous</strong>. Chacun, à son rythme, peut se
+      <strong class="primary">détendre</strong>, se <strong class="primary">ressourcer</strong>,
+      <strong class="primary">respirer</strong>,
+      <strong class="primary">influencer</strong>
+      sa posture, <strong class="primary">soulager</strong> ses douleurs etc. Chacun développe,
       à son rythme, des attitudes/aptitudes pour mieux vivre son quotidien.
     </p>
     <p class="chapter__content">
@@ -214,7 +215,7 @@
     </div>
     <div class="chapter-2__content--columns">
       <div class="column">
-        <h4 class="chapter-2__content--title">le mans</h4>
+        <h3 class="chapter-2__content--title">le mans</h3>
         <p class="chapter__content">
           Saison 2020-2021. Cours d’essai sans engagement. Merci de nous
           téléphoner avant de vous déplacer au premier cours.
@@ -233,7 +234,7 @@
         </p>
       </div>
       <div class="column">
-        <h4 class="chapter-2__content--title">laigné en belin</h4>
+        <h3 class="chapter-2__content--title">laigné en belin</h3>
         <p class="chapter__content">
           Saison 2020-2021. Cours d’essai sans engagement. Merci de nous
           téléphoner avant de vous déplacer au premier cours. L’association Bien
@@ -253,7 +254,7 @@
     </div>
     <div class="chapter-2__content--columns">
       <div class="column">
-        <h4 class="chapter-2__content--title">Autres lieux</h4>
+        <h3 class="chapter-2__content--title">Autres lieux</h3>
         <p class="chapter__content">
           J'encadre également des ateliers prévention santé pour les séniors,
           avec le CDOS Sarthe (Comité Départemental Olympique et Sportif).<br/>En

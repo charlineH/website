@@ -1,6 +1,6 @@
 <div [ngClass]="getImgClass()" [style]="getImgStyle()" class="band">
-  <h3 *ngIf="!cadre" class="band__title">{{title}}</h3>
+  <h2 *ngIf="!cadre" class="band__title">{{title}}</h2>
   <div *ngIf="cadre" class="band__cadre">
-    <h3 [ngClass]="color" class="cadre__title">{{title}}</h3>
+    <h2 [ngClass]="color" class="cadre__title">{{title}}</h2>
   </div>
 </div>

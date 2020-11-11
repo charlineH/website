@@ -1,5 +1,7 @@
-<div class="footer">
+<footer class="footer">
+  <h2 class="sr-only">Footer</h2>
   <div class="footer__contact">
+    <h3 class="sr-only">Contact</h3>
     <div class="contact__item">
       <h4>m'appeler</h4>
       <p>Mobile: 0608032645</p>
@@ -7,7 +9,7 @@
     <div class="contact__item contact__item--dark">
       <h4>venir me voir</h4>
       <p>
-        9 rue de l'oisonnière <br />
+        9 rue de l'oisonnière <br/>
         72220 Laigné en Belin
       </p>
     </div>
@@ -16,9 +18,9 @@
       <p>
         <a
           (click)="meContacter()"
-          aria-label="Envoyer un mail"
+          alt="Envoyer un mail"
           class="none"
-          title="Cliquer pour envoyer un mail"
+          disabled
         >
           Cliquer ici
         </a>
@@ -26,18 +28,19 @@
     </div>
   </div>
   <div class="footer__content">
-    <div class="col--mobile">
+    <div class="col--mobile mr-3">
       <div class="content__item">
-        <h4>cadre éthique</h4>
+        <h3>cadre éthique</h3>
         <p>
           Congruence - Présence - Ecoute active et sensible - Ouverture -
           Disponibilité - Confiance - Bienveillance et non jugement -
           Persévérance - Confidentialité - Respect des engagements - Respect du
-          rythme de chacun - Je ne sais pas pour l'autre.
+          rythme de chacun - Posture d'accompagnement :"Je ne sais pas pour
+          l'autre".
         </p>
       </div>
       <div class="content__item">
-        <h4>Website</h4>
+        <h3>Website</h3>
         <div>
           <a class="none" routerLink="/taichi">Tai Chi</a> -
           <a class="none" routerLink="/massage">Massage</a> -
@@ -47,7 +50,7 @@
       </div>
     </div>
     <div class="content__item content__item--mobile">
-      <h4>dernières mises à jour</h4>
+      <h3>dernières mises à jour</h3>
       <div class="content__posts">
         <app-post
           date="08/09/2020"
@@ -68,7 +71,7 @@
           date="18/08/2020"
           img="assets/images/svg/massage.svg"
           redirect="/massage"
-          title="massage drainant"
+          title="massage"
         >
         </app-post>
       </div>
@@ -80,46 +83,46 @@
       <div>
         Icons made by
         <a
+          alt="Freepik"
           class="none"
           href="https://www.flaticon.com/authors/freepik"
-          title="Freepik"
-          >Freepik</a
+        >Freepik</a
         >,
         <a
+          alt="Smashicons"
           class="none"
           href="https://www.flaticon.com/authors/smashicons"
-          title="Smashicons"
-          >Smashicons</a
+        >Smashicons</a
         >,
         <a
+          alt="Pause08"
           class="none"
           href="https://www.flaticon.com/authors/pause08"
-          title="Pause08"
-          >Pause08</a
+        >Pause08</a
         >
         and
         <a
+          alt="Good Ware"
           class="none"
           href="https://www.flaticon.com/authors/good-ware"
-          title="Good Ware"
-          >Good Ware</a
+        >Good Ware</a
         >
         from
-        <a class="none" href="https://www.flaticon.com/" title="Flaticon"
-          >www.flaticon.com</a
+        <a alt="Flaticon" class="none" href="https://www.flaticon.com/"
+        >www.flaticon.com</a
         >
       </div>
     </div>
     <div class="credit__reseaux">
       <a class="none" href="https://www.facebook.com/marielauretaichi"
-        >Facebook</a
+      >Facebook</a
       >
       |
       <a
         class="none"
         href="https://fr.linkedin.com/in/marie-laure-humeau-b7b2b8137"
-        >LinkedIn</a
+      >LinkedIn</a
       >
     </div>
   </div>
-</div>
+</footer>

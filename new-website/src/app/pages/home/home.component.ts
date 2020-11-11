@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { RoutesPath } from '../../enum/routes.enum';
 
 @Component({
@@ -6,16 +6,10 @@ import { RoutesPath } from '../../enum/routes.enum';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
 
   readonly page = RoutesPath.HOME;
 
   images = [{img: 'truc', title: 'truc'}, {img: 'truc2', title: 'truc2'}];
-
-  constructor() {
-  }
-
-  ngOnInit(): void {
-  }
 
 }

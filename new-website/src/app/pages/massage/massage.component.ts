@@ -3,6 +3,7 @@ import { RoutesPath } from '../../enum/routes.enum';
 import { ActivatedRoute } from '@angular/router';
 import { ImageItem } from '../../model/massage.model';
 import { MassageEnum } from '../../model/massage.enum';
+import { HasTitle } from '../../model/has-title.model';
 
 
 @Component({
@@ -10,7 +11,7 @@ import { MassageEnum } from '../../model/massage.enum';
   templateUrl: './massage.component.html',
   styleUrls: ['./massage.component.scss']
 })
-export class MassageComponent implements AfterViewInit {
+export class MassageComponent implements AfterViewInit, HasTitle {
 
   readonly page = RoutesPath.MASSAGE;
   readonly typesMassage: ImageItem[] = [
@@ -57,6 +58,8 @@ export class MassageComponent implements AfterViewInit {
        c'est un temps pour soi précieux qui est donné avec délicate attention...merci pour cette belle qualité de présence.`
     },
   ];
+
+  title = ' Massages bien-être au Mans (72) | Humoe';
 
   constructor(private readonly route: ActivatedRoute) {
   }

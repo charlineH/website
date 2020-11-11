@@ -55,7 +55,7 @@ app-carousel {
 
 .taichi-chapters {
   width: 80%;
-  margin-bottom: 2.5*$size-default;
+  margin: $size-xmedium 0;
 
   @media (min-width: $small-desktop-window) {
     width: 75%;
