@@ -1,19 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { RoutesPath } from '../../enum/routes.enum';
+import { HasTitle } from '../../model/has-title.model';
 
 @Component({
   selector: 'app-shiatsu',
   templateUrl: './shiatsu.component.html',
   styleUrls: ['./shiatsu.component.scss']
 })
-export class ShiatsuComponent implements OnInit {
+export class ShiatsuComponent implements HasTitle {
 
   readonly page = RoutesPath.SHIATSU;
 
-  constructor() {
-  }
-
-  ngOnInit(): void {
-  }
+  title = 'Shiatsu au Mans (72) | Humoe';
 
 }

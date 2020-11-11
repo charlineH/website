@@ -57,7 +57,7 @@
 }
 
 .content__item {
-  h4 {
+  h3 {
     text-transform: uppercase;
     color: $color-empty-very-light;
     font-weight: $txt-bold-default;
@@ -65,7 +65,7 @@
   }
 
   p, a {
-    font-size: $txt-size-lower;
+    font-size: $txt-size-default;
     color: $color-empty-light;
   }
 }

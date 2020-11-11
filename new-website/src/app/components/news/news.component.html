@@ -1,7 +1,7 @@
 <div [ngClass]="{'news--reverse': left}" class="news">
   <img [ngClass]="type" alt="{{imageLabel}}" class="news__img" src="{{img}}">
   <div [ngClass]="type" class="news__content">
-    <span class="news__title">{{title}}</span>
+    <h3 class="news__title">{{title}}</h3>
     <p class="news__text">
       <ng-content></ng-content>
     </p>
