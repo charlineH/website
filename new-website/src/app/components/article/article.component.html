@@ -1,5 +1,5 @@
 <div class="article">
-  <span [ngClass]="color" class="article__title">{{title}}</span>
+  <h3 [ngClass]="color" class="article__title">{{title}}</h3>
   <div class="article__content">
     <div class="content__image">
       <img alt="{{title}}" src="{{src}}">
@@ -7,12 +7,12 @@
     <div class="content__text">
       <ng-content></ng-content>
       <div *ngIf="duree || tarif" class="content__row">
-      <span *ngIf="duree">
-        <strong>Durée : </strong> {{duree}}
-      </span>
-        <span *ngIf="tarif">
-        <strong>Tarif : </strong> {{tarif}}
-      </span>
+        <p *ngIf="duree">
+          <strong>Durée : </strong> {{duree}}
+        </p>
+        <p *ngIf="tarif">
+          <strong>Tarif : </strong> {{tarif}}
+        </p>
       </div>
       <div *ngIf="bienfaits">
         <strong>Bienfaits : </strong> {{bienfaits}}

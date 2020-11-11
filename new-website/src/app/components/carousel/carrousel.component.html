@@ -1,7 +1,8 @@
 <ngb-carousel
+  [interval]="3000"
   [showNavigationArrows]="false"
   [showNavigationIndicators]="false"
-  [interval]="3000"
+  [tabIndex]="-1"
 >
   <ng-template *ngIf="multiple" ngbSlide>
     <div class="picsum-img-wrapper">

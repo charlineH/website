@@ -4,9 +4,9 @@
     </div>
   </div>
   <div class="testimony__content">
-    <h6 [ngClass]="color" class="testimony__author">
+    <p *ngIf="author" [ngClass]="color" class="testimony__author">
       {{author}}
-    </h6>
+    </p>
     <p class="testimony__text">
       <ng-content></ng-content>
     </p>

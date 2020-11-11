@@ -2,6 +2,11 @@
 
 strong {
   font-weight: $txt-bold-default;
+  color: $color-project-secondary-dark;
+}
+
+strong.primary {
+  color: $color-project-primary-dark;
 }
 
 a.none {
@@ -15,7 +20,7 @@ a.none {
 }
 
 a {
-  color: $color-project-primary;
+  color: $color-project-secondary-dark;
   text-decoration: underline;
   cursor: pointer;
 

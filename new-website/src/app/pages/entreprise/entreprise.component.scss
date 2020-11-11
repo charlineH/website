@@ -48,6 +48,7 @@ app-carousel {
 
 .entreprise__chapters {
   width: 80%;
+  margin: $size-xmedium 0;
 
   @media (min-width: $small-desktop-window) {
     width: 75%;
