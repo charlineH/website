@@ -34,11 +34,8 @@
     }
   }
 
-  @media(min-width: $small-mobile-window) {
-    display: none;
-  }
-
   @media(min-width: $small-desktop-window) {
+    display: none;
     font-size: $txt-size-regular;
     padding: $size-medium;
   }
@@ -86,12 +83,8 @@
   padding-top: $size-default;
   left: 0;
 
-  .item:hover {
-    background-color: $color-project-primary-dark;
-
-    .item__list {
-      display: none;
-    }
+  .item:hover .item__list {
+    display: none;
   }
 
   .item {
