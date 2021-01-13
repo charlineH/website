@@ -17,7 +17,7 @@ app-carousel {
   width: 80%;
   margin-top: $size-large;
 
-  @media (min-width: $medium-desktop-window) {
+  @media (min-width: $large-desktop-window) {
     flex-direction: row;
   }
 }
@@ -25,7 +25,7 @@ app-carousel {
 .presentation__image {
   height: 100%;
 
-  @media (min-width: $medium-desktop-window) {
+  @media (min-width: $large-desktop-window) {
     margin-right: $size-xmedium;
   }
 }
@@ -62,7 +62,7 @@ app-carousel {
     margin-bottom: 4.5*$size-default;
   }
 
-  @media (min-width: $medium-desktop-window) {
+  @media (min-width: $large-desktop-window) {
     width: 65%;
     margin-bottom: 6.5*$size-default;
   }
@@ -80,7 +80,7 @@ app-carousel {
     width: 80%;
   }
 
-  @media (min-width: $medium-desktop-window) {
+  @media (min-width: $large-desktop-window) {
     width: 65%;
   }
 }
@@ -108,7 +108,7 @@ app-carousel {
   flex-direction: column;
   margin: $size-medium 0;
 
-  @media (min-width: $medium-desktop-window) {
+  @media (min-width: $large-desktop-window) {
     flex-direction: row;
     margin: $size-xmedium -4*$size-default;
   }
@@ -124,7 +124,7 @@ app-carousel {
   padding: $size-medium;
 
 
-  @media (min-width: $medium-desktop-window) {
+  @media (min-width: $large-desktop-window) {
     margin: 0 $size-default;
   }
 
@@ -147,7 +147,7 @@ app-carousel {
   display: flex;
   flex-direction: column-reverse;
 
-  @media (min-width: $medium-desktop-window) {
+  @media (min-width: $large-desktop-window) {
     flex-direction: row;
   }
 
@@ -161,7 +161,7 @@ app-carousel {
   display: flex;
   flex-direction: column;
 
-  @media (min-width: $medium-desktop-window) {
+  @media (min-width: $large-desktop-window) {
     flex-direction: row;
   }
 
@@ -169,7 +169,7 @@ app-carousel {
     flex: 1;
     padding: $size-default;
 
-    @media (min-width: $medium-desktop-window) {
+    @media (min-width: $large-desktop-window) {
       margin-left: $size-xmedium;
     }
   }
@@ -198,7 +198,7 @@ app-carousel {
       margin-right: $size-xmedium;
     }
 
-    @media(min-width: $medium-desktop-window) {
+    @media(min-width: $large-desktop-window) {
       width: 30%;
     }
   }

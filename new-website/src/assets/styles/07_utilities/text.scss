@@ -1,0 +1,17 @@
+@import '../bases.scss';
+
+.u-text--primary {
+  color: $color-project-primary-dark !important;
+}
+
+.u-text--secondary {
+  color: $color-project-secondary-dark !important;
+}
+
+.u-text--tertiary {
+  color: $color-project-tertiary-dark !important;
+}
+
+.u-text--empty {
+  color: $color-empty-dark !important;
+}

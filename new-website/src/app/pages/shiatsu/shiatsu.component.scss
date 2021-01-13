@@ -15,7 +15,7 @@ app-carousel {
   width: 80%;
   margin: $size-large 0;
 
-  @media (min-width: $medium-desktop-window) {
+  @media (min-width: $large-desktop-window) {
     width: 65%;
   }
 }
