@@ -1,7 +1,6 @@
 @import "src/assets/styles/bases";
 
 .home-page {
-  background-color: $color-empty-very-light;
   display: flex;
   flex-direction: column;
 }
@@ -9,7 +8,7 @@
 .home__thumbnails {
   display: none;
   justify-content: center;
-  height: 5*$size-xmedium;
+  height: 4*$size-xmedium;
   margin-top: -$size-xmedium;
 
   @media (min-width: $small-desktop-window) {
@@ -29,14 +28,90 @@
 
 }
 
-.home__presentation {
-  background-color: $color-project-tertiary-very-light;
-  align-self: center;
+.sc-activity-intro {
+  width: 80%;
+  margin: 0 auto;
+
+  @media (min-width: $small-desktop-window) {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.sc-activity-intro__column {
+  background-color: $color-default-secondary;
+  border-radius: $border-radius-default;
+  -webkit-box-shadow: $border-shadow;
+  box-shadow: $border-shadow;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
-  box-shadow: 4px 4px 6px rgba($color-default-primary, 0.16);
+  justify-content: space-between;
+  padding: $size-default;
+  margin: $size-default 0;
+
+  @media (min-width: $small-desktop-window) {
+    width: 20%;
+  }
+}
+
+.sc-activity-intro__title {
+  text-transform: uppercase;
+  text-align: center;
+  margin: $size-default 0;
+
+  @media (min-width: $small-desktop-window) {
+    display: none;
+  }
+}
+
+.sc-activity-intro__content {
+  text-align: center;
+  margin-top: $size-default;
+
+  @media (min-width: $small-desktop-window) {
+    margin-top: 0;
+  }
+}
+
+.sc-activity-intro__button {
+  text-align: center;
+  color: $color-default-secondary;
+  font-weight: $txt-regular-medium;
+  padding: $size-lower 0;
+}
+
+.sc-activity-intro__button--primary {
+  background-color: $color-project-primary-dark;
+}
+
+.sc-activity-intro__button--secondary {
+  background-color: $color-project-secondary-dark;
+}
+
+.sc-activity-intro__button--tertiary {
+  background-color: $color-project-tertiary-dark;
+}
+
+.sc-activity-intro__button--empty {
+  background-color: $color-empty-dark;
+}
+
+
+.home__presentation {
+  border-radius: $border-radius-default;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
   padding: $size-medium $size-xmedium;
-  margin: 5*$size-default 0;
+  margin: 2*$size-default 0;
+
+  @media(min-width: $small-desktop-window) {
+    background-color: $color-project-tertiary-very-light;
+    margin: 5*$size-default 0;
+    width: 50%;
+
+  }
 
   .presentation__title {
     color: $color-project-tertiary-dark;
@@ -82,10 +157,40 @@
   }
 }
 
+.sc-home__testimony {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2*$size-xmedium auto;
+  width: 80%;
+  min-height: 9*$size-xmedium;
+
+  .sc-home__testimony__carousel {
+    width: 100%;
+    margin-top: $size-lower;
+
+    @media (min-width: $small-desktop-window) {
+      width: 45%;
+
+      &.sc-home__testimony__carousel--first {
+        margin-right: 10%;
+      }
+    }
+  }
+}
+
 .home__about {
   background-color: $color-default-secondary;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: $size-large;
+}
+
+.c-home__about__button {
+  background-color: $color-project-tertiary-dark;
+  color: $color-default-secondary;
+  padding: $size-lower $size-medium;
+  margin-top: $size-medium;
 }
 
 .about__timeline {

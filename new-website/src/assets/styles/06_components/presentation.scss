@@ -34,6 +34,7 @@
 
 .c-presentation__image {
   height: 100%;
+  width: fit-content;
 
   @media (min-width: $large-desktop-window) {
     margin-right: $size-xmedium;
@@ -49,7 +50,6 @@
 .c-presentation__text {
   color: $color-empty;
   text-align: justify;
-  display: flex;
   padding-top: $size-medium;
   margin: 0;
 }

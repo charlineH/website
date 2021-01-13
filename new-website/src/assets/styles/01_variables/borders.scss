@@ -8,6 +8,8 @@ $border-size-medium: 0.125rem; // 2 px
 
 $border-type-default: solid;
 
+$border-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+
 $border-project-primary-light: $border-size-default $border-type-default $color-project-primary-light;
 $border-project-primary: $border-size-default $border-type-default $color-project-primary;
 $border-project-primary-dark: $border-size-default $border-type-default $color-project-primary-dark;
