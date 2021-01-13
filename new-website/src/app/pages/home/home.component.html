@@ -1,49 +1,94 @@
 <app-nav-bar [page]="page" xmlns="http://www.w3.org/1999/html"></app-nav-bar>
 <div class="home-page">
   <app-carrousel [multiple]="true"></app-carrousel>
+  <h2 class="sr-only">Présentation des activités</h2>
   <div class="home__thumbnails">
     <div class="thumbnails-container">
       <app-thumbnail
         class="thumbnails__item"
         text="tai chi"
-        type="taichi"
-      ></app-thumbnail>
+        type="taichi">
+      </app-thumbnail>
       <app-thumbnail
         class="thumbnails__item"
         text="Massage-Bien-Etre"
-        type="massage"
-      ></app-thumbnail>
+        type="massage">
+      </app-thumbnail>
       <app-thumbnail
         class="thumbnails__item"
         text="Shiatsu"
-        type="shiatsu"
-      ></app-thumbnail>
+        type="shiatsu">
+      </app-thumbnail>
       <app-thumbnail
         class="thumbnails__item"
         text="Qualité de vie au travail"
-        type="entreprise"
-      ></app-thumbnail>
+        type="entreprise">
+      </app-thumbnail>
     </div>
   </div>
-  <p>
-    Tai Chi Qi Gong<br/>Le Tai Chi, le Qi Gong et la méditation développent notre souplesse, notre équilibre, notre coordination, notre respiration, notre enracinement... Ils favorisent l’équilibre du corps, de l’esprit et de l’énergie. Arts énergétiques ou simples activités de loisir, ils développent au fil du temps notre présence, notre rapport à nous, aux autres et au monde, un état d’esprit au quotidien.
-    Cours proposés sur Laigné en Belin et le Mans   en savoir +
-  </p>
-  <p>
-    Massages Bien Etre<br/>Le massage bien-être est un accompagnement personnalisé, par le toucher, pour favoriser, entretenir et renforcer le bien-être au quotidien. Au fil du temps le massage développe la conscience et la globalité de notre corps. Cette conscience transforme, chacun à son rythme, dans son rapport à soi, aux autres et au monde.
-    Séances sur Laigné en Belin   en savoir +
-  </p>
-  <p>
-    Shiatsu<br/>Le shiatsu est une pratique manuelle d'origine japonaise qui mobilise notre corps dans sa globalité. Selon Shizuto Masunaga, le shiatsu alterne des pressions, des étirements et empaumement au rythme de la respiration du receveur. Il participe au rééquilibrage du corps et de l'esprit, au renforcement ou au maintien de la santé. Il puise ses sources dans l'énergétique traditionnelle chinoise.
-    Séances sur Laigné en Belin, proposées dans le cadre de ma 3ème année de formation    en savoir +
-  </p>
-  <p>
-    Qualité de vie au travail<br/>Rendre son corps vivant et conscient, grâce au Tai Chi Qi Gong ou aux massages, développe un véritable point d'appui au quotidien. Ils développent les Soft Skills ou savoir-être dont nous parlons aujourd'hui : relation à soi, aux autres, souplesse, adaptabilité, travail en groupe, gestion du stress et bien d'autres...
-    Sur place en entreprise à l'année ou ponctuellement   en savoir +
-  </p>
+  <div class="sc-activity-intro">
+    <div (click)="redirectTo(taichiPage)" class="sc-activity-intro__column" title="Cliquer pour en savoir plus">
+      <h3 class="sc-activity-intro__title u-text--primary">Tai Chi Qi Gong</h3>
+      <p class="sc-activity-intro__content">
+        Le Tai Chi, le Qi Gong et la méditation développent notre souplesse, notre équilibre, notre coordination,
+        notre
+        respiration, notre enracinement... Ils favorisent l’équilibre du corps, de l’esprit et de l’énergie. Arts
+        énergétiques ou simples activités de loisir, ils développent au fil du temps notre présence, notre rapport à
+        nous, aux autres et au monde, un état d’esprit au quotidien.
+        Cours proposés sur Laigné en Belin et le Mans
+      </p>
+      <button [routerLink]="taichiPage" class="sc-activity-intro__button sc-activity-intro__button--primary">
+        Découvrir les ateliers
+      </button>
+    </div>
+    <div (click)="redirectTo(massagePage)" class="sc-activity-intro__column" title="Cliquer pour en savoir plus">
+      <h3 class="sc-activity-intro__title u-text--empty">Massages-Bien-Etre</h3>
+      <p class="sc-activity-intro__content">
+        Le massage bien-être est un accompagnement personnalisé, par le toucher, pour favoriser,
+        entretenir et renforcer le bien-être au quotidien. Au fil du temps le massage développe la conscience et la
+        globalité de notre corps. Cette conscience transforme, chacun à son rythme, dans son rapport à soi, aux autres
+        et au
+        monde.
+        Séances sur Laigné en Belin
+      </p>
+      <button [routerLink]="massagePage" class="sc-activity-intro__button sc-activity-intro__button--empty">
+        Découvrir les séances
+      </button>
+    </div>
+    <div (click)="redirectTo(shiatsuPage)" class="sc-activity-intro__column" title="Cliquer pour en savoir plus">
+      <h3 class="sc-activity-intro__title u-text--tertiary">Shiatsu</h3>
+      <p class="sc-activity-intro__content">
+        Le shiatsu est une pratique manuelle d'origine japonaise qui mobilise notre corps dans sa globalité. Selon
+        Shizuto Masunaga, le shiatsu alterne des pressions, des étirements et empaumement au rythme de la respiration
+        du receveur. Il participe au rééquilibrage du corps et de l'esprit, au renforcement ou au maintien de la
+        santé. Il puise ses sources dans l'énergétique traditionnelle chinoise. Séances sur Laigné en Belin, proposées
+        dans le cadre de ma 3ème année de formation
+      </p>
+      <button [routerLink]="shiatsuPage" class="sc-activity-intro__button sc-activity-intro__button--tertiary">
+        Découvrir les séances
+      </button>
+    </div>
+    <div (click)="redirectTo(entreprisePage)" class="sc-activity-intro__column" title="Cliquer pour en savoir plus">
+      <h3 class="sc-activity-intro__title u-text--secondary">Qualité de vie au travail</h3>
+      <p class="sc-activity-intro__content">
+        Rendre son corps vivant et conscient, grâce au Tai Chi Qi Gong ou aux massages, développe un véritable point
+        d'appui au quotidien. Ils développent les Soft Skills ou savoir-être dont nous parlons
+        aujourd'hui : relation à soi, aux autres, souplesse, adaptabilité, travail en groupe, gestion du stress et
+        bien
+        d'autres...
+        Sur place en entreprise à l'année ou ponctuellement
+      </p>
+      <button [routerLink]="entreprisePage" class="sc-activity-intro__button sc-activity-intro__button--secondary">
+        Découvrir les solutions
+      </button>
+    </div>
+  </div>
+
   <div class="home__presentation">
     <p>
-      Une philosophie d’accompagnement vers le Bien Etre : Le Bien Etre, comme une recherche d’équilibre permanente. Cette recherche d’équilibre, en mouvement, est la vie … Elle est passionnante. Elle est accessible à tous. Elle nous transforme silencieusement, sans en avoir l’air, à notre rythme.
+      Une philosophie d’accompagnement vers le Bien Etre : Le Bien Etre, comme une recherche d’équilibre permanente.
+      Cette recherche d’équilibre, en mouvement, est la vie … Elle est passionnante. Elle est accessible à tous. Elle
+      nous transforme silencieusement, sans en avoir l’air, à notre rythme.
     </p>
   </div>
   <app-img-band [title]="'Actualités'" [type]="'ears-bonze'"></app-img-band>
@@ -65,62 +110,96 @@
     >Tai Chi Qi Gong</a
     >
     </app-news>
-    <app-news>
+    <app-news
       [left]="true"
       class="news__item"
       img="assets/images/massage/massage-ayurvedique-dos-300x200.jpg"
       title="Massage Bien-Etre : Nouvelle année 2021 je continue à vous accueillir"
-      type="tertiary"
-      Ces derniers temps, le toucher est un des sens que nous avons le plus oublié. En énergétique traditionnelle chinoise la
+      type="tertiary">
+      Ces derniers temps, le toucher est un des sens que nous avons le plus oublié. En énergétique traditionnelle
+      chinoise la
       peau est associée aux poumons et à la respiration. Nous avons bien besoin
-      de les renforcer.<br />
-      <a class="button alt" routerLink="massage">Massages</a> <br />Je mets en
+      de les renforcer.<br/>
+      <a class="button alt" routerLink="massage">Massages</a> <br/>Je mets en
       œuvre toutes les conditions pour pouvoir vous accueillir au mieux, dans le
       respect des règles liées au covid-19. Nous en conviendrons à la prise de
       notre rendez-vous.
     </app-news>
-    <app-news>
+    <app-news
       [left]="true"
       class="news__item"
       img="assets/images/taichi/livre-corps-vivant-corps-conscient.jpg"
       title="Livre corps vivant corps conscient Edition Almora disponible en librairie"
-      type="tertiary"
+      type="tertiary">
       Quatre enseignants en Tai Chi, Qi Gong et Stretching Postural, de plus de
       40 ans d’expérience, mais aussi des médecins, thérapeutes, éducateurs et
       artistes, témoignent de leur pratique et des bienfaits qu’ils en ont
       retirés. … )
     </app-news>
   </div>
-  <p> avis et témoignages</p>
-  <p>Tai Chi - Soizic Je suis rentrée plus rapidement dans la relaxation et dans les mouvements aussi, cette année. J’ai eu la sensation de progresser très rapidement cette année. Physiquement, avant j’avais très mal au dos et un peu au niveau des épaules. Je suis plus souple dans les bras. (2ème année) </p>
-  <p>Tai Chi - Sylvie  Je retiens l’idée du Tai Chi de positiver. J’utilise la respiration par le ventre quand je stresse. Je pose mes épaules et j’ai plus d’équilibre, cette deuxième année. </p>
-  <p>Tai Chi - Nathalie  J’ai eu de la difficulté à coordonner les mouvements mais c’était plus facile en fin d’année. Je suis rentrée assez vite dans la méditation, la détente. Dans la vie quotidienne ça m’apporte du bien-être ponctuellement, de la confiance. (1ère année)</p>
-  <p>Tai Chi - Joséphine  Je luttais contre la boulimie depuis 7 ans. Je ne suis plus boulimique, j’ai perdu 10 kg et j’ai déstressé. J’ai commencé à être mieux dès 3 mois après le début des cours. (1ère année)</p>
-  <p>Tai Chi - Eric  Je n’ai plus mal au dos ou qu’un tout petit peu. Je change de position et ça se débloque, avant je forçais maintenant je sens. J’avais mal au dos depuis des années. Dans mon boulot je piétine beaucoup, maintenant avec une autre conscience de mon corps je peux rester confortablement debout. C’est agréable d’être plus dans mon corps (2ème année)</p>
-  <p>Tai Chi - Martine  J’ai moins de douleur et un mieux-être général. Je suis contente d’avoir découvert le Tai Chi, alors qu’on me disait, avec un peu de moquerie, tu fais des gestes lents. (1ère année)</p>
-  <p>Massage - Mary Pierre  Suite à de sérieux soucis de santé, je me suis intéressée aux massages procurés par Marie-Laure ... le ressenti à chaque séance est différent... et offre toujours une profonde détente, distance par rapport aux émotions, recentrage et ressourcement... c'est un temps pour soi précieux qui est donné avec délicate attention...merci pour cette belle qualité de présence.</p>
-  <p>Massage - Paul  J'apprécie beaucoup les massages de Marie Laure la relation qu'elle propose à ma respiration.</p>
-  <p>Massage - Nadine  C'est la première fois que je venais, à la fin du massage je me suis sentie à la fois détendue et ressourcée.</p>
+
+  <app-img-band
+    [title]="'Avis et témoignages'"
+    img="assets/images/taichi/mieux-vivre.jpg"
+  ></app-img-band>
+  <div class="sc-home__testimony">
+    <ngb-carousel class="sc-home__testimony__carousel sc-home__testimony__carousel--first">
+      <ng-template *ngFor="let avis of taichiAvis" ngbSlide>
+        <app-testimony
+          [author]="avis.author"
+          type="tai chi"
+        >
+          {{avis.text}}
+        </app-testimony>
+      </ng-template>
+    </ngb-carousel>
+    <ngb-carousel class="sc-home__testimony__carousel">
+      <ng-template *ngFor="let avis of massageAvis" ngbSlide>
+        <app-testimony
+          [author]="avis.author"
+          type="massage"
+        >
+          {{avis.text}}
+        </app-testimony>
+      </ng-template>
+    </ngb-carousel>
+  </div>
   <app-img-band
     [title]="'A propos de moi'"
     img="assets/images/taichi/mieux-vivre.jpg"
   ></app-img-band>
   <div class="home__about">
-    <div class="c-presentation c-presentation--lg">
-      <p>
-      Je pratique le Tai Chi, le Qi Gong et la méditation depuis plus de 15 ans. Je transmets avec plaisir cet art millénaire, attentive au confort de chacun, sans recherche de performance, sur Laigné en Belin et Le Mans. La pratique est ouverte à tous, quel que soit son âge ou sa condition physique.
-      Je propose les massages bien-être depuis plus de 10 ans et transmets avec plaisir cette conscience du corps vivant par un toucher bienveillant.
-      Je propose le shiatsu dans le cadre de ma formation pour devenir spécialiste en shiatsu. Actuellement en 3ème et dernière année.
-      Quel que soit la pratique, chacun est accueilli avec autant de bienveillance, qu'il vienne pour découvrir ces arts corporels, pour améliorer sa qualité de vie, pour se déstresser, par recommandation d'un thérapeute ou pour faire du lien avec sa pratique professionnelle.
-      en savoir +
-    </p>
+    <div class="c-presentation">
+      <div class="c-presentation--row">
+        <img class="c-presentation__image mr-4" src="assets/images/taichi/noirmoutier guitare 300x224.jpg">
+        <div>
+          <p class="c-presentation__text pt-0">
+            <strong class="u-text--tertiary">
+              Je pratique le Tai Chi, le Qi Gong et la méditation depuis plus de 15 ans.
+            </strong>
+            <br>
+            Je transmets avec plaisir cet art millénaire, attentive au confort de chacun, sans recherche de performance,
+            sur Laigné en Belin et Le Mans. La pratique est ouverte à tous, quel que soit son âge ou sa condition
+            physique. Je propose les massages bien-être depuis plus de 10 ans et transmets avec plaisir cette conscience
+            du corps vivant par un toucher bienveillant. Je propose le shiatsu dans le cadre de ma formation pour
+            devenir spécialiste en shiatsu. Actuellement en 3ème et dernière année. Quel que soit la pratique, chacun
+            est accueilli avec autant de bienveillance, qu'il vienne pour découvrir ces arts corporels, pour améliorer
+            sa qualité de vie, pour se déstresser, par recommandation d'un thérapeute ou pour faire du lien avec sa
+            pratique professionnelle.
+          </p>
+          <button class="c-home__about__button">En savoir plus</button>
+        </div>
+      </div>
+    </div>
+    <div>
       <h3 class="c-presentation__title c-presentation__title--tertiary mt-5">
         SUITE SUR PAGE A PROPOS DE MOI :Accompagner la conscience corporelle tant sur le plan physique
         qu'énergétique est, comme le Tai Chi, tout un art.
       </h3>
       <p class="c-presentation__text">
         Développer la conscience de son corps, de soi, est particulièrement
-        enrichissant et je suis fière du chemin parcouru.. J'en fais l'expérience depuis plus de 15 ans. Pas pour "briller ou
+        enrichissant et je suis fière du chemin parcouru.. J'en fais l'expérience depuis plus de 15 ans. Pas pour
+        "briller ou
         casser mon adversaire" mais pour la vie qu'il a développée. La
         conscience du corps devient, au fil du temps, point d'appui et force
         intérieure, au quotidien. Elle transforme, le rapport à soi, aux autres
@@ -175,74 +254,74 @@
         Transmettre l’<strong>équilibre corps, esprit, énergie</strong>.
         Transmettre les mouvements de <strong>Tai Chi</strong>, l’<strong>
         assouplissement</strong>du corps et de l’esprit, <strong>
-        <br />
+        <br/>
         <strong>Respecter</strong> le rythme de chacun. Etre en alternance
         guide, soutien, à côté, derrière. Faire vivre la confiance comme une
         relation.
-        <br />
-        Partager la phrase de M. Csikszentmihaly «<strong>La conscience corporelle favorise l’harmonie elle est accessible à
-          tous </strong>»
-        <br />
+        <br/>
+        Partager la phrase de M. Csikszentmihaly «<strong>La conscience corporelle favorise l’harmonie elle est
+        accessible à
+        tous </strong>»
+        <br/>
         Faire émerger les ressources et savoirs passés inaperçus. Favoriser la
         prise de conscience de l’expérience, l’autonomie, la cohésion du groupe…<br/>Au plaisir de vous rencontrer
-      <div class="about__timeline">
-        <h3 class="c-presentation__title c-presentation__title--tertiary mt-5 text-uppercase">
-          Mon cursus de formations :
-        </h3>
-        <div class="c-timeline tertiary my-5">
-          <div class="c-timeline__item c-timeline__item--white">
-            <div class="c-timeline__content">
-              <p class="c-timeline__title">2018 - 2021</p>
-              <p class="c-timeline__text">
-                Formation pour devenir spécialiste en shiatsu, titre RNCP
-              </p>
-            </div>
-          </div>
-          <div class="c-timeline__item c-timeline__item--white">
-            <div class="c-timeline__content">
-              <p class="c-timeline__title">2013 - 2015</p>
-              <p class="c-timeline__text">
-                Master IFAC (ingénierie et fonctions d'accompagnement en
-                formation) <br/>
-                Mémoire : Pratique corporelle interne et autoformation
-                existentielle, Etude d’un accompagnement réflexif de pratiquants
-                de Tai Ji Quan <br/>
-                Sujet : Apprentissage d’une capacité à agir sur soi, en lien
-                avec les autres transférable dans la vie professionnelle comme
-                personnelle
-              </p>
-            </div>
-          </div>
-          <div class="c-timeline__item c-timeline__item--white">
-            <div class="c-timeline__content">
-              <p class="c-timeline__title">2011 - 2013</p>
-              <p class="c-timeline__text">
-                DUHEPS (Diplôme universitaire de hautes études en pratiques
-                sociales)<br/>
-                Mémoire : D’une pratique de loisir à une formation
-                expérientielle, Les transformations silencieuses du Tai Ji
-                Quan<br/>
-                Sujet : Transformations silencieuses et coloration du quotidien
-              </p>
-            </div>
-          </div>
-          <div class="c-timeline__item c-timeline__item--white">
-            <div class="c-timeline__content">
-              <p class="c-timeline__title">2011</p>
-              <p class="c-timeline__text">CQP Animateur de loisir sportif</p>
-            </div>
-          </div>
-          <div class="c-timeline__item c-timeline__item--white">
-            <div class="c-timeline__content">
-              <p class="c-timeline__title">2009</p>
-              <p class="c-timeline__text">Massages ayurvédique et stimulant</p>
-            </div>
-          </div>
-          <div class="c-timeline__item c-timeline__item--white">
-            <div class="c-timeline__content">
-              <p class="c-timeline__title">2003 - 2009</p>
-              <p class="c-timeline__text">Thérapie manuelle énergétique</p>
-            </div>
-          </div>
-        </div>
-      </div>
+        <div class="about__timeline">
+          <h3 class="c-presentation__title c-presentation__title--tertiary mt-5 text-uppercase">
+            Mon cursus de formations :
+          </h3>
+          <div class="c-timeline tertiary my-5">
+            <div class="c-timeline__item c-timeline__item--white">
+              <div class="c-timeline__content">
+      <p class="c-timeline__title">2018 - 2021</p>
+      <p class="c-timeline__text">
+        Formation pour devenir spécialiste en shiatsu, titre RNCP
+      </p>
+    </div>
+  </div>
+  <div class="c-timeline__item c-timeline__item--white">
+    <div class="c-timeline__content">
+      <p class="c-timeline__title">2013 - 2015</p>
+      <p class="c-timeline__text">
+        Master IFAC (ingénierie et fonctions d'accompagnement en
+        formation) <br/>
+        Mémoire : Pratique corporelle interne et autoformation
+        existentielle, Etude d’un accompagnement réflexif de pratiquants
+        de Tai Ji Quan <br/>
+        Sujet : Apprentissage d’une capacité à agir sur soi, en lien
+        avec les autres transférable dans la vie professionnelle comme
+        personnelle
+      </p>
+    </div>
+  </div>
+  <div class="c-timeline__item c-timeline__item--white">
+    <div class="c-timeline__content">
+      <p class="c-timeline__title">2011 - 2013</p>
+      <p class="c-timeline__text">
+        DUHEPS (Diplôme universitaire de hautes études en pratiques
+        sociales)<br/>
+        Mémoire : D’une pratique de loisir à une formation
+        expérientielle, Les transformations silencieuses du Tai Ji
+        Quan<br/>
+        Sujet : Transformations silencieuses et coloration du quotidien
+      </p>
+    </div>
+  </div>
+  <div class="c-timeline__item c-timeline__item--white">
+    <div class="c-timeline__content">
+      <p class="c-timeline__title">2011</p>
+      <p class="c-timeline__text">CQP Animateur de loisir sportif</p>
+    </div>
+  </div>
+  <div class="c-timeline__item c-timeline__item--white">
+    <div class="c-timeline__content">
+      <p class="c-timeline__title">2009</p>
+      <p class="c-timeline__text">Massages ayurvédique et stimulant</p>
+    </div>
+  </div>
+  <div class="c-timeline__item c-timeline__item--white">
+    <div class="c-timeline__content">
+      <p class="c-timeline__title">2003 - 2009</p>
+      <p class="c-timeline__text">Thérapie manuelle énergétique</p>
+    </div>
+  </div>
+</div>

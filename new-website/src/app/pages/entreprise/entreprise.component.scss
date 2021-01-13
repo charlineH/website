@@ -17,7 +17,7 @@ app-carousel {
   width: 80%;
   margin-top: $size-large;
 
-  @media (min-width: $medium-desktop-window) {
+  @media (min-width: $large-desktop-window) {
     flex-direction: row;
   }
 }
@@ -25,7 +25,7 @@ app-carousel {
 .presentation__image {
   height: 100%;
 
-  @media (min-width: $medium-desktop-window) {
+  @media (min-width: $large-desktop-window) {
     margin-right: $size-xmedium;
   }
 
@@ -54,7 +54,7 @@ app-carousel {
     width: 75%;
   }
 
-  @media (min-width: $medium-desktop-window) {
+  @media (min-width: $large-desktop-window) {
     width: 65%;
   }
 }
@@ -67,7 +67,7 @@ app-carousel {
     width: 80%;
   }
 
-  @media (min-width: $medium-desktop-window) {
+  @media (min-width: $large-desktop-window) {
     width: 65%;
   }
 }
@@ -90,7 +90,7 @@ app-carousel {
       margin-right: $size-xmedium;
     }
 
-    @media(min-width: $medium-desktop-window) {
+    @media(min-width: $large-desktop-window) {
       width: 30%;
     }
   }

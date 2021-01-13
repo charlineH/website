@@ -1,14 +1,10 @@
-<div [ngClass]="{'testimony--small': small}" class="testimony">
-  <div>
-    <div [ngClass]="color" class="testimony__icon">
-    </div>
+<div [ngClass]="'sc-testimony--' + color" class="sc-testimony">
+  <div class="sc-testimony__header">
+    <mat-icon [ngClass]="'sc-testimony__quote--' + color" svgIcon="quotemark"></mat-icon>
+    <p class="sc-testimony__type">{{type}}</p>
   </div>
-  <div class="testimony__content">
-    <p *ngIf="author" [ngClass]="color" class="testimony__author">
-      {{author}}
-    </p>
-    <p class="testimony__text">
-      <ng-content></ng-content>
-    </p>
-  </div>
+  <p class="sc-testimony__text">
+    <ng-content></ng-content>
+  </p>
+  <p class="sc-testimony__author">{{author}}</p>
 </div>

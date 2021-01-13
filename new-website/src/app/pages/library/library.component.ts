@@ -397,7 +397,7 @@ export class LibraryComponent {
   `;
   readonly htmlTestimony = `
     Témoignage en version small.
-    <app-testimony [small]="true">J’ai aimé passé un moment agréable.</app-testimony>
+    <app-testimony>J’ai aimé passé un moment agréable.</app-testimony>
 
     Témoignage en version normal
     <app-testimony author="Adeline Duplat">

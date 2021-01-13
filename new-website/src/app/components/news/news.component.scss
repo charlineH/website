@@ -4,14 +4,14 @@
   display: flex;
   flex-direction: column;
   background-color: $color-default-secondary;
-  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 3px 0 rgba(0, 0, 0, .12);
+  box-shadow: $border-shadow;
   border-radius: $border-radius-default;
   width: 100%;
   min-height: $size-xlarge;
 
-
   @media (min-width: $medium-desktop-window) {
     flex-direction: row;
+    flex-wrap: nowrap;
   }
 }
 
@@ -59,6 +59,7 @@
   border-top: $size-default solid $color-project-primary-light;
   width: 100%;
   max-width: 384px;
+  margin: 0 auto;
 
   &.secondary {
     border-top: $size-default solid $color-project-secondary-light;
@@ -72,10 +73,14 @@
     border-top: $size-default solid $color-empty;
   }
 
-  @media (min-width: $medium-desktop-window) {
-    border-top: none;
+  @media (min-width: $small-desktop-window) {
+    border-top: none !important;
+  }
+
+  @media (min-width: $large-desktop-window) {
     border-radius: $border-radius-default 0 0 $border-radius-default;
     border-left: $size-default solid $color-project-primary-light;
+    margin: 0;
 
     &.secondary {
       border-top: none;
