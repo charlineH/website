@@ -72,6 +72,10 @@
   display: flex;
   margin-bottom: $size-default;
 
+  :first-child {
+    min-width: 10%;
+  }
+
   span {
     margin-right: $size-large;
     max-width: 70%;
