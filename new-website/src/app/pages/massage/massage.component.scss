@@ -17,6 +17,7 @@ p {
 
 .img--ffmbe {
   height: 3*$size-large;
+  width: auto;
 }
 
 .massage__multiple_img_band {
@@ -48,6 +49,7 @@ app-article {
 .massage__testimonies {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   width: 80%;
   margin-bottom: 2*$size-default;
 
