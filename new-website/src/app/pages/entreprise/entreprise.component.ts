@@ -2,6 +2,7 @@ import { AfterViewInit, Component } from '@angular/core';
 import { RoutesPath } from '../../enum/routes.enum';
 import { ActivatedRoute } from '@angular/router';
 import { HasTitle } from '../../model/has-title.model';
+import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-entreprise',
@@ -12,7 +13,12 @@ export class EntrepriseComponent implements AfterViewInit, HasTitle {
   readonly page = RoutesPath.ENTREPRISE;
   title = ' Massages bien-être, Tai Chi & Qi Gong, Méditation en entreprise au Mans (72) | Humoe';
 
-  constructor(private readonly route: ActivatedRoute) {
+  constructor(
+    private readonly route: ActivatedRoute,
+    private readonly config: NgbCarouselConfig) {
+    config.showNavigationArrows = false;
+    config.showNavigationIndicators = true;
+    config.interval = 10000;
   }
 
   ngAfterViewInit(): void {

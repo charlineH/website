@@ -67,7 +67,7 @@ export class HomeComponent {
     private readonly config: NgbCarouselConfig) {
     config.showNavigationArrows = false;
     config.showNavigationIndicators = true;
-    config.interval = 20000;
+    config.interval = 10000;
   }
 
   redirectTo(page: string) {
