@@ -141,6 +141,8 @@
   @media (min-width: $medium-desktop-window) {
     flex-direction: column;
     flex-wrap: nowrap;
+    align-items: center;
+    width: fit-content;
   }
 
   .news__item {
@@ -152,7 +154,7 @@
     }
 
     @media (min-width: $medium-desktop-window) {
-      width: 100%;
+      width: 80%;
     }
   }
 }
