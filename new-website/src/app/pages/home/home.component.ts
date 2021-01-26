@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RoutesPath } from '../../enum/routes.enum';
 import { Router } from '@angular/router';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-home',
@@ -16,6 +17,8 @@ export class HomeComponent {
   readonly massagePage = RoutesPath.MASSAGE;
   readonly shiatsuPage = RoutesPath.SHIATSU;
   readonly entreprisePage = RoutesPath.ENTREPRISE;
+
+  readonly prod = environment.production;
 
   taichiAvis = [
     {
