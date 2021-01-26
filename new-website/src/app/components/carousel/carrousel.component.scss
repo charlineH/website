@@ -2,10 +2,6 @@
 
 img {
   width: 100%;
-
-  @media(min-width: $small-desktop-window) {
-    width: inherit;
-  }
 }
 
 ::ng-deep .carousel-item {

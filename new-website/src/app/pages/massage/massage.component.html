@@ -1,29 +1,12 @@
 <app-nav-bar [page]="page"></app-nav-bar>
 <div class="massage-page">
   <app-carrousel [multiple]="false" type="massage"></app-carrousel>
-  <div class="c-presentation  my-5">
-    <p class="c-presentation__title c-presentation__title--grey">
-      Marie-Laure, accompagne la conscience du corps par le Tai Chi, le Qi Gong,
-      la Méditation et les Massages Bien-être...
-    </p>
-    <p>
-      Les massages-bien-être proposés prennent en compte chacun dans sa
-      globalité. Ils partagent une vision globale du corps. Ils ont comme point
-      commun d’accompagner la détente, diminuer les effets du stress, développer
-      la conscience du corps etc. Dans la durée, ils développent la conscience
-      corporelle qui devient ainsi un véritable point d’appui au quotidien. Ils
-      peuvent compléter la pratique du Tai Chi, s'intégrer dans un processus de
-      prévention pour une meilleure santé et se rapprocher de la définition de
-      l'OMS : La santé est un état complet de bien-être physique, mental et
-      social et ne constitue pas seulement une absence de maladie ou
-      d'infirmité. Pour ceux qui le souhaitent, ils peuvent aussi participer à
-      leur développement personnel.
-    </p>
+  <div class="c-presentation my-5">
     <div class="c-presentation--row">
       <img
         alt="Massage auyvédique du dos"
         class="c-presentation__image img--ffmbe"
-        src="assets/images/logo/massage-logo-ffmbe-couleur-260x200.jpg"
+        src="assets/images/massage/logo-grand-France-Massage-rvb.png"
       />
       <p>
         Le Massage-Bien-Etre est un accompagnement personnalisé, par le toucher,
@@ -36,25 +19,22 @@
         >
       </p>
     </div>
-  </div>
-  <app-multiple-img-band
-    (selectItem)="scrollToMassage($event)"
-    [images]="typesMassage"
-  ></app-multiple-img-band>
-  <div class="c-presentation my-5">
-    <p>
-      Au fil du temps les massages développent la conscience de la globalité de
-      notre corps. Notre corps conscient devient point d'appui et force
-      intérieure, au quotidien. Cette conscience transforme, chacun à son
-      rythme, dans son rapport à soi, aux autres et au monde... Ces
-      transformations, le plus souvent silencieuses, demandent un accompagnement
-      éthique. J'ai choisi de réfléchir cet accompagnement à l'université de
-      Tours, dans le cadre d'un diplôme universitaire puis d'un Master 2 en
-      sciences de l'éducation et de la formation. Même si mes recherches ont
-      portées sur les transformations du Tai Chi et leur accompagnement, les
-      massages bénéficient du même fil conducteur, conscience corporelle et
-      force intérieure au quotidien.
-    </p>
+    <div>
+      <p>
+        Les massages-bien-être proposés prennent en compte chacun dans sa
+        globalité. Ils partagent une vision globale du corps. Ils ont comme
+        point commun d’accompagner la détente, diminuer les effets du stress,
+        développer la conscience du corps etc.
+        <br/>Dans la durée, ils développent la conscience corporelle qui
+        devient un véritable point d’appui au quotidien. Ils peuvent participer
+        à une démarche de développement personnel. <br/>Ils peuvent aussi
+        compléter la pratique du Tai Chi, s'intégrer dans un processus de
+        prévention pour une meilleure santé et se rapprocher de la définition de
+        l'OMS : La santé est un état complet de bien-être physique, mental et
+        social et ne constitue pas seulement une absence de maladie ou
+        d'infirmité.
+      </p>
+    </div>
   </div>
   <app-img-band
     [cadre]="true"
@@ -72,20 +52,11 @@
       title="{{ typesMassage[0].title }}"
     >
       <p>
-        L’art du toucher … pour un moment de bien-être et de relaxation. Toucher
-        doux et bienveillant, à l’huile biologique, pour détendre, rééquilibrer
-        l’énergie et harmoniser le corps. Il est issu de la tradition
-        ayurvédique et de la transmission d’un moine ayurvédiste népalais, Swami
-        Yoga Anand, fondateur d'APMA (Association pour la Promotion du Massage
-        Ayurvédique).
-        <a
-          aria-label="APMA"
-          href="http://www.massage-ayurvedique.com/"
-          target="_blank"
-          title="APMA"
-        >
-          le site de l'APMA
-        </a>
+        Un moment de bien-être et de relaxation. Toucher doux et bienveillant, à
+        l’huile biologique, pour détendre, rééquilibrer l’énergie et harmoniser
+        le corps. Il est issu de la tradition ayurvédique et de la transmission
+        d’un moine ayurvédiste népalais, Swami Yoga Anand, fondateur d'APMA
+        (Association pour la Promotion du Massage Ayurvédique).
       </p>
     </app-article>
     <app-article
@@ -97,13 +68,13 @@
       title="{{ typesMassage[1].title }}"
     >
       <p>
-        L’art du toucher … pour un moment de bien-être et de relaxation.
-        Alliance de toucher doux, de respiration et de circulation énergétique,
-        de Chi. Ecoute fine liée au mouvement de respiration primaire, pour
-        détendre et soulager les douleurs, en lien au moment présent. Il
-        développe notre présence au quotidien. Il est à la croisée du prendre
-        soin énergétique et du massage. Au besoin, des exercices personnalisés
-        accompagnent cette détente pour favoriser une coloration du quotidien.
+        Un moment de bien-être et de relaxation. Alliance de toucher doux, de
+        respiration et de circulation énergétique, de Chi. Ecoute fine liée au
+        mouvement de respiration primaire, pour détendre et soulager les
+        douleurs, en lien au moment présent. Il développe notre présence au
+        quotidien. Il est à la croisée du prendre soin énergétique et du
+        massage. Au besoin, des exercices personnalisés accompagnent cette
+        détente pour favoriser une coloration du quotidien.
       </p>
     </app-article>
     <app-article
@@ -111,33 +82,46 @@
       duree="1h"
       id="drainant"
       src="{{ typesMassage[2].img }}"
-      tarif="55€. Ce massage nécessite le plus souvent au départ des scéances rapprochées. Forfait de 3 scéances 150€."
+      tarif="55€. (Au départ ce massage nécessite le plus souvent des scéances rapprochées) Forfait de 3 scéances 150€."
       title=" {{ typesMassage[2].title }}"
     >
       <p>
-        L’art du toucher… pour accompagner une période de régime ou une
-        sensation de jambes fatiguées. Alliance de pressions et d’effleurements
-        sur tout le corps. Ce massage relaxe et défatigue en stimulant le
-        système veineux lymphatique.
+        Pour accompagner une période de régime ou une sensation de jambes
+        fatiguées. Alliance de pressions et d’effleurements sur tout le corps.
+        Ce massage relaxe et défatigue en stimulant le système veineux
+        lymphatique.
       </p>
     </app-article>
     <app-article
       bienfaits="Défatigue et stimule le corps tant mentalement que physiquement."
-      duree="1h à 1h30"
+      duree="2h"
       id="thailandais"
       src="{{ typesMassage[3].img }}"
-      tarif="Format découverte 65€ / 2h 120€"
+      tarif="120€ - format découverte d'1h 65€"
       title="MASSAGE THAÏLANDAIS ANCESTRAL : NUAD-BO-RARN"
     >
       <p>
-        L’art du toucher … pour un moment de bien-être et de relaxation de 2
-        heures à la fois massage et gym douce. Le nuad-bo-rarn est une technique
-        puissante qui induit une profonde relaxation et stimule en profondeur le
-        flux de l'énergie et du sang dans le corps. Les pieds, les mains, le
-        dos, le visage, tout le corps est pétri, étiré, comprimé. L’énergie, les
-        points et les méridiens sont stimulés. Le corps est sollicité dans son
-        ensemble. Prévoir une tenue souple et confortable, si possible en coton,
-        avec manches et pantalon.
+        Un moment de bien-être et de relaxation de 2 heures à la fois massage et
+        gym douce. Le nuad-bo-rarn est une technique puissante qui induit une
+        profonde relaxation et stimule en profondeur le flux de l'énergie et du
+        sang dans le corps. Les pieds, les mains, le dos, le visage, tout le
+        corps est pétri, étiré, comprimé. L’énergie, les points et les méridiens
+        sont stimulés. Le corps est sollicité dans son ensemble. Prévoir une
+        tenue souple et confortable, si possible en coton, avec manches et
+        pantalon.
+      </p>
+    </app-article>
+    <app-article
+      bienfaits="Déstresse et détend, stimule et vitalise"
+      duree="1/2h"
+      id="minutes"
+      src="{{ typesMassage[5].img }}"
+      tarif="30€"
+      title="{{ typesMassage[5].title }}"
+    >
+      <p>
+        Massage habillé sur chaise ergonomique. Il soulage le dos, les épaules
+        et aussi la tête des tensions accumulées au quotidien.
       </p>
     </app-article>
     <app-article
@@ -154,25 +138,24 @@
         tactiles peuvent la compléter. Ni l'instructeur ni l'enseignant ne masse
         les enfants. L'adulte guide les mouvements. Le programme s'adresse aux
         enfants de 4 à 12 ans. (Dans le cadre des ateliers parents enfants,
-        enfants et parents se massent réciproquement).
-      </p>
-    </app-article>
-    <app-article
-      bienfaits="Déstresse et détend, stimule et vitalise"
-      duree="45 min"
-      id="minutes"
-      src="{{ typesMassage[5].img }}"
-      title="{{ typesMassage[5].title }}"
-    >
-      <p>
-        Pour faciliter votre déconfinement, massage habillé sans contact direct
-        avec la peau. Il soulage le dos, les épaules et aussi la tête des
-        tensions liées aux peurs et à la fatigue accumulée avec cette période
-        particulière.
+        enfants et parents se massent réciproquement). Devis sur demande.
       </p>
     </app-article>
   </div>
-  <div class="massage-page__presentation">
+  <div class="c-presentation my-5">
+    <p>
+      Au fil du temps les massages développent la conscience de la globalité de
+      notre corps. Notre corps conscient devient point d'appui et force
+      intérieure, au quotidien. Cette conscience transforme, chacun à son
+      rythme, dans son rapport à soi, aux autres et au monde... Ces
+      transformations, le plus souvent silencieuses, demandent un accompagnement
+      éthique. J'ai choisi de réfléchir cet accompagnement à l'université de
+      Tours, dans le cadre d'un diplôme universitaire puis d'un Master 2 en
+      sciences de l'éducation et de la formation. Même si mes recherches ont
+      portées sur les transformations du Tai Chi et leur accompagnement, les
+      massages bénéficient du même fil conducteur, conscience corporelle et
+      force intérieure au quotidien.
+    </p>
     <p>
       Les prestations n’ont aucun but thérapeutique et en raison de leur nature,
       ne s’apparentent en rien, ni dans les contenus ni dans les objectifs, à la
@@ -183,7 +166,7 @@
     [cadre]="true"
     class="massage__band"
     title="Témoignages"
-    type="stage"
+    type="eye-bonze"
   ></app-img-band>
   <div class="massage__testimonies">
     <app-testimony

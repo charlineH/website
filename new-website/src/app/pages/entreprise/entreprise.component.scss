@@ -17,7 +17,7 @@ app-carousel {
   width: 80%;
   margin-top: $size-large;
 
-  @media (min-width: $medium-desktop-window) {
+  @media (min-width: $large-desktop-window) {
     flex-direction: row;
   }
 }
@@ -25,7 +25,7 @@ app-carousel {
 .presentation__image {
   height: 100%;
 
-  @media (min-width: $medium-desktop-window) {
+  @media (min-width: $large-desktop-window) {
     margin-right: $size-xmedium;
   }
 
@@ -54,7 +54,7 @@ app-carousel {
     width: 75%;
   }
 
-  @media (min-width: $medium-desktop-window) {
+  @media (min-width: $large-desktop-window) {
     width: 65%;
   }
 }
@@ -67,7 +67,7 @@ app-carousel {
     width: 80%;
   }
 
-  @media (min-width: $medium-desktop-window) {
+  @media (min-width: $large-desktop-window) {
     width: 65%;
   }
 }
@@ -81,17 +81,16 @@ app-carousel {
   display: flex;
   flex-wrap: wrap;
 
-  app-testimony {
+  .sc-chapter__testimony__carrousel {
     width: 100%;
     margin-top: $size-lower;
 
     @media (min-width: $small-desktop-window) {
-      width: 40%;
-      margin-right: $size-xmedium;
-    }
+      width: 45%;
 
-    @media(min-width: $medium-desktop-window) {
-      width: 30%;
+      &.sc-chapter__testimony__carrousel--first {
+        margin-right: 10%;
+      }
     }
   }
 

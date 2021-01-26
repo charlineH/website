@@ -5,7 +5,7 @@
   flex-direction: column;
   width: 80%;
 
-  @media (min-width: $small-desktop-window) {
+  @media (min-width: $large-desktop-window) {
     width: 60%;
   }
 }
@@ -19,8 +19,9 @@
 .c-presentation--row {
   display: flex;
   flex-direction: column;
+  align-items: center;
 
-  @media (min-width: $medium-desktop-window) {
+  @media (min-width: $small-desktop-window) {
     flex-direction: row;
   }
 }
@@ -33,8 +34,9 @@
 
 .c-presentation__image {
   height: 100%;
+  width: fit-content;
 
-  @media (min-width: $medium-desktop-window) {
+  @media (min-width: $large-desktop-window) {
     margin-right: $size-xmedium;
   }
 }
@@ -48,7 +50,6 @@
 .c-presentation__text {
   color: $color-empty;
   text-align: justify;
-  display: flex;
   padding-top: $size-medium;
   margin: 0;
 }

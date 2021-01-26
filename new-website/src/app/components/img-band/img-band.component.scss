@@ -93,7 +93,7 @@ $cadre-offset: 7 * $size-default;
   height: $cadre-offset;
   margin-top: 1.25 * $cadre-offset;
 
-  @media (min-width: $medium-desktop-window) {
+  @media (min-width: $large-desktop-window) {
     width: 60%;
     height: 2 * $cadre-offset;
     margin-top: 1.5 * $cadre-offset;
@@ -125,7 +125,7 @@ $cadre-offset: 7 * $size-default;
       font-size: $txt-size-big;
     }
 
-    @media (min-width: $medium-desktop-window) {
+    @media (min-width: $large-desktop-window) {
       font-size: $txt-size-xxl;
     }
   }

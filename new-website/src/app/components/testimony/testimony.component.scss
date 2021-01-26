@@ -1,68 +1,78 @@
 @import "src/assets/styles/bases";
 
-.testimony {
-  display: flex;
-  padding: $size-medium;
+.sc-testimony {
+  padding: $size-lower $size-default;
   border-radius: $border-radius-default;
-  box-shadow: 0 4px 6px rgba($color-default-primary, 0.16);
-
-  &.testimony--small {
-    height: 4 * $size-xmedium;
-  }
-
-  @media (min-width: $small-desktop-window) {
-    height: 4 * $size-large;
-  }
+  border-left: $size-lower solid $color-default-primary;
 }
 
-.testimony__icon {
-  display: none;
-  border-radius: 50%;
-  width: 2 * $size-default;
-  height: 2 * $size-default;
-  margin-right: $size-medium;
-
-  @media (min-width: $small-desktop-window) {
-    display: block;
-  }
-
-  &.tertiary {
-    background-color: $color-project-tertiary;
-  }
-
-  &.primary {
-    background-color: $color-project-primary;
-  }
-
-  &.secondary {
-    background-color: $color-project-secondary;
-  }
-
-  &.grey {
-    background-color: $color-empty;
-  }
+.sc-testimony--primary {
+  border-left-color: $color-project-primary;
 }
 
-.testimony__author {
-  font-size: $txt-size-regular;
-  font-weight: $txt-regular-medium;
-  margin-bottom: $size-small;
-
-  &.tertiary {
-    color: $color-project-tertiary;
-  }
-
-  &.primary {
-    color: $color-project-primary;
-  }
-
-  &.secondary {
-    color: $color-project-secondary;
-  }
+.sc-testimony--secondary {
+  border-left-color: $color-project-secondary-dark;
 }
 
-.testimony__text {
-  font-size: $txt-size-small;
+.sc-testimony--tertiary {
+  border-left-color: $color-project-tertiary-dark;
+}
+
+.sc-testimony--empty {
+  border-left-color: $color-empty-dark;
+}
+
+.sc-testimony__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+%sc-testimony__quote {
+  width: $size-default;
+  height: $size-default;
+}
+
+.sc-testimony__quote--primary {
+  @extend %sc-testimony__quote;
+  color: $color-project-primary-light;
+}
+
+.sc-testimony__quote--secondary {
+  @extend %sc-testimony__quote;
+  color: $color-project-secondary-light;
+}
+
+.sc-testimony__quote--tertiary {
+  @extend %sc-testimony__quote;
+  color: $color-project-tertiary-light;
+}
+
+.sc-testimony__quote--empty {
+  @extend %sc-testimony__quote;
+  color: $color-empty-light;
+}
+
+.sc-testimony__type {
+  font-size: $txt-size-lower;
   color: $color-empty;
+  text-transform: uppercase;
+}
+
+.sc-testimony__text {
+  font-size: $txt-size-default;
   text-align: justify;
+  margin-top: 1rem;
+}
+
+.sc-testimony__author {
+  font-size: $txt-size-lower;
+  text-transform: capitalize;
+  font-style: italic;
+
+  &::before {
+    content: '–';
+    font-weight: $txt-bold-default;
+    color: $color-empty-light;
+    margin-right: $size-lower;
+  }
 }

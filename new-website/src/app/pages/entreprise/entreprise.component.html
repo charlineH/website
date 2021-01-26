@@ -1,74 +1,31 @@
 <app-nav-bar [page]="page"></app-nav-bar>
 <div class="entreprise__page">
   <app-carrousel [multiple]="false" type="entreprise"></app-carrousel>
-  <div class="c-presentation c-presentation--lg c-presentation--row mt-5">
-    <p class="c-presentation__text">
-      Marie laure, accompagne la conscience du corps par le Tai Chi, le Qi Gong,
-      la méditation et les Massages Bien-être…
-      <br/>
-      Le Tai Chi le Qi Gong, la méditation favorisent l’équilibre du corps et de
-      l’esprit. Ces pratiques millénaires prennent toutes leurs places en
-      entreprise où l’on cherche à développer la qualité de vie au travail.
-      <br/>
-      Rendre son corps vivant et conscient développe un véritable point d’appui
-      au quotidien. Il développe les Soft Skills ou savoir-être dont nous
-      parlons aujourd'hui : relation à soi et aux autres, souplesse,
-      adaptabilité, travail en groupe, gestion du stress ... et bien d'autres.
-      <br/>
-      J’accompagne ces transformations au rythme de chacun auprès des
-      particuliers comme en entreprise.
-    </p>
-    <img
-      alt="Marie-Laure Humeau, professeur de Tai Chi, Le Mans"
-      class="c-presentation__image c-presentation__image--right"
-      src="assets/images/taichi/noirmoutier guitare 300x224.jpg"
-    />
-  </div>
-  <div class="c-presentation c-presentation--lg c-presentation--row mb-5">
-    <span
-      (click)="goToQuatrePilier()"
-      aria-label="Site des quatres piliers"
-      class="align-self-center"
-    >
-      <img
-        alt="Enseignant certifié corps vivant corps conscient"
-        class="c-presentation__image--certification-taichi"
-        src="assets/images/logo/corps-viviant-corps-conscient.jpg"
-        style="width: 300px"
-      />
-    </span>
-    <p class="c-presentation__text">
-      Je pratique le Tai Chi, le Qi Gong et la méditation depuis une quinzaine
-      d’années. Je participe au rayonnement du réseau Corps Vivant Corps
-      Conscient dans le monde du travail.
-      <br/>
-      La pédagogie Corps Vivant Corps conscient se distingue par une pédagogie
-      progressive et précise. Elle met l'accent sur le ressenti et développe une
-      meilleure qualité de vie.
-      <br/>
-      Un corps vivant, c’est à dire disponible, souple, puissant, en santé.
-      <br/>
-      Un corps conscient c’est-à-dire centré, incarné, où l’énergie circule,
-      libéré.
-    </p>
-  </div>
+  <img
+    alt="Enseignant certifié corps vivant corps conscient"
+    src="assets/images/logo/corps-viviant-corps-conscient.jpg"
+  />
   <div class="entreprise__chapters">
     <h2 class="sr-only">Chapitres</h2>
     <app-chapter
       (click)="goToChapter1()"
       color="secondary"
       img="assets/images/taichi/tai-chi-s_accorder-445x203.png"
-      title="Cours à l'année : Tai Chi, Qi Gong et méditation"
+      title="Cours à l'année : Tai Chi, Qi Gong et méditation, "
     >
       <p class="chapter__teaser">
-        Le Tai Chi, le Qi Gong et la méditation sont accessibles à tous. Leur
-        pratique développe la souplesse, l’équilibre, la respiration, le
-        lâcher-prise, la relation aux autres, l'ancrage …
+        Le Tai Chi, le Qi Gong et la méditation, sur le lieu du travail,
+        renforcent notre qualité de vie au travail et nos savoir-être. Ils
+        développent notre esprit d’équipe ou d’entreprise, notre présence à nous
+        et aux autres, notre persévérance. Ils nous apprennent à diminuer les
+        effets du stress accumulés au quotidien.
         <br/>
-        Les cours associent des temps de relaxation, d’assouplissement, de
-        méditation en parallèle des mouvements lents. Toutes ces techniques
-        permmettent d'aller plus loin que le simple apprentissage des
-        mouvements.
+        Les cours sont accessibles à tous, et le format adapté à l’entreprise.
+        Chaque projet est différent, j’adapte le format et le contenu en
+        fonction des attentes et besoin de l’entreprise. Avec le télétravail qui
+        se développe, nous pouvons le réfléchir en présentiel et distanciel.<br/>
+        Rendre son corps vivant et conscient développe un véritable point
+        d’appui au quotidien.
         <br/>
       </p>
     </app-chapter>
@@ -76,12 +33,15 @@
       (click)="goToChapter2()"
       color="secondary"
       img="assets/images/taichi/qi-gong-entreprise-2-363x186.png"
-      title="Ateliers ponctuels : Collectifs ou individuels"
+      title="Interventions ponctuelles, en Collectif ou en individuel"
     >
       <p class="chapter__teaser">
-        Les ateliers sont accessibles à tous. ils favorisent la qualité de vie
-        au travail. Ils peuvent être ponctuels ou selon une périodicité fixée
-        avec l'entreprise.
+        Les ateliers à thème peuvent être ponctuels ou selon une périodicité
+        fixée avec l’entreprise. Chaque projet est différent, j’adapte le format
+        et le contenu en fonction des attentes et besoin de l’entreprise. Ils
+        sont accessibles à tous. <br/>Les thèmes varient en fonction des
+        besoins : respiration, posture assise ou debout confortable, créer une
+        transition travail et vie perso en télétravail etc.
         <br/>
         La pédagogie corps vivant corps conscient est adaptée à notre monde
         occidentale et au monde du travail.
@@ -94,10 +54,9 @@
       title="Massages-bien-être minutes"
     >
       <p class="chapter__teaser">
-        Les massages minutes sont accessibles à tous. Ils durent de 15 à 30mn et
-        se reçoivent habillés le plus souvent assis. Ils visent la globalité du
-        corps dans un esprit de détente et de libération des tensions accumulées
-        au quotidien, sur le lieu du travail comme sur le lieu personnel.
+        La durée du massage est définie avec l’entreprise, le plus souvent de 20
+        à 30 mn. Le massage se reçoit habillé, le plus souvent assis. Il peut
+        être sur table. Le projet est défini en amont avec l’entreprise.
       </p>
     </app-chapter>
   </div>
@@ -113,61 +72,133 @@
   <div class="entreprise__chapter">
     <h3 class="sr-only">présentation</h3>
     <p class="chapter__content">
-      Ces pratiques chinoises millénaires favorisent l'équilibre du corps, de
-      l'esprit et de l'énergie. Elles associent, au sol, relaxation,
-      assouplissement, méditation... et, debout, le plaisir de se mouvoir dans
-      l'espace. Elles harmonisent le mental, les émotions, le physique et
-      l'énergie. Elles développent souplesse, équilibre, coordination,
-      respiration, enracinement...
-      <br/>
-      La pratique est accessible à tous.
-      <br/>
-      Elle favorise, en entreprise, la qualité de vie au travail.
-      <br/>
-      Grâce aux exercices, les techniques s'apprennent au rythme de chacun.
-      Elles peuvent être utilisées au quotidien.
-      <br/>
-      Chacun, à son rythme, apprend à se détendre, se ressourcer, respirer,
-      influencer sa posture etc. Chacun développe, à son rythme, des
-      attitudes/aptitudes pour mieux vivre son quotidien : gestion du stress,
-      posture assise et debout confortable etc.
-      <br/>
-      La pratique est aussi une expérience de groupe. Elle influence
-      progressivement la relation aux autres et de fil en aiguille le travail
-      collaboratif dans l’entreprise.
-      <br/>
-      Les cours sont le plus souvent proposés en format d’une heure pour
-      s’adapter au cadre de l’entreprise.
+      La pratique du Tai chi, du Qi Gong et de la méditation est accessible à
+      tous. Chacun développe, à son rythme, des attitudes/aptitudes pour mieux
+      vivre son quotidien, au travail comme au privé : gestion du stress,
+      posture assise ou debout confortable etc. Chacun, à son rythme, se détend,
+      se ressource, respire, influence sa posture, soulage ses douleurs etc.
     </p>
-    <h3 class="chapter__subtitle mb-3">RETOUR DES PARTICIPANTS</h3>
+    <p>
+      Le Qi Gong et le Tai Chi sont des gymnastiques de santé chinoise qui
+      s’inscrivent dans une tradition millénaire. Ils associent la respiration,
+      la relaxation, le chi, le mouvement lent, la concentration souple et
+      l’enracinement. Leur pratique assouplit le corps et l’esprit, favorise un meilleur
+      équilibre physique, mental, émotionnel et énergétique. Leur pratique
+      développe une meilleure qualité de vie au travail par une conscience du
+      corps et un sens de l’effort adéquat. Leur pratique développe la
+      souplesse, la concentration, la coopération, l’écoute … La pratique est
+      ouverte à tous, quel que soit l’âge ou la condition physique.
+      Les cours associent des temps d’assouplissement, de relaxation, de
+      méditation orientée sur la respiration, le centrage, la circulation du Chi
+      et des mouvements lents. Les techniques s’apprennent au rythme de chacun.
+      Une fois intégrées elles peuvent être utilisées au quotidien.
+    </p>
+    <p>
+      La pratique est aussi une expérience de groupe. Elle influence
+      progressivement la relation à soi et aux autres, de fil en aiguille le
+      travail collaboratif dans l’entreprise.
+      <br/>
+      Les cours sont le plus souvent proposés au format d’une heure pour
+      s’adapter au cadre de l’entreprise. Mais la durée peut être ajustée en
+      fonction des impératifs de l’entreprise. Avec la crise que nous vivons ils
+      peuvent être associés à des temps en visio-conférence. Chaque projet est
+      affiné au cas par cas.
+      <br/>
+      La pédagogie Corps Vivant Corps Conscient est progressive, précise et
+      adaptée à notre monde occidental. Elle met l'accent sur le ressenti et
+      développe une meilleure qualité de vie, vers un corps vivant et conscient.
+    </p>
+    <ul>
+      <li>
+        Un corps vivant, c’est à dire disponible, souple, puissant, en santé.
+      </li>
+      <li>
+        Un corps conscient c’est-à-dire centré, incarné, où l’énergie circule,
+        libéré.
+      </li>
+      <li>
+        C’est un chemin d’évolution pour chacun.
+      </li>
+    </ul>
+    <p>
+      Plus d’infos, un téléphone 06.08.03.26.45
+    </p>
+    <h3 class="chapter__subtitle mb-3">Témoignages</h3>
     <div class="chapter__testimonies">
-      <app-testimony [small]="true">
-        Mon dos et mes épaules sont soulagées même s’il reste encore à faire.
-      </app-testimony>
-      <app-testimony [small]="true"
-      >Je me sens beaucoup plus légère et détendue.
-      </app-testimony>
-      <app-testimony [small]="true"
-      >Mon dos est moins endolori et plus souple, ma respiration facilitée et
-        plus souple.
-      </app-testimony>
-      <app-testimony [small]="true"
-      >Mon sommeil est plus réparateur.
-      </app-testimony>
-      <app-testimony [small]="true">
-        J’ai aimé les fous rires, la détente, l’harmonie, sentir mes mouvements
-        se déverrouiller, cela fait du bien tout simplement.
-      </app-testimony>
-      <app-testimony [small]="true"
-      >Mes relations sont plus apaisées, je suis plus calme.
-      </app-testimony>
-      <app-testimony [small]="true"
-      >J'ai pris du recul avec des situations même stressantes.
-      </app-testimony>
-      <app-testimony [small]="true">
-        Mes relations sont plus apaisées, je suis peut-être plus à l’écoute et
-        moins dans le rentre dedans.
-      </app-testimony>
+      <ngb-carousel
+        class="sc-chapter__testimony__carrousel sc-chapter__testimony__carrousel--first"
+      >
+        <ng-template ngbSlide>
+          <app-testimony author="Martine">
+            Mon dos et mes épaules sont soulagées même s’il reste encore à
+            faire.
+          </app-testimony>
+        </ng-template>
+        <ng-template ngbSlide>
+          <app-testimony author="Antoine">
+            Le Qi Gong me permet toujours de renforcer mon dos, plus
+            grande souplesse, de même mon cou est plus mobile, la station debout
+            continue devient moins contraignante. Après une séance, il se dégage une
+            sérénité salvatrice qui dure jusqu'à plusieurs jours, un petit
+            réinvestissement chez soi permet de prolonger cet effet. Le sommeil est
+            mieux régulé, le stress mieux géré. Encore mille mercis pour ces séances
+            si enrichissantes, je reviendrai avec plaisir.
+          </app-testimony>
+        </ng-template>
+        <ng-template ngbSlide>
+          <app-testimony author="Dominique">
+            Mon dos est moins endolori et plus souple, ma respiration
+            facilitée et plus souple.
+          </app-testimony>
+        </ng-template>
+        <ng-template ngbSlide>
+          <app-testimony author="Monique">
+            Mon sommeil est plus réparateur.
+          </app-testimony>
+        </ng-template>
+        <ng-template ngbSlide>
+          <app-testimony author="Annie">
+            J’ai aimé les fous rires, la détente, l’harmonie, sentir mes
+            mouvements se déverrouiller, cela fait du bien tout simplement.
+          </app-testimony>
+        </ng-template>
+        <ng-template ngbSlide>
+          <app-testimony author="François">
+            Mes relations sont plus apaisées, je suis plus calme.
+          </app-testimony>
+        </ng-template>
+      </ngb-carousel>
+      <ngb-carousel
+        class="sc-chapter__testimony__carrousel"
+      >
+        <ng-template ngbSlide>
+          <app-testimony author="Françoise">
+            J'ai pris du recul avec des situations même stressantes.
+          </app-testimony>
+        </ng-template>
+        <ng-template ngbSlide>
+          <app-testimony author="Valérie">
+            Mes relations sont plus apaisées, je suis peut-être plus à
+            l’écoute et moins dans le rentre dedans.
+          </app-testimony>
+        </ng-template>
+        <ng-template ngbSlide>
+          <app-testimony author="Jean Charles">
+            J'ai vraiment apprécié la découverte du Qi Gong cette
+            année. Il m'a permis de faire une pause dans le boulot, d'améliorer ma
+            concentration et d'être à l'écoute de mon corps et de ses sensations.
+            J'ai également pu assouplir mon bas du dos et ainsi limiter mes
+            douleurs chroniques. C'est avec plaisir que je te retrouverai l'année
+            prochaine pour un cours toujours dans la bonne humeur.
+          </app-testimony>
+        </ng-template>
+        <ng-template ngbSlide>
+          <app-testimony author="Dominique">
+            Je préfère pratiquer les mouvements à la relaxation mais
+            c'est un "TOUT" et je souhaite remplier.
+          </app-testimony>
+        </ng-template>
+      </ngb-carousel>
     </div>
   </div>
   <app-img-band
@@ -176,56 +207,115 @@
     color="secondary"
     id="ateliers"
     img="assets/images/bandeau/IMG_4627_1680x658.png"
-    title="Ateliers ponctuels : Collectifs ou individuels"
+    title="Interventions ponctuelles, en Collectif ou en individuel"
   >
   </app-img-band>
   <div class="entreprise__chapter">
     <h3 class="sr-only">présentation</h3>
 
     <p class="chapter__content">
-      Les ateliers sont accessibles à tous. Ils favorisent la qualité de vie au
-      travail. Ils peuvent être ponctuels ou selon une périodicité fixée avec
-      l’entreprise.
+      Les thèmes proposés puisent leurs sources dans le « travail » de
+      préparation du Tai Chi et du Qi Gong. La pédagogie Corps Vivant Corps
+      Conscient est progressive et adaptée à notre mode de vie occidentalet au
+      monde du travail. Elle met l'accent sur le ressenti et développe une
+      meilleure qualité de vie, vers un corps vivant et conscient.
       <br/>
-      Les thèmes peuvent variés entre la relaxation, la respiration, retrouver
-      une posture debout ou assise confortable, retrouver le plaisir de se
-      concentrer. Ils sont construits pour favoriser le thème de l’atelier mais
-      aussi son transfert dans le quotidien professionnel comme personnel. Ils
-      sont choisis en collaboration avec l’entreprise.
-      <br/>
-      La même démarche d’accompagnement peut être proposée individuellement.
-      <br/>
-      Objectif, fil conducteur : développer et faire de sa conscience corporelle
-      une véritable compétence.
+      Voici quelques exemples tirés d’ateliers :
     </p>
-    <h3 class="chapter__subtitle mb-3">RETOURS DES PARTICIPANTS</h3>
+    <ul>
+      <li>
+        Retrouver le plaisir de respirer
+      </li>
+      <li>
+        Se détendre et apprendre à se détendre
+      </li>
+      <li>
+        Mobiliser son dos et retrouver une posture débout/assise confortable
+      </li>
+      <li>
+        Entrainer le muscle de l’attention, de la concentration
+      </li>
+      <li>
+        Etre centré et apprendre à se centrer
+      </li>
+      <li>
+        Retrouver le plaisir de se concentrer, etc.
+      </li>
+    </ul>
+    <p>
+      Ponctuellement les ateliers permettent de se détendre et réduire les
+      effets du stress. Par la répétition ces ateliers installent des
+      aptitudes/attitudes qui nous permettent de mieux vivre au quotidien. Ils
+      développent des savoir-être tels que : écoute, capacité à se détendre et
+      réduire les effets du stress, gestion des émotions, disponibilité au
+      changement etc.
+      <br/>
+      Ils sont construits pour favoriser le thème de l’atelier mais aussi son
+      transfert dans le quotidien professionnel comme personnel. Ils sont
+      choisis en collaboration avec l’entreprise.
+      <br/>
+      La démarche d’accompagnement peut être proposée en collectif ou en
+      individuel. L'accompagnement a comme « objectif, fil conducteur » :
+      développer et faire de sa conscience corporelle une véritable compétence,
+      au quotidien.
+      <br/>
+      Plus d’infos, un téléphone 06.08.03.26.45
+    </p>
+    <h3 class="chapter__subtitle mb-3">Temoignages</h3>
     <div class="chapter__testimonies">
-      <app-testimony [small]="true">
-        J’ai aimé prendre conscience de mon corps pour me détendre.
-      </app-testimony>
-      <app-testimony [small]="true">
-        J’ai aimé apprendre plusieurs relax.
-      </app-testimony>
-      <app-testimony [small]="true">
-        J’ai aimé apprendre à connaitre mon corps.
-      </app-testimony>
-      <app-testimony [small]="true">
-        J’ai aimé apprendre à me détendre.
-      </app-testimony>
-      <app-testimony [small]="true">
-        J’ai aimé passé un moment agréable.
-      </app-testimony>
-      <app-testimony [small]="true">
-        Marie-Laure je partage les retours des secrétaires après notre atelier
-        de vendredi. Les retours sont très positifs, elles ont toutes apprécié.
-        Voici quelques extraits de leur bilan : "J'ai aimé prendre conscience de
-        mon corps pour me détendre" "J'ai aimé apprendre plusieurs relax" "J'ai
-        aimé passé un moment agréable".
-        <br/>
-        Sophie et Léatitia ont, elles aussi apprécié, l'ambiance créée a
-        facilité la suite de la réunion. (elles animaient une réunion après
-        l'atelier).
-      </app-testimony>
+      <ngb-carousel
+        class="sc-chapter__testimony__carrousel sc-chapter__testimony__carrousel--first"
+      >
+        <ng-template ngbSlide>
+          <app-testimony author="Christine">
+            J’ai pris conscience du bas du dos. Dans mon cas comme c’est
+            une zone sensible, j’ai appris à faire les exercices en me concentrant
+            et en prenant conscience de chaque partie. Je les refais à la maison
+            régulièrement surtout quand je sens que le dos commence à souffrir. Les
+            automassages du reste du corps sont également très bénéfiques.
+          </app-testimony>
+        </ng-template>
+        <ng-template ngbSlide>
+          <app-testimony author="Nathalie">
+            Les ateliers massage ont été très intéressants pour moi. Ils
+            permettent pendant une heure de temps en temps de se déconnecter, de se
+            relaxer et d’apprendre des gestes et techniques simples agréables et
+            faciles à reproduire si besoin ou envie.
+          </app-testimony>
+        </ng-template>
+        <ng-template ngbSlide>
+          <app-testimony>
+            Soizic : J’ai apprécié l’atelier automassages efficace relaxant et
+            facile à reproduire soi-même une fois les enchainements un peu
+            mémorisés, mais en premier j’ai apprécié la détente que cela procure.
+          </app-testimony>
+        </ng-template>
+      </ngb-carousel>
+      <ngb-carousel
+        class="sc-chapter__testimony__carrousel"
+      >
+        <ng-template ngbSlide>
+          <app-testimony author="Ghislaine">
+            La méditation m’apporte de la sérénité, du relâchement, du
+            calme. Ça devient un moment de relaxation le soir. Quand je me concentre
+            sur la respiration ça rafraichi mes neurones. La pédagogie progressive
+            sur les 4 séances est intéressante. J’apprécie de méditer en groupe.
+          </app-testimony>
+        </ng-template>
+        <ng-template ngbSlide>
+          <app-testimony author="Armelle">
+            Marie-Laure je partage les retours des secrétaires après notre
+            atelier de vendredi. Les retours sont très positifs, elles ont toutes
+            apprécié. Voici quelques extraits de leur bilan : "J'ai aimé prendre
+            conscience de mon corps pour me détendre" "J'ai aimé apprendre plusieurs
+            relax" "J'ai aimé passé un moment agréable".
+            <br/>
+            Sophie et Léatitia ont, elles aussi apprécié, l'ambiance créée a
+            facilité la suite de la réunion. (elles animaient une réunion après
+            l'atelier).
+          </app-testimony>
+        </ng-template>
+      </ngb-carousel>
     </div>
   </div>
 
@@ -242,12 +332,16 @@
     <h3 class="sr-only">présentation</h3>
 
     <p class="chapter__content">
-      Les massages minutes sont accessibles à tous. Ils durent de 15 à 30mn et
-      se reçoivent habillés le plus souvent assis. Ils visent la globalité du
+      Les massages minutes sont accessibles à tous. Ils visent la globalité du
       corps dans un esprit de détente et de libération des tensions accumulées
       au quotidien. Ils sont très favorables pour développer la qualité de vie
-      au travail ou lors d’animations évènementielles. Ils peuvent être proposés
-      de façon ponctuelle ou périodique.
+      au travail.
+      <br/>
+      Ils peuvent aussi être proposés lors d’animations évènementielles.
+      <br/>
+      Ils peuvent être proposés de façon ponctuelle ou périodique.
+      <br/>
+      Plus d’infos, un téléphone 06.08.03.26.45
     </p>
   </div>
 </div>
