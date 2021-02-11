@@ -174,14 +174,21 @@ app-carousel {
 
 .taichi__articles {
   display: flex;
-  flex-direction: column;
-  padding: 2*$size-medium;
+  flex-wrap: wrap;
+  padding: $size-default;
+
   @media (min-width: $small-mobile-window) {
     padding: 2*$size-medium 8*$size-medium;
+    flex-direction: column;
+    height: 75rem;
   }
 
   .articles__item {
-    margin-bottom: $size-xmedium;
+    margin-bottom: $size-medium;
+    @media (min-width: $small-mobile-window) {
+      margin: $size-xmedium;
+      width: 25%;
+    }
   }
 }
 

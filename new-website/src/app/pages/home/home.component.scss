@@ -135,14 +135,7 @@
   padding: $txt-size-default;
 
   @media (min-width: $tablet-window) {
-    justify-content: space-around;
-  }
-
-  @media (min-width: $medium-desktop-window) {
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    width: fit-content;
+    justify-content: space-evenly;
   }
 
   .news__item {
@@ -154,7 +147,7 @@
     }
 
     @media (min-width: $medium-desktop-window) {
-      width: 80%;
+      width: 20%;
     }
   }
 }
