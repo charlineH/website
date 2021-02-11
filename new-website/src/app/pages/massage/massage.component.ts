@@ -1,9 +1,11 @@
-import { AfterViewInit, Component } from '@angular/core';
+import { AfterViewChecked, Component, OnDestroy } from '@angular/core';
 import { RoutesPath } from '../../enum/routes.enum';
 import { ActivatedRoute } from '@angular/router';
 import { ImageItem } from '../../model/massage.model';
 import { MassageEnum } from '../../model/massage.enum';
 import { HasTitle } from '../../model/has-title.model';
+import { takeUntil } from 'rxjs/operators';
+import { Subject } from 'rxjs';
 
 
 @Component({
@@ -11,7 +13,7 @@ import { HasTitle } from '../../model/has-title.model';
   templateUrl: './massage.component.html',
   styleUrls: ['./massage.component.scss']
 })
-export class MassageComponent implements AfterViewInit, HasTitle {
+export class MassageComponent implements AfterViewChecked, OnDestroy, HasTitle {
 
   readonly page = RoutesPath.MASSAGE;
   readonly typesMassage: ImageItem[] = [
@@ -60,12 +62,22 @@ export class MassageComponent implements AfterViewInit, HasTitle {
   ];
 
   title = ' Massages bien-être au Mans (72) | Humoe';
+  private _destroyed$ = new Subject();
 
   constructor(private readonly route: ActivatedRoute) {
   }
 
-  ngAfterViewInit(): void {
-    this.scrollToAnchor(this.route.snapshot.queryParams.anchor);
+  ngOnDestroy() {
+    this._destroyed$.next();
+    this._destroyed$.complete();
+  }
+
+  ngAfterViewChecked(): void {
+    this.route.queryParams
+      .pipe(takeUntil(this._destroyed$))
+      .subscribe(params => {
+        this.scrollToAnchor(params.anchor);
+      });
   }
 
   scrollToMassage(event: number) {
