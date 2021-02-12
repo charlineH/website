@@ -15,13 +15,19 @@ export class NewsComponent implements OnInit {
 
   imageLabel: string;
   isExterneRedirect: boolean;
+  isAssetRedirect: boolean;
 
   ngOnInit(): void {
     this.imageLabel = this.img?.split('/')?.reverse()[0].split('.')[0];
     this.isExterneRedirect = this.redirect && this.redirect.includes('http');
+    this.isAssetRedirect = this.redirect && this.redirect.includes('assets');
   }
 
   openLink() {
-    window.open(this.redirect, '_blank');
+    let redirectUrl = this.redirect;
+    if (this.isAssetRedirect) {
+      redirectUrl = window.location.origin + '/' + redirectUrl;
+    }
+    window.open(redirectUrl, '_blank');
   }
 }

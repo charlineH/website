@@ -5,17 +5,21 @@
     <p class="news__text">
       <ng-content></ng-content>
     </p>
-    <button *ngIf="buttonLabel && !isExterneRedirect"
-            [routerLink]="redirect"
-            aria-label="buttonLabel"
-            class="news__button">
-      {{buttonLabel}}
-    </button>
     <button (click)="openLink()"
-            *ngIf="buttonLabel && isExterneRedirect"
+            *ngIf="buttonLabel && isExterneRedirect || isAssetRedirect; else interneRedirect"
             aria-label="buttonLabel"
             class="news__button">
       {{buttonLabel}}
     </button>
   </div>
 </div>
+
+<ng-template #interneRedirect>
+
+  <button *ngIf="buttonLabel "
+          [routerLink]="redirect"
+          aria-label="buttonLabel"
+          class="news__button">
+    {{buttonLabel}}
+  </button>
+</ng-template>

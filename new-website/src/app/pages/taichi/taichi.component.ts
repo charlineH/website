@@ -1,14 +1,16 @@
-import { AfterViewInit, Component } from '@angular/core';
+import { AfterViewChecked, Component, ElementRef, OnDestroy } from '@angular/core';
 import { RoutesPath } from '../../enum/routes.enum';
 import { ActivatedRoute } from '@angular/router';
 import { HasTitle } from '../../model/has-title.model';
+import { takeUntil } from 'rxjs/operators';
+import { Subject } from 'rxjs';
 
 @Component({
   selector: 'app-taichi',
   templateUrl: './taichi.component.html',
   styleUrls: ['./taichi.component.scss']
 })
-export class TaichiComponent implements AfterViewInit, HasTitle {
+export class TaichiComponent implements AfterViewChecked, OnDestroy, HasTitle {
 
   readonly page = RoutesPath.TAICHI;
 
@@ -91,11 +93,25 @@ export class TaichiComponent implements AfterViewInit, HasTitle {
 
   title = 'Tai Chi & Qi Gong et Méditation, au Mans (72) | Humoe';
 
-  constructor(private readonly route: ActivatedRoute) {
+
+  private _destroyed$ = new Subject();
+
+  constructor(
+    private readonly route: ActivatedRoute,
+    private el: ElementRef) {
   }
 
-  ngAfterViewInit(): void {
-    this.scrollToAnchor(this.route.snapshot.queryParams.anchor);
+  ngOnDestroy(): void {
+    this._destroyed$.next();
+    this._destroyed$.complete();
+  }
+
+  ngAfterViewChecked(): void {
+    this.route.queryParams
+      .pipe(takeUntil(this._destroyed$))
+      .subscribe(params => {
+        this.scrollToAnchor(params.anchor);
+      });
   }
 
   goToQuatrePilier() {
@@ -117,7 +133,8 @@ export class TaichiComponent implements AfterViewInit, HasTitle {
   private scrollToAnchor(anchor: string): void {
     try {
       if (anchor) {
-        document.querySelector(`#${ anchor }`).scrollIntoView();
+        const toScrollEl = this.el.nativeElement.querySelector(`#${ anchor }`);
+        toScrollEl.scrollIntoView();
       }
     } catch (e) {
       console.error('Scoll impossible', e);
