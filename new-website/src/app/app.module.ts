@@ -32,6 +32,7 @@ import { LibraryComponent } from './pages/library/library.component';
 import { LibraryComponentComponent } from './pages/library/library-component/library-component.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { AProposComponent } from './pages/a-propos/a-propos.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { MatListModule } from '@angular/material/list';
     ArticleComponent,
     PostComponent,
     LibraryComponent,
-    LibraryComponentComponent
+    LibraryComponentComponent,
+    AProposComponent
   ],
   imports: [
     BrowserModule,

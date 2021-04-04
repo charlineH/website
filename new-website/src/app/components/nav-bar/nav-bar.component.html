@@ -55,5 +55,11 @@
          class="item__title none"
          routerLink="/{{entreprisePage}}">Entreprise</a>
     </h3>
+    <h3 [ngClass]="{'active': page === aProposPage}"
+        class="item">
+      <a (click)="hideMenu()"
+         class="item__title none"
+         routerLink="/{{aProposPage}}">A propos</a>
+    </h3>
   </div>
 </header>

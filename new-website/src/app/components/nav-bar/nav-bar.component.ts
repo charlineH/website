@@ -14,6 +14,8 @@ export class NavBarComponent {
   readonly massagePage = RoutesPath.MASSAGE;
   readonly shiatsuPage = RoutesPath.SHIATSU;
   readonly entreprisePage = RoutesPath.ENTREPRISE;
+  readonly aProposPage = RoutesPath.A_PROPOS;
+
   displayMobileMenu: boolean;
 
   showHideMenu() {
