@@ -178,7 +178,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: $size-large;
+  margin: $size-large 0;
 }
 
 .c-home__about__button {
@@ -186,10 +186,4 @@
   color: $color-default-secondary;
   padding: $size-lower $size-medium;
   margin-top: $size-medium;
-}
-
-.about__timeline {
-  background-color: $color-empty-very-light;
-  padding: $size-default $size-large;
-  margin: $size-large 0;
 }

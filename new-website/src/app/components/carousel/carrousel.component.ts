@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CarrouselComponent implements OnInit {
   @Input() multiple: boolean;
-  @Input() type: 'taichi' | 'massage' | 'shiatsu' | 'entreprise';
+  @Input() type: 'taichi' | 'massage' | 'shiatsu' | 'entreprise' | 'about';
 
   constructor() {
   }

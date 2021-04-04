@@ -17,6 +17,7 @@ export class HomeComponent {
   readonly massagePage = RoutesPath.MASSAGE;
   readonly shiatsuPage = RoutesPath.SHIATSU;
   readonly entreprisePage = RoutesPath.ENTREPRISE;
+  readonly aProposPage = RoutesPath.A_PROPOS;
 
   readonly prod = environment.production;
 

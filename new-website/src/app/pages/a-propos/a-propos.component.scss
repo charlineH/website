@@ -1,0 +1,21 @@
+@import "src/assets/styles/bases";
+
+.about-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home__about {
+  background-color: $color-default-secondary;
+  display: flex;
+  flex-direction: column;
+  margin-top: $size-large;
+  width: 80%;
+}
+
+.about__timeline {
+  background-color: $color-empty-very-light;
+  padding: $size-default $size-large;
+  margin: $size-large 0;
+}
