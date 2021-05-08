@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { ImgBandComponent } from './img-band.component';
 
@@ -6,7 +6,7 @@ describe('ImgBandComponent', () => {
   let component: ImgBandComponent;
   let fixture: ComponentFixture<ImgBandComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ ImgBandComponent ]
     })
