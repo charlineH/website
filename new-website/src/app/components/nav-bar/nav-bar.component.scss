@@ -135,7 +135,8 @@
   }
 }
 
-.item:hover .item__list {
+.item:hover .item__list,
+.item__title:focus + .item__list {
   display: flex;
   flex-direction: column;
 }
