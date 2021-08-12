@@ -33,6 +33,7 @@ import { LibraryComponentComponent } from './pages/library/library-component/lib
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { AProposComponent } from './pages/a-propos/a-propos.component';
+import { RessourceComponent } from './pages/ressource/ressource.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { AProposComponent } from './pages/a-propos/a-propos.component';
     PostComponent,
     LibraryComponent,
     LibraryComponentComponent,
-    AProposComponent
+    AProposComponent,
+    RessourceComponent
   ],
   imports: [
     BrowserModule,
@@ -98,5 +100,11 @@ export class AppModule {
     iconRegistry.addSvgIcon(
       'up-arrow',
       sanitizer.bypassSecurityTrustResourceUrl('../assets/images/svg/up-arrow.svg'));
+    iconRegistry.addSvgIcon(
+      'pdf',
+      sanitizer.bypassSecurityTrustResourceUrl('../assets/images/svg/pdf.svg'));
+    iconRegistry.addSvgIcon(
+      'download',
+      sanitizer.bypassSecurityTrustResourceUrl('../assets/images/svg/download.svg'));
   }
 }

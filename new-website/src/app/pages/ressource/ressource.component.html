@@ -1,0 +1,22 @@
+<app-nav-bar></app-nav-bar>
+<h1 class="sr-only"></h1>
+<div class="sc-ressource-content">
+  <h2 class="sc-ressource__title">{{resource?.title}}</h2>
+  <div class="sc-ressource__resume">
+    <h3 class="sc-resume__title">Résumé</h3>
+    <p [innerHTML]="resource.resume" class="sc-resume__content"></p>
+  </div>
+  <div class="sc-ressource__download">
+    <h3 class="sc-download__title">
+      <span aria-hidden="true">
+        <mat-icon svgIcon="download"></mat-icon>
+      </span>
+      Télécharger le document
+    </h3>
+    <a [href]="resource.lien">
+      <span aria-hidden="true">
+        <mat-icon class="thumbnail__icon" svgIcon="pdf"></mat-icon>
+      </span>
+    </a>
+  </div>
+</div>

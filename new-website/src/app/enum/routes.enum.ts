@@ -5,5 +5,6 @@ export enum RoutesPath {
   TAICHI = 'taichi',
   A_PROPOS = 'a-propos',
   GALLERY = 'gallerie',
-  ENTREPRISE = 'entreprise'
+  ENTREPRISE = 'entreprise',
+  RESSOURCE = 'ressource'
 }

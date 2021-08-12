@@ -10,6 +10,7 @@ import { NotProductionGuard } from './guard/not-production.guard';
 import { GallerieComponent } from './pages/gallerie/gallerie.component';
 import { LibraryComponent } from './pages/library/library.component';
 import { AProposComponent } from './pages/a-propos/a-propos.component';
+import { RessourceComponent } from './pages/ressource/ressource.component';
 
 const routes: Routes = [
   {path: RoutesPath.HOME, component: HomeComponent},
@@ -18,13 +19,14 @@ const routes: Routes = [
   {path: RoutesPath.SHIATSU, component: ShiatsuComponent},
   {path: RoutesPath.ENTREPRISE, component: EntrepriseComponent},
   {path: RoutesPath.A_PROPOS, component: AProposComponent},
+  {path: `${ RoutesPath.RESSOURCE }/:id`, component: RessourceComponent},
   {path: 'library', canActivate: [NotProductionGuard], component: LibraryComponent},
   {path: RoutesPath.GALLERY, component: GallerieComponent, canActivate: [NotProductionGuard]},
   {path: '**', redirectTo: '/'}
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { scrollPositionRestoration: 'top', relativeLinkResolution: 'legacy' })],
+  imports: [RouterModule.forRoot(routes, {scrollPositionRestoration: 'top', relativeLinkResolution: 'legacy'})],
   exports: [RouterModule]
 })
 export class AppRoutingModule {
