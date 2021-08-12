@@ -64,4 +64,15 @@
       <h1>Entreprise</h1>
     </div>
   </ng-template>
+  <ng-template *ngIf="type === 'about'" ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img
+        alt="Random second slide"
+        src="assets/images/caroussel/taichi-mont-beuvray-1920x447.png"
+      />
+    </div>
+    <div class="carousel-caption">
+      <h1>A propos de moi</h1>
+    </div>
+  </ng-template>
 </ngb-carousel>

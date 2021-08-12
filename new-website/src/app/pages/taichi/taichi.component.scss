@@ -61,7 +61,7 @@ app-carousel {
 
 .chapter__content {
   color: $color-empty;
-  font-size: $txt-size-default;
+  font-size: 1.125rem;
   text-align: justify;
   margin-bottom: $size-xmedium;
 }
@@ -105,7 +105,7 @@ app-carousel {
   }
 
   .stiker__content {
-    font-size: $txt-size-lower;
+    font-size: $txt-size-default;
     color: $color-empty;
     text-align: justify;
   }
@@ -143,11 +143,11 @@ app-carousel {
   }
 }
 
-.chapter-2__content--title {
-  color: $color-project-primary;
+.chapter__content--title {
+  color: $color-project-primary-dark;
   text-transform: uppercase;
   font-size: $txt-size-regular;
-  font-weight: $txt-regular-medium;
+  font-weight: $txt-bold-default;
   margin-bottom: $size-default;
 }
 
