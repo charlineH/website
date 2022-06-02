@@ -1,65 +1,122 @@
 <header class="nav-bar" role="navigation">
-  <div (click)="showHideMenu()" class="nav-bar__menu">
-    Menu
-  </div>
+  <div (click)="showHideMenu()" class="nav-bar__menu">Menu</div>
   <div class="nav-bar__website-info">
     <div class="website-info__logo"></div>
     <span class="website-info__title">Marie-Laure HUMEAU </span>
   </div>
-  <div (clickOutside)="hideMenu()"
-       [excludeClasses]="['nav-bar__menu']"
-       [ngClass]="{'nav-bar__items--mobile': displayMobileMenu}"
-       appClickOutside
-       class="nav-bar__items">
-    <h3 [ngClass]="{'active': page === homePage}"
-        class="item">
-      <a (click)="hideMenu()"
-         class="item__title none"
-         routerLink="/{{homePage}}">Accueil</a>
+  <div
+    (clickOutside)="hideMenu()"
+    [excludeClasses]="['nav-bar__menu']"
+    [ngClass]="{ 'nav-bar__items--mobile': displayMobileMenu }"
+    appClickOutside
+    class="nav-bar__items"
+  >
+    <h3 [ngClass]="{ active: page === homePage }" class="item">
+      <a
+        (click)="hideMenu()"
+        class="item__title none"
+        routerLink="/{{ homePage }}"
+        >Accueil</a
+      >
     </h3>
-    <h3 [ngClass]="{'active': page === taichiPage}"
-        class="item">
-      <a (click)="hideMenu()"
-         class="item__title none"
-         routerLink="/{{taichiPage}}">Tai Chi</a>
+    <h3 [ngClass]="{ active: page === taichiPage }" class="item">
+      <a
+        (click)="hideMenu()"
+        class="item__title none"
+        routerLink="/{{ taichiPage }}"
+        >Tai Chi</a
+      >
       <div class="item__list">
-        <a [queryParams]="{anchor: 'explication'}" class="none" routerLink="/{{taichiPage}}">Présentation</a>
-        <a [queryParams]="{anchor: 'cours'}" class="none" routerLink="/{{taichiPage}}">Les cours</a>
-        <a [queryParams]="{anchor: 'articles'}" class="none" routerLink="/{{taichiPage}}">Documents</a>
+        <a
+          [queryParams]="{ anchor: 'explication' }"
+          class="none"
+          routerLink="/{{ taichiPage }}"
+          >Présentation</a
+        >
+        <a
+          [queryParams]="{ anchor: 'cours' }"
+          class="none"
+          routerLink="/{{ taichiPage }}"
+          >Les cours</a
+        >
+        <a
+          [queryParams]="{ anchor: 'articles' }"
+          class="none"
+          routerLink="/{{ taichiPage }}"
+          >Documents</a
+        >
         <!--        <a [queryParams]="{anchor: 'stage'}" class="none" routerLink="/{{taichiPage}}">Stages et ateliers</a>-->
       </div>
     </h3>
-    <h3 [ngClass]="{'active': page === massagePage}"
-        class="item">
-      <a (click)="hideMenu()"
-         class="item__title none"
-         routerLink="/{{massagePage}}">Massages-Bien-Etre</a>
+    <h3 [ngClass]="{ active: page === massagePage }" class="item">
+      <a
+        (click)="hideMenu()"
+        class="item__title none"
+        routerLink="/{{ massagePage }}"
+        >Massages-Bien-Etre</a
+      >
       <div class="item__list">
-        <a [queryParams]="{anchor: 'ayurvedique'}" class="none" routerLink="/{{massagePage}}">Tradition ayurvédique</a>
-        <a [queryParams]="{anchor: 'vitalisant'}" class="none" routerLink="/{{massagePage}}">Relaxation vitalisante</a>
-        <a [queryParams]="{anchor: 'drainant'}" class="none" routerLink="/{{massagePage}}">Relaxation drainante</a>
-        <a [queryParams]="{anchor: 'thailandais'}" class="none" routerLink="/{{massagePage}}">Nuad-bo-rarn</a>
-        <a [queryParams]="{anchor: 'enfants'}" class="none" routerLink="/{{massagePage}}">Massage avec les enfants</a>
-        <a [queryParams]="{anchor: 'minutes'}" class="none" routerLink="/{{massagePage}}">Massage minutes</a>
+        <a
+          [queryParams]="{ anchor: 'ayurvedique' }"
+          class="none"
+          routerLink="/{{ massagePage }}"
+          >Massage ayurvédique</a
+        >
+        <a
+          [queryParams]="{ anchor: 'vitalisant' }"
+          class="none"
+          routerLink="/{{ massagePage }}"
+          >Massage vitalisant</a
+        >
+        <a
+          [queryParams]="{ anchor: 'drainant' }"
+          class="none"
+          routerLink="/{{ massagePage }}"
+          >Massage drainant</a
+        >
+        <a
+          [queryParams]="{ anchor: 'posture' }"
+          class="none"
+          routerLink="/{{ massagePage }}"
+          >Massage & posture ou respiration</a
+        >
+        <a
+          [queryParams]="{ anchor: 'enfants' }"
+          class="none"
+          routerLink="/{{ massagePage }}"
+          >Massage avec les enfants</a
+        >
+        <a
+          [queryParams]="{ anchor: 'minutes' }"
+          class="none"
+          routerLink="/{{ massagePage }}"
+          >Massage minutes</a
+        >
       </div>
     </h3>
-    <h3 [ngClass]="{'active': page === shiatsuPage}"
-        class="item">
-      <a (click)="hideMenu()"
-         class="item__title none"
-         routerLink="/{{shiatsuPage}}">Shiatsu</a>
+    <h3 [ngClass]="{ active: page === shiatsuPage }" class="item">
+      <a
+        (click)="hideMenu()"
+        class="item__title none"
+        routerLink="/{{ shiatsuPage }}"
+        >Shiatsu</a
+      >
     </h3>
-    <h3 [ngClass]="{'active': page === entreprisePage}"
-        class="item">
-      <a (click)="hideMenu()"
-         class="item__title none"
-         routerLink="/{{entreprisePage}}">Entreprise</a>
+    <h3 [ngClass]="{ active: page === entreprisePage }" class="item">
+      <a
+        (click)="hideMenu()"
+        class="item__title none"
+        routerLink="/{{ entreprisePage }}"
+        >Entreprise</a
+      >
     </h3>
-    <h3 [ngClass]="{'active': page === aProposPage}"
-        class="item">
-      <a (click)="hideMenu()"
-         class="item__title none"
-         routerLink="/{{aProposPage}}">A propos</a>
+    <h3 [ngClass]="{ active: page === aProposPage }" class="item">
+      <a
+        (click)="hideMenu()"
+        class="item__title none"
+        routerLink="/{{ aProposPage }}"
+        >A propos</a
+      >
     </h3>
   </div>
 </header>
