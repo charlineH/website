@@ -28,18 +28,16 @@
       class="sc-activity-intro__column"
       title="Cliquer pour en savoir plus"
     >
-      <h3 class="sc-activity-intro__title u-text--primary">Tai Chi Qi Gong Méditation</h3>
+      <h3 class="sc-activity-intro__title u-text--primary">
+        Tai Chi Qi Gong Méditation
+      </h3>
       <p class="sc-activity-intro__content">
-        Le <strong>Tai Chi, le Qi Gong et la méditation</strong> développent notre souplesse,
-        notre équilibre, notre coordination, notre respiration, notre
-        enracinement... Ils favorisent l’équilibre du corps, de l’esprit et de
-        l’énergie. Arts énergétiques ou simples activités de loisir, ils
-        développent au fil du temps notre présence, notre rapport à nous, aux
-        autres et au monde, un état d’esprit au quotidien.
+        Le <strong>Tai Chi, le Qi Gong et la méditation</strong> développent
+        notre souplesse, notre équilibre, notre coordination, notre respiration,
+        notre enracinement...
       </p>
       <p>
-        <strong>Lieux : </strong>Cours proposés sur
-        Laigné en Belin et le Mans
+        <strong>Lieux : </strong>Cours proposés sur Laigné en Belin et le Mans
       </p>
       <button
         [routerLink]="taichiPage"
@@ -55,15 +53,11 @@
     >
       <h3 class="sc-activity-intro__title u-text--empty">Massages-Bien-Etre</h3>
       <p class="sc-activity-intro__content">
-        Le <strong>massage bien-être</strong> est un accompagnement personnalisé, par le toucher,
-        pour favoriser, entretenir et renforcer le bien-être au quotidien. Au
-        fil du temps le massage développe la conscience et la globalité de notre
-        corps. Cette conscience transforme, chacun à son rythme, dans son
-        rapport à soi, aux autres et au monde.
+        Le <strong>massage bien-être</strong> est un accompagnement
+        personnalisé, par le toucher, pour favoriser, entretenir et renforcer le
+        bien-être au quotidien.
       </p>
-      <p>
-        <strong>Lieux : </strong>Séances sur Laigné en Belin (15mn Le Mans)
-      </p>
+      <p><strong>Lieux : </strong>Séances sur Laigné en Belin (15mn Le Mans)</p>
       <button
         [routerLink]="massagePage"
         class="sc-activity-intro__button sc-activity-intro__button--empty"
@@ -78,17 +72,11 @@
     >
       <h3 class="sc-activity-intro__title u-text--tertiary">Shiatsu</h3>
       <p class="sc-activity-intro__content">
-        Le <strong>shiatsu</strong> est une pratique manuelle d'origine japonaise qui mobilise
-        notre corps dans sa globalité. Selon Shizuto Masunaga, le shiatsu
-        alterne des pressions, des étirements et empaumement au rythme de la
-        respiration du receveur. Il participe au rééquilibrage du corps et de
-        l'esprit, au renforcement ou au maintien de la santé. Il puise ses
-        sources dans l'énergétique traditionnelle chinoise.
+        Le <strong>shiatsu</strong> est un accompagnement à la santé. Selon
+        Shizuto Masunaga, il alterne pressions, étirements et empaumements au
+        rythme de la respiration du receveur.
       </p>
-      <p>
-        <strong>Lieux : </strong>Séances sur Laigné
-        en Belin (15mn Le Mans), proposées dans le cadre de ma 3ème année de formation
-      </p>
+      <p><strong>Lieux : </strong>Séances sur Laigné en Belin (15mn Le Mans)</p>
       <button
         [routerLink]="shiatsuPage"
         class="sc-activity-intro__button sc-activity-intro__button--tertiary"
@@ -106,14 +94,12 @@
       </h3>
       <p class="sc-activity-intro__content">
         Rendre son corps vivant et conscient, grâce au Tai Chi Qi Gong ou aux
-        massages, développe un véritable point d'appui au quotidien. Ils
-        développent les Soft Skills ou savoir-être dont nous parlons aujourd'hui
-        : relation à soi, aux autres, souplesse, adaptabilité, travail en
-        groupe, gestion du stress et bien d'autres..
+        massages, développe les Soft Skills ou savoir-être dont nous parlons
+        aujourd'hui
       </p>
       <p>
-        <strong>Lieux : </strong> Sur place en entreprise à
-        l'année ou ponctuellement
+        <strong>Lieux : </strong> Sur place en entreprise à l'année ou
+        ponctuellement
       </p>
       <button
         [routerLink]="entreprisePage"
@@ -144,43 +130,52 @@
     <app-news
       [left]="true"
       class="news__item"
-      img="assets/images/taichi/laigné coq 2 300x223.png"
-      title="Tai Chi/Qi Gong : Rentrée saison 2021-2022"
+      img="assets/images/taichi/tai-chi-24-verdigne-300x225.jpg"
+      title="Tai Chi/Qi Gong : Rentrée 2022-2023"
       type="secondary"
     >
-      Nous reprenons les cours la 3ème semaine de septembre, dans les associations.<br/>
-      Comme l'année passée nous nous adapterons pour maintenir les cours malgré les conditions sanitaires.
-      <br/>
+      Nous reprenons les cours la 3ème semaine de septembre, dans les
+      associations.<br />
       Vous retrouverez sur la page Tai Chi Qi Gong les différents lieux où vous
       pourrez nous retrouver.<a class="button alt" routerLink="taichi"
-    >Tai Chi Qi Gong</a
+        >Tai Chi Qi Gong</a
+      >
+    </app-news>
+    <app-news
+      [left]="true"
+      class="news__item"
+      img="assets/images/shiatsu/diplome-shiatsu-nouveau-300x218.jpg"
+      title="Shiatsu"
+      type=""
+      tertiary
     >
+      Après 3 ans 1/2 de formation, je suis ravie de vous accompagner dans votre
+      recherche d'équilibre physique comme psychique. <br />
+      <a class="button alt" routerLink="shiatsu">Shiatsu</a>
     </app-news>
     <app-news
       [left]="true"
       class="news__item"
       img="assets/images/massage/massage-ayurvedique-dos-300x200.jpg"
-      title="Massage Bien-Etre : je continue à vous accueillir"
+      title="Massage Bien-Etre"
       type="tertiary"
     >
       Ces derniers temps, le toucher est un des sens que nous avons le plus
       oublié. En énergétique traditionnelle chinoise la peau est associée aux
-      poumons et à la respiration. Nous avons bien besoin de les renforcer.<br/>
-      <a class="button alt" routerLink="massage">Massages</a> <br/>Je mets en
-      œuvre toutes les conditions pour pouvoir vous accueillir au mieux, dans le
-      respect des règles liées au covid-19, quelque soit votre situation.
+      poumons et à la respiration.<br />
+      <a class="button alt" routerLink="massage">Massages</a>
     </app-news>
     <app-news
       [left]="true"
       class="news__item"
       img="assets/images/taichi/livre-corps-vivant-corps-conscient.jpg"
-      title="Livre corps vivant corps conscient Edition Almora disponible en librairie"
+      title="Livre corps vivant corps conscient"
       type="primary"
     >
       Quatre enseignants en Tai Chi, Qi Gong et Stretching Postural, de plus de
       40 ans d’expérience, mais aussi des médecins, thérapeutes, éducateurs et
       artistes, témoignent de leur pratique et des bienfaits qu’ils en ont
-      retirés. … )
+      retirés.
     </app-news>
   </div>
 
@@ -224,19 +219,18 @@
               Je pratique le Tai Chi, le Qi Gong et la méditation depuis plus de
               15 ans.
             </strong>
-            <br/>
+            <br />
             Je transmets avec plaisir cet art millénaire, attentive au confort
             de chacun, sans recherche de performance, sur Laigné en Belin et Le
             Mans. La pratique est ouverte à tous, quel que soit son âge ou sa
-            condition physique. <br/>Je propose les massages bien-être depuis
+            condition physique. <br />Je propose les massages bien-être depuis
             plus de 10 ans et transmets avec plaisir cette conscience du corps
-            vivant par un toucher bienveillant. <br/>Je propose le shiatsu dans
-            le cadre de ma formation pour devenir spécialiste en shiatsu.
-            Actuellement en 3ème et dernière année. <br/>Quel que soit la
-            pratique, chacun est accueilli avec autant de bienveillance, qu'il
-            vienne pour découvrir ces arts corporels, pour améliorer sa qualité
-            de vie, pour se déstresser, par recommandation d'un thérapeute ou
-            pour faire du lien avec sa pratique professionnelle.
+            vivant par un toucher bienveillant. <br />Je propose le shiatsu et
+            partage avec plaisir cet accompagnement à la santé.<br />Quel que
+            soit la pratique, chacun est accueilli avec autant de bienveillance,
+            qu'il vienne pour découvrir ces arts corporels, pour améliorer sa
+            qualité de vie, pour se déstresser, par recommandation d'un
+            thérapeute ou pour faire du lien avec sa pratique professionnelle.
           </p>
           <button [routerLink]="aProposPage" class="c-home__about__button">
             En savoir plus
