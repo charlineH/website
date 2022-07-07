@@ -40,7 +40,7 @@
 
 .sc-activity-intro__column {
   background-color: $color-default-secondary;
-  border-radius: $border-radius-default;
+  border-radius: $border-radius;
   -webkit-box-shadow: $border-shadow;
   box-shadow: $border-shadow;
   cursor: pointer;
@@ -79,27 +79,31 @@
   color: $color-default-secondary;
   font-weight: $txt-regular-medium;
   padding: $size-lower 0;
+  border-radius: $border-radius;
 }
 
 .sc-activity-intro__button--primary {
-  background-color: $color-project-primary-dark;
+  background-color: $color-project-primary;
 }
 
 .sc-activity-intro__button--secondary {
-  background-color: $color-project-secondary-dark;
+  background-color: $color-project-secondary;
+  color: $color-default-primary;
 }
 
 .sc-activity-intro__button--tertiary {
-  background-color: $color-project-tertiary-dark;
+  background-color: $color-project-tertiary;
+  color: $color-default-primary;
 }
 
-.sc-activity-intro__button--empty {
-  background-color: $color-empty-dark;
+.sc-activity-intro__button--quaternary {
+  background-color: $color-project-quaternary;
+  color: $color-default-primary;
 }
 
 
 .home__presentation {
-  border-radius: $border-radius-default;
+  border-radius: $border-radius;
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -107,14 +111,15 @@
   margin: 2*$size-default 0;
 
   @media(min-width: $small-desktop-window) {
-    background-color: $color-project-tertiary-very-light;
+    background-color: rgba($color-bg, 0.5);
+
     margin: 5*$size-default 0;
     width: 50%;
 
   }
 
   .presentation__title {
-    color: $color-project-tertiary-dark;
+    color: $color-project-primary-dark;
     font-size: $txt-size-regular;
     font-weight: $txt-bold-default;
     align-self: center;
@@ -128,28 +133,10 @@
 }
 
 .home__news {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: $txt-size-default;
-
-  @media (min-width: $tablet-window) {
-    justify-content: space-evenly;
-  }
-
-  .news__item {
-    margin-bottom: $size-xmedium;
-    width: 80%;
-
-    @media (min-width: $tablet-window) {
-      width: 45%;
-    }
-
-    @media (min-width: $medium-desktop-window) {
-      width: 20%;
-    }
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: $size-xmedium;
+  margin: $size-default $size-xmedium $size-xmedium;
 }
 
 .sc-home__testimony {
@@ -182,7 +169,7 @@
 }
 
 .c-home__about__button {
-  background-color: $color-project-tertiary-dark;
+  background-color: $color-project-primary;
   color: $color-default-secondary;
   padding: $size-lower $size-medium;
   margin-top: $size-medium;

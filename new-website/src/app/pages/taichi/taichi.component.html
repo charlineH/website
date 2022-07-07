@@ -254,7 +254,7 @@
   </div>
   <app-img-band [cadre]="true" class="taichi__band" title="Témoignages" type="stage"></app-img-band>
   <div class="taichi__testimonies">
-    <app-testimony *ngFor="let testimony of testimonies" [author]="testimony.author">
+    <app-testimony *ngFor="let testimony of testimonies" [author]="testimony.author" color="primary">
       {{ testimony.testimony }}
     </app-testimony>
   </div>

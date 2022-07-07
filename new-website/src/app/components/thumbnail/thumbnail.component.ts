@@ -24,7 +24,7 @@ export class ThumbnailComponent {
         icon = 'massage';
         break;
       case 'entreprise':
-        icon = 'building';
+        icon = 'balance';
         break;
       case 'shiatsu':
       default:
@@ -44,7 +44,7 @@ export class ThumbnailComponent {
         color = 'tertiary';
         break;
       case 'massage':
-        color = 'grey';
+        color = 'quaternary';
         break;
       case 'entreprise':
         color = 'secondary';

@@ -5,33 +5,33 @@
   max-width: $medium-desktop-window;
 
   &::after {
-    content: '';
     position: absolute;
-    width: $size-small;
     top: 0;
     bottom: 0;
     left: 0;
+    width: $size-small;
     margin-left: -$size-small;
+    content: '';
   }
 }
 
 .c-timeline__item {
-  padding: $size-small + $size-lower 5*$size-lower;
   position: relative;
-  background-color: inherit;
-  width: 100%;
   left: 0;
+  width: 100%;
+  padding: $size-small + $size-lower 5*$size-lower;
+  background-color: inherit;
 
   &::after {
-    content: '';
-    border: 2px solid $color-default-secondary;
     position: absolute;
+    z-index: 1;
+    top: 2 * $size-default;
+    left: -14px;
     width: $size-medium;
     height: $size-medium;
-    left: -14px;
-    top: $size-default;
+    border: 2px solid $color-empty-very-light;
     border-radius: 50%;
-    z-index: 1;
+    content: '';
   }
 }
 
@@ -45,18 +45,14 @@
 }
 
 .c-timeline__content {
+  position: relative;
   padding: $size-default;
   background-color: $color-empty-very-light;
-  position: relative;
 }
 
-.c-timeline.primary {
+.c-timeline {
   &::after {
-    background-color: $color-project-primary-dark;
-  }
-
-  .c-timeline__item::after {
-    background-color: $color-project-primary-dark;
+    background-color: $color-default-primary;
   }
 
   .c-timeline__title {
@@ -64,31 +60,43 @@
   }
 }
 
-.c-timeline.secondary {
-  &::after {
-    background-color: $color-project-secondary-dark;
-  }
-
-  .c-timeline__item::after {
-    background-color: $color-project-secondary-dark;
+.primary {
+  &.c-timeline__item::after {
+    background-color: $color-project-primary;
   }
 
   .c-timeline__title {
-    color: $color-project-secondary;
+    color: $color-project-primary;
   }
 }
 
-.c-timeline.tertiary {
-  &::after {
-    background-color: $color-project-tertiary-dark;
-  }
-
-  .c-timeline__item::after {
-    background-color: $color-project-tertiary-dark;
+.secondary {
+  &.c-timeline__item::after {
+    background-color: $color-project-secondary;
   }
 
   .c-timeline__title {
-    color: $color-project-tertiary;
+    color: $color-project-secondary-dark;
+  }
+}
+
+.tertiary {
+  &.c-timeline__item::after {
+    background-color: $color-project-tertiary;
+  }
+
+  .c-timeline__title {
+    color: $color-project-tertiary-dark;
+  }
+}
+
+.quaternary {
+  &.c-timeline__item::after {
+    background-color: $color-project-quaternary;
+  }
+
+  .c-timeline__title {
+    color: $color-project-quaternary-dark;
   }
 }
 

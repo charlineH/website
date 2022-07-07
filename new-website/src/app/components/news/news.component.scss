@@ -1,21 +1,18 @@
 @import "src/assets/styles/bases";
 
-.news {
+:host {
   display: flex;
   flex-direction: column;
   background-color: $color-default-secondary;
   box-shadow: $border-shadow;
-  border-radius: $border-radius-default;
+  border-radius: $border-radius;
   width: 100%;
-  min-height: $size-xlarge;
 }
 
 .news__img {
-  border-radius: $border-radius-default $border-radius-default 0 0;
+  border-radius: $border-radius $border-radius 0 0;
   border-top: $size-default solid $color-project-primary;
   width: 100%;
-  max-width: 384px;
-  margin: 0 auto;
 
   &.secondary {
     border-top: $size-default solid $color-project-secondary;
@@ -23,6 +20,10 @@
 
   &.tertiary {
     border-top: $size-default solid $color-project-tertiary;
+  }
+
+  &.quaternary {
+    border-top: $size-default solid $color-project-quaternary;
   }
 
   &.grey {
@@ -40,17 +41,17 @@
 .news__title {
   font-size: $txt-size-big;
   font-weight: $txt-bold-default;
-  color: $color-project-primary;
+  color: $color-project-primary-dark;
 }
 
 .secondary {
   .news__title {
-    color: $color-project-secondary;
+    color: $color-project-secondary-dark;
   }
 
   .news__button {
-    background-color: $color-project-secondary;
-    color: $color-empty-dark;
+    background-color: $color-project-secondary-very-light;
+    color: $color-default-primary;
 
     &:hover {
       background-color: $color-project-secondary-light;
@@ -60,15 +61,31 @@
 
 .tertiary {
   .news__title {
-    color: $color-project-tertiary;
+    color: $color-project-tertiary-dark;
   }
 
   .news__button {
-    background-color: $color-project-tertiary;
-    color: $color-default-secondary;
+    background-color: $color-project-tertiary-very-light;
+    color: $color-default-primary;
 
     &:hover {
       background-color: $color-project-tertiary-light;
+      color: $color-empty-dark;
+    }
+  }
+}
+
+.quaternary {
+  .news__title {
+    color: $color-project-quaternary-dark;
+  }
+
+  .news__button {
+    background-color: $color-project-quaternary-very-light;
+    color: $color-default-primary;
+
+    &:hover {
+      background-color: $color-project-quaternary-light;
       color: $color-empty-dark;
     }
   }
@@ -96,11 +113,11 @@
 }
 
 .news__button {
-  background-color: $color-project-primary;
-  color: $color-project-primary-very-light;
+  background-color: $color-project-primary-very-light;
+  color: $color-default-primary;
   font-size: $txt-size-regular;
 
-  border-radius: $border-radius-default;
+  border-radius: $border-radius;
   height: $size-xlarge;
 
   &:hover {

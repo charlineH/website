@@ -12,12 +12,12 @@
 }
 
 .on-top__icon {
-  color: $color-project-secondary;
+  color: $color-project-quaternary;
   width: $size-large;
   height: $size-large;
 
   &:hover {
     cursor: pointer;
-    color: $color-project-secondary-light;
+    color: $color-project-quaternary-dark;
   }
 }

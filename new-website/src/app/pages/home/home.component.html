@@ -1,6 +1,6 @@
 <app-nav-bar [page]="page" xmlns="http://www.w3.org/1999/html"></app-nav-bar>
 <div class="home-page">
-  <app-carrousel [multiple]="true"></app-carrousel>
+  <app-carrousel></app-carrousel>
   <h2 class="sr-only">Présentation des activités</h2>
   <div class="home__thumbnails">
     <div class="thumbnails-container">
@@ -28,7 +28,7 @@
       class="sc-activity-intro__column"
       title="Cliquer pour en savoir plus"
     >
-      <h3 class="sc-activity-intro__title u-text--primary">
+      <h3 class="sc-activity-intro__title u-text--primary-dark">
         Tai Chi Qi Gong Méditation
       </h3>
       <p class="sc-activity-intro__content">
@@ -60,7 +60,7 @@
       <p><strong>Lieux : </strong>Séances sur Laigné en Belin (15mn Le Mans)</p>
       <button
         [routerLink]="massagePage"
-        class="sc-activity-intro__button sc-activity-intro__button--empty"
+        class="sc-activity-intro__button sc-activity-intro__button--quaternary"
       >
         Découvrir les séances
       </button>
@@ -112,10 +112,10 @@
 
   <div class="home__presentation">
     <h3 class="text-center">
-      <strong class="u-text--tertiary"> Humoe </strong> -
-      <strong class="u-text--tertiary"> HU</strong>manité
-      <strong class="u-text--tertiary"> MO</strong>uvement
-      <strong class="u-text--tertiary"> E</strong>quilibre
+      <strong class="u-text--primary"> Humoe </strong> -
+      <strong class="u-text--primary"> HU</strong>manité
+      <strong class="u-text--primary"> MO</strong>uvement
+      <strong class="u-text--primary"> E</strong>quilibre
     </h3>
     <p>
       Une philosophie d’accompagnement vers le Bien Etre : Le Bien Etre, comme
@@ -132,33 +132,20 @@
       class="news__item"
       img="assets/images/taichi/tai-chi-24-verdigne-300x225.jpg"
       title="Tai Chi/Qi Gong : Rentrée 2022-2023"
-      type="secondary"
+      type="primary"
     >
       Nous reprenons les cours la 3ème semaine de septembre, dans les
       associations.<br />
       Vous retrouverez sur la page Tai Chi Qi Gong les différents lieux où vous
-      pourrez nous retrouver.<a class="button alt" routerLink="taichi"
-        >Tai Chi Qi Gong</a
-      >
-    </app-news>
-    <app-news
-      [left]="true"
-      class="news__item"
-      img="assets/images/shiatsu/diplome-shiatsu-nouveau-300x218.jpg"
-      title="Shiatsu"
-      type=""
-      tertiary
-    >
-      Après 3 ans 1/2 de formation, je suis ravie de vous accompagner dans votre
-      recherche d'équilibre physique comme psychique. <br />
-      <a class="button alt" routerLink="shiatsu">Shiatsu</a>
+      pourrez nous retrouver.<br />
+      <a class="button alt" routerLink="taichi">Tai Chi Qi Gong</a>
     </app-news>
     <app-news
       [left]="true"
       class="news__item"
       img="assets/images/massage/massage-ayurvedique-dos-300x200.jpg"
       title="Massage Bien-Etre"
-      type="tertiary"
+      type="quaternary"
     >
       Ces derniers temps, le toucher est un des sens que nous avons le plus
       oublié. En énergétique traditionnelle chinoise la peau est associée aux
@@ -168,9 +155,20 @@
     <app-news
       [left]="true"
       class="news__item"
+      img="assets/images/shiatsu/diplome-shiatsu-nouveau-300x218.jpg"
+      title="Shiatsu"
+      type="tertiary"
+    >
+      Après 3 ans 1/2 de formation, je suis ravie de vous accompagner dans votre
+      recherche d'équilibre physique comme psychique. <br />
+      <a class="button alt" routerLink="shiatsu">Shiatsu</a>
+    </app-news>
+    <app-news
+      [left]="true"
+      class="news__item"
       img="assets/images/taichi/livre-corps-vivant-corps-conscient.jpg"
       title="Livre corps vivant corps conscient"
-      type="primary"
+      type="secondary"
     >
       Quatre enseignants en Tai Chi, Qi Gong et Stretching Postural, de plus de
       40 ans d’expérience, mais aussi des médecins, thérapeutes, éducateurs et
@@ -181,6 +179,7 @@
 
   <app-img-band
     [title]="'Avis et témoignages'"
+    type="eye-bonze"
     img="assets/images/caroussel/mieux-vivre_1920x448.png"
   ></app-img-band>
   <div class="sc-home__testimony">
@@ -188,21 +187,21 @@
       class="sc-home__testimony__carousel sc-home__testimony__carousel--first"
     >
       <ng-template *ngFor="let avis of taichiAvis" ngbSlide>
-        <app-testimony [author]="avis.author" type="tai chi">
+        <app-testimony [author]="avis.author" type="tai chi" color="primary">
           {{ avis.text }}
         </app-testimony>
       </ng-template>
     </ngb-carousel>
     <ngb-carousel class="sc-home__testimony__carousel">
       <ng-template *ngFor="let avis of massageAvis" ngbSlide>
-        <app-testimony [author]="avis.author" type="massage">
+        <app-testimony [author]="avis.author" type="massage" color="quaternary">
           {{ avis.text }}
         </app-testimony>
       </ng-template>
     </ngb-carousel>
   </div>
   <app-img-band
-    img="assets/images/caroussel/mieux-vivre_1920x448.png"
+    type="mouse-bonze"
     title="A propos de Marie Laure Humeau (9 rue de l'Oisonnière Laigné en Belin)"
   ></app-img-band>
   <div class="home__about">
@@ -215,7 +214,7 @@
         />
         <div>
           <p class="c-presentation__text pt-0">
-            <strong class="u-text--tertiary">
+            <strong class="u-text--primary">
               Je pratique le Tai Chi, le Qi Gong et la méditation depuis plus de
               15 ans.
             </strong>

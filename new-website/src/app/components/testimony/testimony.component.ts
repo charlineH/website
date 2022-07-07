@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class TestimonyComponent implements OnInit {
   @Input() author: string;
   @Input() type: string;
-  @Input() color: 'tertiary' | 'secondary' | 'primary' | 'grey';
+  @Input() color: 'tertiary' | 'secondary' | 'primary' | 'quaternary' | 'grey';
 
   ngOnInit(): void {
     if (!this.color) {

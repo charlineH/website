@@ -16,6 +16,7 @@
 
   @media (min-width: $small-desktop-window) {
     flex-direction: row;
+    width: 95%;
   }
 }
 
@@ -38,7 +39,7 @@
   }
 
   h4 {
-    color: $color-project-secondary;
+    color: $color-project-quaternary;
     font-weight: $txt-regular-medium;
     text-transform: uppercase;
     font-size: $txt-size-regular
@@ -52,11 +53,18 @@
 
 .footer__content {
   display: flex;
+  flex-wrap: wrap;
   width: 80%;
   margin: $size-xmedium 0;
+  gap: $size-xmedium;
+
+  @media (min-width: $small-desktop-window) {
+    flex-wrap: nowrap;
+  }
 }
 
 .content__item {
+  flex: 0 0 50%;
   h3 {
     text-transform: uppercase;
     color: $color-empty-very-light;
@@ -77,14 +85,6 @@
   @media (min-width: $small-desktop-window) {
     flex: 0 0 50%;
     max-width: 50%;
-  }
-}
-
-.content__item--mobile {
-  display: none;
-
-  @media (min-width: $small-desktop-window) {
-    display: block;
   }
 }
 

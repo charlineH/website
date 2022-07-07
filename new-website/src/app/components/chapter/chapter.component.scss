@@ -30,15 +30,19 @@
   margin-bottom: $size-xmedium;
 
   &.primary {
-    color: $color-project-primary;
+    color: $color-project-primary-dark;
   }
 
   &.secondary {
-    color: $color-project-secondary;
+    color: $color-project-secondary-dark;
   }
 
   &.tertiary {
-    color: $color-project-tertiary;
+    color: $color-project-tertiary-dark;
+  }
+
+  &.quaternary {
+    color: $color-project-quaternary-dark;
   }
 
   &.grey {

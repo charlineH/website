@@ -2,7 +2,7 @@
 
 .sc-testimony {
   padding: $size-lower $size-default;
-  border-radius: $border-radius-default;
+  border-radius: $border-radius;
   border-left: $size-lower solid $color-default-primary;
 }
 
@@ -11,11 +11,15 @@
 }
 
 .sc-testimony--secondary {
-  border-left-color: $color-project-secondary-dark;
+  border-left-color: $color-project-secondary;
 }
 
 .sc-testimony--tertiary {
-  border-left-color: $color-project-tertiary-dark;
+  border-left-color: $color-project-tertiary;
+}
+
+.sc-testimony--quaternary {
+  border-left-color: $color-project-quaternary;
 }
 
 .sc-testimony--empty {
@@ -45,6 +49,11 @@
 .sc-testimony__quote--tertiary {
   @extend %sc-testimony__quote;
   color: $color-project-tertiary-light;
+}
+
+.sc-testimony__quote--quaternary {
+  @extend %sc-testimony__quote;
+  color: $color-project-quaternary-light;
 }
 
 .sc-testimony__quote--empty {

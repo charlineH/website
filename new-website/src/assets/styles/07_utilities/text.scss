@@ -1,7 +1,10 @@
 @import '../bases.scss';
 
-.u-text--primary {
+.u-text--primary-dark {
   color: $color-project-primary-dark !important;
+}
+.u-text--primary {
+  color: $color-project-primary !important;
 }
 
 .u-text--secondary {
@@ -10,6 +13,10 @@
 
 .u-text--tertiary {
   color: $color-project-tertiary-dark !important;
+}
+
+.u-text--quaternary {
+  color: $color-project-quaternary-dark !important;
 }
 
 .u-text--empty {

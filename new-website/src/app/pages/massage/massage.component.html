@@ -39,6 +39,7 @@
     class="massage__band"
     img="assets/images/bandeau/IMG_4635_1680x658.png"
     title="Les massages"
+    color="quaternary"
   ></app-img-band>
   <div class="massage-page__massages">
     <app-article
@@ -48,6 +49,7 @@
       src="assets/images/massage/massage-ayurvedique-dos-300x200.jpg"
       tarif="60€ à 80€"
       title="Massage ayurvédique"
+      color="quaternary"
     >
       <p>
         Le Massage aurvédique est un moment de bien-être et de relaxation.
@@ -64,6 +66,7 @@
       id="vitalisant"
       src="assets/images/massage/massage-vitalisant-300x200.jpg"
       tarif="60€ à 80€"
+      color="quaternary"
       title="Massage vitalisant"
     >
       <p>
@@ -83,6 +86,7 @@
       src="assets/images/massage/massage-drainant-300x200.jpg"
       tarif="60€. (Au départ ce massage nécessite le plus souvent des scéances rapprochées) Forfait de 3 scéances 165€."
       title="massage drainant"
+      color="quaternary"
     >
       <p>
         Le Massage drainant stimule la circulation dans le corps. Il accompagne
@@ -98,6 +102,7 @@
       src="{{ typesMassage[3].img }}"
       tarif="80€"
       title="MASSAGE & POSTURE ou RESPIRATION"
+      color="quaternary"
     >
       <p>
         Le Massage & posture ou respiration est un moment de bien-être et de
@@ -116,6 +121,7 @@
       src="assets/images/massage/massage-main-300x200.jpg"
       tarif="30€"
       title="MASSAGE ASSIS"
+      color="quaternary"
     >
       <p>
         Le Massage assis se reçoit habillé sur chaise ergonomique. Il soulage le
@@ -127,6 +133,7 @@
       id="enfants"
       src="assets/images/logo/misa-france-146x250.jpg"
       title="MASSAGE ENTRE ENFANTS, école centre de loisirs"
+      color="quaternary"
     >
       <p>
         Programme de massage enfants pour les écoles, accueils périscolaires,
@@ -167,11 +174,13 @@
     class="massage__band"
     title="Témoignages"
     type="eye-bonze"
+    color="quaternary"
   ></app-img-band>
   <div class="massage__testimonies">
     <app-testimony
       *ngFor="let testimony of testimonies"
       [author]="testimony.author"
+      color="quaternary"
     >
       {{ testimony.testimony }}
     </app-testimony>
