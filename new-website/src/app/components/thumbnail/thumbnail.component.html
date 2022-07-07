@@ -1,7 +1,7 @@
 <div (click)="redirectTo()" [ngClass]="getColorClasses()" aria-pressed="false" class="thumbnail" role="button"
      tabindex="0">
   <div aria-hidden="true" class="thumbnail__bubble">
-    <mat-icon [svgIcon]="getIcon()" class="thumbnail__icon"></mat-icon>
+    <img [src]="'assets/images/icons/' +  getIcon() + '.png'" class="thumbnail__icon" [alt]="getIcon()">
   </div>
   <h3 class="thumbnail__text">{{text}}</h3>
 </div>

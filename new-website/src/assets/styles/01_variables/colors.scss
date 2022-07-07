@@ -1,24 +1,29 @@
-@import "concrete-color";
+$color-default-primary: #252525;
+$color-default-secondary: #ffffff;
 
-$color-default-primary: $dark;
-$color-default-secondary: $white;
+$color-project-primary-very-light: #ECF7FB;
+$color-project-primary-light: #7BC7E2;
+$color-project-primary: #227C9D;
+$color-project-primary-dark: #071A21;
 
-$color-project-primary-very-light: #f1f7f8;
-$color-project-primary-light: $steel-blue;
-$color-project-primary: #5898b0;
-$color-project-primary-dark: #373f51;
+$color-project-secondary-very-light: #FFF4F5;
+$color-project-secondary-light: #FFABAE;
+$color-project-secondary: #FE6D73;
+$color-project-secondary-dark: #A7171C;
 
-$color-project-secondary-very-light: #fcedef;
-$color-project-secondary-light: #ff646f;
-$color-project-secondary: #ed6270;
-$color-project-secondary-dark: #bc2c1a;
+$color-project-tertiary-very-light: #FFFBF5;
+$color-project-tertiary-light: #FFE1B0;
+$color-project-tertiary: #FFCB77;
+$color-project-tertiary-dark: #D58300;
 
-$color-project-tertiary-very-light: #f3f6f4;
-$color-project-tertiary-light: #c5efcb;
-$color-project-tertiary: #6f9774;
-$color-project-tertiary-dark: #617564;
+$color-project-quaternary-very-light: #ECFDFB;
+$color-project-quaternary-light: #7DF0E4;
+$color-project-quaternary: #17C3B2;
+$color-project-quaternary-dark: #0A544D;
 
-$color-empty-dark: $grey-dark;
-$color-empty: $grey;
-$color-empty-light: $grey-light;
-$color-empty-very-light: $grey-very-light;
+$color-bg: #FEF9EF;
+
+$color-empty-dark: #30323d;
+$color-empty: #4d5061;
+$color-empty-light: #d5dfe8;
+$color-empty-very-light: #eeeff0;

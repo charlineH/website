@@ -11,7 +11,7 @@ export class NewsComponent implements OnInit {
   @Input() title: string;
   @Input() buttonLabel: string;
   @Input() redirect: string;
-  @Input() type: 'secondary' | 'tertiary' | 'grey';
+  @Input() type: 'secondary' | 'tertiary' | 'grey' | 'quaternary';
 
   imageLabel: string;
   isExterneRedirect: boolean;

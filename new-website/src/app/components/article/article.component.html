@@ -8,14 +8,14 @@
       <ng-content></ng-content>
       <div *ngIf="duree || tarif" class="content__row">
         <p *ngIf="duree">
-          <strong>Durée : </strong> {{duree}}
+          <strong [ngClass]="'u-text--' + color">Durée : </strong> {{duree}}
         </p>
         <p *ngIf="tarif" class="ml-3">
-          <strong>Tarif : </strong> {{tarif}}
+          <strong [ngClass]="'u-text--' + color">Tarif : </strong> {{tarif}}
         </p>
       </div>
       <div *ngIf="bienfaits">
-        <strong>Bienfaits : </strong> {{bienfaits}}
+        <strong [ngClass]="'u-text--' + color">Bienfaits : </strong> {{bienfaits}}
       </div>
     </div>
   </div>

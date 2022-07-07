@@ -10,6 +10,8 @@
   height: 8*$size-default;
   padding: $size-default;
   cursor: pointer;
+  background-color: rgba($color-bg, 0.5);
+  border-radius: $border-radius;
 
 }
 
@@ -25,6 +27,7 @@
 .thumbnail__icon {
   width: $size-xmedium;
   height: $size-xmedium;
+  color: $color-default-primary;
 }
 
 .thumbnail__text {
@@ -36,38 +39,13 @@
 }
 
 .thumbnail--primary {
-  background-color: rgba($color-project-primary-very-light, 0.9);
 
   &:hover {
     background-color: rgba($color-project-primary-very-light, 1);
   }
 
   .thumbnail__bubble {
-    background-color: $color-project-primary-dark;
-  }
-
-  .thumbnail__icon {
-    color: $color-project-primary-very-light;
-  }
-
-  .thumbnail__text {
-    color: $color-project-primary-dark;
-  }
-}
-
-.thumbnail--primary {
-  background-color: rgba($color-project-primary-very-light, 0.9);
-
-  &:hover {
-    background-color: rgba($color-project-primary-very-light, 1);
-  }
-
-  .thumbnail__bubble {
-    background-color: $color-project-primary-dark;
-  }
-
-  .thumbnail__icon {
-    color: $color-project-primary-very-light;
+    background-color: $color-project-primary;
   }
 
   .thumbnail__text {
@@ -76,18 +54,13 @@
 }
 
 .thumbnail--secondary {
-  background-color: rgba($color-project-secondary-very-light, 0.9);
 
   &:hover {
     background-color: rgba($color-project-secondary-very-light, 1);
   }
 
   .thumbnail__bubble {
-    background-color: $color-project-secondary-dark;
-  }
-
-  .thumbnail__icon {
-    color: $color-project-secondary-very-light;
+    background-color: $color-project-secondary;
   }
 
   .thumbnail__text {
@@ -96,18 +69,13 @@
 }
 
 .thumbnail--tertiary {
-  background-color: rgba($color-project-tertiary-very-light, 0.9);
 
   &:hover {
     background-color: rgba($color-project-tertiary-very-light, 1);
   }
 
   .thumbnail__bubble {
-    background-color: $color-project-tertiary-dark;
-  }
-
-  .thumbnail__icon {
-    color: $color-project-tertiary-very-light;
+    background-color: $color-project-tertiary;
   }
 
   .thumbnail__text {
@@ -115,22 +83,17 @@
   }
 }
 
-.thumbnail--grey {
-  background-color: rgba($color-empty-very-light, 0.9);
+.thumbnail--quaternary {
 
   &:hover {
-    background-color: rgba($color-empty-very-light, 1);
+    background-color: rgba($color-project-quaternary-very-light, 1);
   }
 
   .thumbnail__bubble {
-    background-color: $color-empty-dark;
-  }
-
-  .thumbnail__icon {
-    color: $color-empty-light;
+    background-color: $color-project-quaternary;
   }
 
   .thumbnail__text {
-    color: $color-empty-dark;
+    color: $color-project-quaternary-dark;
   }
 }

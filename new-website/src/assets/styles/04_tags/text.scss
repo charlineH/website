@@ -2,11 +2,6 @@
 
 strong {
   font-weight: $txt-bold-default;
-  color: $color-project-secondary-dark;
-}
-
-strong.primary {
-  color: $color-project-primary-dark;
 }
 
 a.none {
@@ -25,7 +20,7 @@ a {
   cursor: pointer;
 
   &:hover {
-    color: $color-project-primary-light;
+    color: $color-project-secondary;
     text-decoration: underline;
   }
 }

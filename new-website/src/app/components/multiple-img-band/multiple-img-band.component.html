@@ -1,8 +1,0 @@
-<div class="multiple-img-band">
-  <div (click)="selectItem.emit(image.type)" *ngFor="let image of images" class="multiple-image-band__item">
-    <span [ngClass]="{'item__title--dark': image.dark}" class="item__title">{{image.title}}</span>
-    <div class="item__img">
-      <img alt="{{image.title}}" src="{{image.img}}">
-    </div>
-  </div>
-</div>

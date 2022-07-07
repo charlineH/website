@@ -80,13 +80,13 @@ $cadre-offset: 7 * $size-default;
 
 .band__title {
   font-size: 2.5em;
-  color: $white;
+  color: $color-default-secondary;
   text-align: center;
   text-transform: uppercase;
 }
 
 .band__cadre {
-  background-color: rgba($color-project-primary-very-light, 0.65);
+  background-color: rgba($color-bg, 0.65);
   display: flex;
   justify-content: center;
   width: 80%;
@@ -115,6 +115,10 @@ $cadre-offset: 7 * $size-default;
 
     &.tertiary {
       color: $color-project-tertiary-dark;
+    }
+
+    &.quaternary {
+      color: $color-project-quaternary-dark;
     }
 
     @media (min-width: $small-mobile-window) {

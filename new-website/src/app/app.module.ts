@@ -9,7 +9,6 @@ import { TaichiComponent } from './pages/taichi/taichi.component';
 import { GallerieComponent } from './pages/gallerie/gallerie.component';
 import { EntrepriseComponent } from './pages/entreprise/entreprise.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
-import { MultipleImgBandComponent } from './components/multiple-img-band/multiple-img-band.component';
 import { ImgBandComponent } from './components/img-band/img-band.component';
 import { OnTopComponent } from './components/on-top/on-top.component';
 import { ShiatsuComponent } from './pages/shiatsu/shiatsu.component';
@@ -43,7 +42,6 @@ import { AProposComponent } from './pages/a-propos/a-propos.component';
     GallerieComponent,
     EntrepriseComponent,
     NavBarComponent,
-    MultipleImgBandComponent,
     ImgBandComponent,
     OnTopComponent,
     ShiatsuComponent,
