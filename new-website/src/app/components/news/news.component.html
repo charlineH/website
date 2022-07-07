@@ -1,17 +1,15 @@
-<div [ngClass]="{'news--reverse': left}" class="news">
-  <img [ngClass]="type" alt="{{imageLabel}}" class="news__img" src="{{img}}">
-  <div [ngClass]="type" class="news__content">
-    <h3 class="news__title">{{title}}</h3>
-    <p class="news__text">
-      <ng-content></ng-content>
-    </p>
-    <button (click)="openLink()"
-            *ngIf="buttonLabel && isExterneRedirect || isAssetRedirect; else interneRedirect"
-            aria-label="buttonLabel"
-            class="news__button">
-      {{buttonLabel}}
-    </button>
-  </div>
+<img [ngClass]="type" alt="{{imageLabel}}" class="news__img" src="{{img}}">
+<div [ngClass]="type" class="news__content">
+  <h3 class="news__title">{{title}}</h3>
+  <p class="news__text">
+    <ng-content></ng-content>
+  </p>
+  <button (click)="openLink()"
+          *ngIf="buttonLabel && isExterneRedirect || isAssetRedirect; else interneRedirect"
+          aria-label="buttonLabel"
+          class="news__button">
+    {{buttonLabel}}
+  </button>
 </div>
 
 <ng-template #interneRedirect>

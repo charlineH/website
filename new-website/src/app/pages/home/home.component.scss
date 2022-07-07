@@ -128,28 +128,10 @@
 }
 
 .home__news {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: $txt-size-default;
-
-  @media (min-width: $tablet-window) {
-    justify-content: space-evenly;
-  }
-
-  .news__item {
-    margin-bottom: $size-xmedium;
-    width: 80%;
-
-    @media (min-width: $tablet-window) {
-      width: 45%;
-    }
-
-    @media (min-width: $medium-desktop-window) {
-      width: 20%;
-    }
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: $size-xmedium;
+  margin: $size-default $size-xmedium $size-xmedium;
 }
 
 .sc-home__testimony {

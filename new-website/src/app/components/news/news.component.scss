@@ -1,21 +1,18 @@
 @import "src/assets/styles/bases";
 
-.news {
+:host {
   display: flex;
   flex-direction: column;
   background-color: $color-default-secondary;
   box-shadow: $border-shadow;
   border-radius: $border-radius-default;
   width: 100%;
-  min-height: $size-xlarge;
 }
 
 .news__img {
   border-radius: $border-radius-default $border-radius-default 0 0;
   border-top: $size-default solid $color-project-primary;
   width: 100%;
-  max-width: 384px;
-  margin: 0 auto;
 
   &.secondary {
     border-top: $size-default solid $color-project-secondary;
