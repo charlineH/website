@@ -25,7 +25,7 @@ git add .
 git commit -m ":bookmark: Release ${VERSION}"
 
 # Create tag with release version
-git tag "metro-${VERSION}"
+git tag "v-${VERSION}"
 
 
 # Push release branch with tag
