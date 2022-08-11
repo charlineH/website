@@ -1,0 +1,16 @@
+@import "src/assets/styles/bases";
+
+.mentions-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: $size-large 0;
+}
+
+.mentions__content {
+  width: 80%;
+
+  @media (min-width: $large-desktop-window) {
+    width: 65%;
+  }
+}
