@@ -3,7 +3,6 @@ import { RoutesPath } from '../../enum/routes.enum';
 import { HasTitle } from '../../model/has-title.model';
 
 @Component({
-  selector: 'app-gallerie',
   templateUrl: './gallerie.component.html',
   styleUrls: ['./gallerie.component.scss']
 })

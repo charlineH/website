@@ -76,6 +76,10 @@
     font-size: $txt-size-default;
     color: $color-empty-light;
   }
+
+  a {
+    margin-right: $size-default ;
+  }
 }
 
 .col--mobile {

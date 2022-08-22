@@ -6,7 +6,6 @@ import { MatSelectionListChange } from '@angular/material/list';
 
 
 @Component({
-  selector: 'app-library',
   templateUrl: './library.component.html',
   styleUrls: ['./library.component.scss']
 })
