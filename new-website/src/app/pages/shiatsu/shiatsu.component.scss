@@ -1,6 +1,5 @@
 @import "src/assets/styles/bases";
 
-
 app-carousel {
   width: 100%;
 }
@@ -50,5 +49,64 @@ app-carousel {
 
   @media (min-width: $small-desktop-window) {
     flex-direction: row;
+  }
+}
+.shiatsu-chapters {
+  width: 80%;
+  margin: $size-xmedium 0;
+  .chapter__row {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    @media (min-width: $small-desktop-window) {
+      flex-direction: row;
+    }
+  }
+
+  .chapter__introduction {
+    color: $color-project-tertiary;
+    font-weight: $txt-regular-medium;
+    font-size: $txt-size-regular;
+    margin-bottom: $size-xmedium;
+  }
+
+  .chapter__content {
+    color: $color-empty;
+    font-size: 1.125rem;
+    text-align: justify;
+    margin-bottom: $size-xmedium;
+  }
+
+  .chapter__image {
+    height: 6 * $size-large;
+    width: fit-content;
+  }
+
+  @media (min-width: $small-desktop-window) {
+    width: 75%;
+    margin-bottom: 4.5 * $size-default;
+  }
+
+  @media (min-width: $large-desktop-window) {
+    width: 65%;
+    margin-bottom: 6.5 * $size-default;
+  }
+}
+
+.shiatsu__band {
+  width: 100%;
+}
+
+.shiatsu__chapter {
+  width: 90%;
+  margin: $size-large 0;
+
+  @media (min-width: $small-desktop-window) {
+    width: 80%;
+  }
+
+  @media (min-width: $large-desktop-window) {
+    width: 65%;
   }
 }
