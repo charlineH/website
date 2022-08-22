@@ -3,7 +3,6 @@ import { RoutesPath } from '../../enum/routes.enum';
 import { HasTitle } from '../../model/has-title.model';
 
 @Component({
-  selector: 'app-shiatsu',
   templateUrl: './shiatsu.component.html',
   styleUrls: ['./shiatsu.component.scss']
 })

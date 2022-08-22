@@ -6,7 +6,6 @@ import { takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
 
 @Component({
-  selector: 'app-taichi',
   templateUrl: './taichi.component.html',
   styleUrls: ['./taichi.component.scss']
 })

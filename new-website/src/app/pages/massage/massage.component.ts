@@ -9,7 +9,6 @@ import { Subject } from 'rxjs';
 
 
 @Component({
-  selector: 'app-massage',
   templateUrl: './massage.component.html',
   styleUrls: ['./massage.component.scss']
 })
