@@ -32,6 +32,10 @@ import { LibraryComponentComponent } from './pages/library/library-component/lib
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { AProposComponent } from './pages/a-propos/a-propos.component';
+import { MentionsComponent } from './pages/mentions/mentions.component';
+import { RgpdComponent } from './pages/rgpd/rgpd.component';
+import { MediationComponent } from './pages/mediation/mediation.component';
+import { ConditionGeneraleVenteComponent } from './pages/condition-generale-vente/condition-generale-vente.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +61,11 @@ import { AProposComponent } from './pages/a-propos/a-propos.component';
     PostComponent,
     LibraryComponent,
     LibraryComponentComponent,
-    AProposComponent
+    AProposComponent,
+    MentionsComponent,
+    RgpdComponent,
+    MediationComponent,
+    ConditionGeneraleVenteComponent
   ],
   imports: [
     BrowserModule,

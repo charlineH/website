@@ -5,7 +5,6 @@ import { HasTitle } from '../../model/has-title.model';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-entreprise',
   templateUrl: './entreprise.component.html',
   styleUrls: ['./entreprise.component.scss']
 })
