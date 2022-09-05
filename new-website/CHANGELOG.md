@@ -33,3 +33,17 @@
 - massages maj tarif descriptif photo
 - :bookmark: release 3.0.0
 - :sparkles: Enabled https redirection
+
+### 3.1.2
+
+- fix(shiatsu): correction du style
+- shiatsu : html scss ts images
+- shiatsu : photos
+- feat(taichi): Mise à jour de la page et des documents
+
+### 3.1.3
+
+- fix(shiatsu): correction du style
+- shiatsu : html scss ts images
+- shiatsu : photos
+- feat(taichi): Mise à jour de la page et des documents
